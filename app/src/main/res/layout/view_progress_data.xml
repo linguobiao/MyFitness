@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout
+        android:id="@+id/layout_one_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+        
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/DAILY_REPORT"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_public_title" />
+        
+		<RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/text_title"
+            android:orientation="horizontal" >
+            
+		     <TextView
+                android:id="@+id/text_value_burn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/value_size_progress_burn"
+                android:textStyle="bold" />
+       
+		     <ImageView
+	            android:id="@+id/image_circle_burn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:contentDescription="@null"
+	            android:src="@drawable/background_progress_circle"/>
+      
+            <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="25dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical" >
+            
+	             <TextView
+	                android:id="@+id/text_label_burn_daily"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:layout_gravity="center_horizontal"
+	                android:text="@string/DAILY"
+	                android:textColor="@android:color/black"
+	                android:textSize="@dimen/text_size_progress_daily_bigger" />
+	
+	            <TextView
+	                android:id="@+id/text_label_burn_average"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_horizontal"
+	                android:text="@string/AVERAGE"
+	                android:textColor="@android:color/black"
+	                android:textSize="@dimen/text_size_progress_average_bigger" />
+	            
+               </LinearLayout>
+ 
+	            <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="25dp"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical" >
+            
+	            <TextView
+	                android:id="@+id/text_label_cal"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_horizontal"
+	                android:layout_marginTop="5dp"
+	                android:text="@string/KCALS"
+	                android:textColor="@android:color/black"
+	                android:textSize="@dimen/text_size_progress_kcals" />
+	
+	            <TextView
+	                android:id="@+id/text_label_burn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_horizontal"
+	                android:text="@string/BURNED"
+	                android:textColor="@android:color/black"
+	                android:textSize="@dimen/text_size_progress_burned" />
+        	</LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_two_circle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_one_circle"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image_circle_step"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/background_progress_circle_small" />
+
+            <com.lgb.myfitness.view.GoalProgressbar
+                android:id="@+id/progress_step"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_label_step_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/DAILY"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_progress_daily" />
+
+                <TextView
+                    android:id="@+id/text_label_step_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/AVERAGE"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_progress_average" />
+
+                <TextView
+                    android:id="@+id/text_value_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/value_size_progress_steps"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_label_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/STEPS"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_progress_steps" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image_circle_sleep"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/background_progress_circle_small" />
+
+            <com.lgb.myfitness.view.GoalProgressbar
+                android:id="@+id/progress_sleep"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_label_sleep_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/DAILY"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_progress_daily" />
+
+                <TextView
+                    android:id="@+id/text_label_sleep_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/AVERAGE"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_progress_average" />
+
+                <TextView
+                    android:id="@+id/text_value_sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/value_size_progress_sleep"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_label_sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/SLEEP"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_progress_sleep" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_one_circle"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/image_progress_circle_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_two_circle"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/image_progress_circle_shadow_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/image_progress_circle_shadow_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

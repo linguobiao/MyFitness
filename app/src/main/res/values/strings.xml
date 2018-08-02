@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id_facebook">777811778928824</string>
+    <string name="app_name">My Fitness</string>
+
+    <!-- activity_type -->
+    <string name="Technaxx_Fitness_Scale">Technaxx Fitness Scale</string>
+    <string name="Technaxx_Wristband">Technaxx Wristband</string>
+    <string name="Choose_Your_Device_">Choose Your Device!</string>
+
+    <!-- activity_main -->
+    <string name="History">History</string>
+    <string name="Activity">Activity</string>
+    <string name="Settings">Settings</string>
+
+    <!-- fragment_progress -->
+    <string name="DAILY_REPORT">DAILY REPORT</string>
+    <string name="WEEKLY_REPORT">WEEKLY REPORT</string>
+    <string name="MONTHLY_REPORT">MONTHLY REPORT</string>
+    <string name="YEARLY_REPORT">YEARLY REPORT</string>
+    <string name="DAY">DAY</string>
+    <string name="WEEK">WEEK</string>
+    <string name="MONTH">MONTH</string>
+    <string name="YEAR">YEAR</string>
+    <string name="DAILY">DAILY</string>
+    <string name="AVERAGE">AVERAGE</string>
+    <string name="KCALS">KCALS</string>
+    <string name="CALS">CALS</string>
+    <string name="BURNED">BURNED</string>
+    <string name="STEPS">STEPS</string>
+    <string name="SLEEP">SLEEP</string>
+    <string name="Awake">Awake</string>
+    <string name="Asleep">Asleep</string>
+
+    <!-- fragment_activity -->
+    <string name="TODAYS">TODAYS</string>
+    <string name="GOAL">GOAL</string>
+    <string name="kcals">kcals</string>
+    <string name="cals">cals</string>
+    <string name="Burned">Burned</string>
+    <string name="km">km</string>
+    <string name="mile">mile</string>
+    <string name="Distance">Distance</string>
+    <string name="steps">steps</string>
+    <string name="Steps">Steps</string>
+    <string name="hours">hours</string>
+    <string name="Active">Active</string>
+    <string name="In_active">In-active</string>
+    <string name="percent_of_Average">% of Goal</string>
+    <string name="Deep">Deep</string>
+    <string name="Light">Light</string>
+    <string name="CALORIES">CALORIES</string>
+
+    <!-- chart -->
+    <string name="Calories_kcals">Calories (kcals)</string>
+    <string name="Calories_cals">Calories (cals)</string>
+    <string name="Sleep_Pattern">Sleep Pattern</string>
+    <string name="Sleep_Rating">Sleep Rating</string>
+    <string name="Calories_Steps_Trend">Calories/Steps Trend</string>
+    <string name="Calories">Calories</string>
+    <string name="DATE">Date</string>
+    <string name="MONTH_">Month</string>
+    <string name="TIME">TIME</string>
+    <string name="Low">Low</string>
+    <string name="Opti">Opti</string>
+    <string name="Norm">Norm</string>
+    <string name="Mild">Mild</string>
+    <string name="Midd">Midd</string>
+    <string name="High">High</string>
+
+    <!-- fragment_settings -->
+    <string name="SETTINGS">SETTINGS</string>
+    <string name="My_Profile">My Profile</string>
+    <string name="Workout_Goal">Workout Goal</string>
+    <string name="Smart_Alarm">Smart Alarm</string>
+    <string name="Reminders">Reminders</string>
+    <string name="About_Us">About Us</string>
+    <string name="LOST_MODE">LOST MODE</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="Back">Back</string>
+    <string name="Save">Save</string>
+    <string name="Choose_Device">Choose Device</string>
+    <string name="SYNC">SYNC</string>
+
+    <!-- fragment_settings_scale -->
+    <string name="SCALE">SCALES</string>
+    <string name="Scales">Scales</string>
+    <string name="Male">M</string>
+    <string name="Female">F</string>
+    <string name="Weight">Weight</string>
+    <string name="Kg">Kg</string>
+    <string name="BMI">BMI</string>
+    <string name="Weight_data">0.0</string>
+    <string name="BMI_data">0.00</string>
+    <string name="Weight_Kg">Weight(Kg)</string>
+    <string name="Goal_Weight_">Goal Weight:</string>
+
+    <!-- fragment_settings_profile -->
+    <string name="Name">Name</string>
+    <string name="SELECT">SELECT</string>
+    <string name="LANGUAGE">LANGUAGE</string>
+    <string name="Age">Age</string>
+    <string name="Age_18">18</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="Weight_kg">Weight (kg)</string>
+    <string name="height_feet">Height (feet)</string>
+    <string name="Weight_lbs">Weight (lbs)</string>
+    <string name="height_example">180</string>
+    <string name="weight_example">70</string>
+    <string name="marker_1">~</string>
+    <string name="marker_2">:</string>
+    <string name="MALE">MALE</string>
+    <string name="FEMALE">FEMALE</string>
+    <string name="Commit">Commit</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- fragment_settings_goal -->
+    <string name="Set_Goals">Set Goals</string>
+    <string name="Steps_">Steps:</string>
+    <string name="Calories_">Calories:</string>
+    <string name="Sleep_">Sleep:</string>
+    <string name="goal_notice">Keeping you focused on improving every day.</string>
+    <string name="steps_day">steps/day</string>
+    <string name="kcals_day">kcals/day</string>
+    <string name="cals_day">cals/day</string>
+    <string name="hours_day">hours/day</string>
+    <string name="H">H</string>
+
+    <!-- fragment_settings_alarm -->
+    <string name="Alarm_Clock">Alarm Clock</string>
+    <string name="Alarm_Time">Alarm Time</string>
+    <string name="Monitoring_period">Monitoring period</string>
+    <string name="mins">mins</string>
+    <string name="MON">MON</string>
+    <string name="TUE">TUE</string>
+    <string name="WED">WED</string>
+    <string name="THU">THU</string>
+    <string name="FRI">FRI</string>
+    <string name="SAT">SAT</string>
+    <string name="SUN">SUN</string>
+
+    <!-- fragment_settings_reminder -->
+    <string name="Reminder">Reminder</string>
+    <string name="Start_Hour">Start Hour</string>
+    <string name="End_Hour">End Hour</string>
+    <string name="Interval">Interval</string>
+
+    <!-- fragment_settings_about_us -->
+    <string name="Version">My Fitness Version</string>
+    <string name="version_code">Version:V2.6.0</string>
+    <string name="about_us_introduction_1">Technaxx Deutschland GmbH &amp; Co.KG</string>
+    <string name="about_us_introduction_2">Kruppstrasse 105</string>
+    <string name="about_us_introduction_3">D-60388 Frankfurt am Main</string>
+
+    <!-- fragment_settings_lost_mode -->
+    <string name="Lost_Mode">Lost Mode</string>
+    <string name="Found_Within">Found Within…</string>
+    <string name="distance_1">0 – 1m</string>
+    <string name="distance_2">1 – 2m</string>
+    <string name="distance_3">2 – 3m</string>
+    <string name="distance_4">> 3m</string>
+    <string name="Searching">Searching…</string>
+
+    <!-- fragment_scale_settings_profile -->
+    <string name="Set_Your_Goal_">Set Your Goal:</string>
+    <string name="kg">kg</string>
+    <string name="weight_goal_example">80</string>
+
+    <!-- fragment_bpm_home -->
+    <string name="SYS">SYS</string>
+    <string name="DIA">DIA</string>
+    <string name="mmHg">mmHg</string>
+    <string name="Bluetooth_Device">Bluetooth Device</string>
+
+    <!-- fragment_bpm_test -->
+    <string name="BP_Monitor">BP Monitor</string>
+    <string name="Unconnected">Unconnected</string>
+    <string name="Connected">Connected</string>
+    <string name="state_disconnected">No device</string>
+    <string name="state_connected">Device is connected, wear the cuff correctly; make sure the blue arrow pointed down, and red arrow pointed up; \nThe cuff is 2cm away from the elbow!</string>
+    <string name="state_start">Measuring now, please don\'t move and keep cuff at your heart level.</string>
+    <string name="RECONNECT">RECONNECT</string>
+    <string name="SEARCHING_">SEARCHING…</string>
+    <string name="START">START</string>
+    <string name="STOP">STOP</string>
+    <string name="Pressure">Pressure</string>
+
+    <!-- fragment_bpm_statistics -->
+    <!-- fragment_bpm_statistics_detail -->
+    <string name="H_R">PUL</string>
+    <string name="bpm">bpm</string>
+    <string name="Analyse_result">Analyse result</string>
+    <string name="result_low">\t\tYou should choose healthy food easy to digest and nutritious. Do not excessive dieting, and three meals a day is indispensable. Take part in physical exercise to improve physical fitness. Increase nutrition, drink more water, eat more soup, daily salt slightly more than the average man; If there are obvious symptoms, turn to your doctor and take the treatment actively.</string>
+    <string name="result_opti">\t\tNow your blood pressure is in a state of ideal, continue to maintain a healthy lifestyle.</string>
+    <string name="result_norm">\t\tYour blood pressure is normal, please keep a regular life, avoid long motionless; Keep eating food with low salt, low fat. Keep good reasonable working and resting habit; Keep a good, positive and optimistic mood.</string>
+    <string name="result_mild">\t\tIf there is not any symptoms, please do not take any medicine. Body fitness can be adjusted and improved by diet. Eating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine, take some appropriate exercise and have rest in time. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>
+    <string name="result_midd">\t\tEating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>
+    <string name="result_high">\t\tEating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>
+
+    <!-- fragment_bpm_settings -->
+    <string name="BP_Monitor_Language">BP Monitor Language</string>
+    <string name="Language">Language</string>
+
+    <!-- fragment_bpm_settings_language -->
+    <string name="Select_language_in_BP_Monitor">Select language in BP Monitor.</string>
+
+    <!-- dialog -->
+    <string name="Notice">Notice</string>
+    <string name="notice_unbound">Do you want to unbind your band?</string>
+    <string name="exit_app">Do you want to exit My Fitness?</string>
+    <string name="Exit">Exit</string>
+    <string name="bluetooth_connecting">Bluetooth connecting…</string>
+    <string name="synchronizing">Synchronizing…</string>
+    <string name="Share_via">Share via</string>
+
+    <string-array name="item">
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string name="cancelled">Cancelled</string>
+    <string name="ok">OK</string>
+    <string name="Sharing_to_facebook">Sharing to facebook…</string>
+    <string name="Loading">Loading…</string>
+    <string name="Sharing_to_twitter">Sharing to twitter…</string>
+    <string name="notice_reset">Your band was once reset for some reasons, leading to loss of data within your band. \n\n If you want to keep the same data display between APP and band, please click CLEAR to clear data today in app. \n Or click RETAIN to retain those data, but this may possibly make app display larger data than your band\'s</string>
+    <string name="Retain">Retain</string>
+    <string name="Clear">Clear</string>
+    <string name="BPM_unusual_data">Your result is unnormal high, data will not be saved.</string>
+    <string name="English">English</string>
+    <string name="German">Deutsch</string>
+    <string name="French">French</string>
+    <string name="Test_fail">Test is fail, the result will not be saved.</string>
+    <string name="Delete_bpm">Do you want to delete this bpm data?</string>
+    <string name="Measuring_Done">Measuring Done</string>
+    <string name="Test_complete">You can now check the result.</string>
+    <string name="Check">Check</string>
+
+    <!-- toast -->
+    <string name="Save_succeeded">Save succeeded!</string>
+    <string name="Reminder_save_fail">Save failed! End time should be later than begin time.</string>
+    <string name="Profile_save_fail_height">Save failed! Height setting unreasonable.</string>
+    <string name="Profile_save_fail_weight">Save failed! Weight set unreasonable.</string>
+    <string name="No_bluetooth_in_device">No bluetooth in device</string>
+    <string name="Please_enable_bluetooth">Please enable bluetooth to connect device</string>
+    <string name="name_can_not_be_empty">Name can not be empty</string>
+    <string name="Unbound_succeeded">Unbound succeeded</string>
+    <string name="Do_not_find_bounded_device">Do not find bounded device</string>
+    <string name="mm35_time_out_request_sync_again">time out request sync again</string>
+    <string name="mm35_sync_fail_please_light_up_your_device_and_try_again">sync fail, please light up your device and try again</string>
+    <string name="can_not_use_BLE">Can not use BLE in your phone, please use audio jack to sync.</string>
+    <string name="no_internet_connect">No internet connection.</string>
+    <string name="Please_select_a_language">Please select a language.</string>
+    <string name="band_is_reset">Your band was once power off, data in the band will be clear to start</string>
+    <string name="connect_timeout">Timed out. Stop scanning!</string>
+    <string name="stop_connecting">Stop connecting</string>
+    <string name="connect_fail">Connect fail</string>
+    <string name="disconnected">Bluetooth disconnected…</string>
+    <string name="stop_synchronizing">Stop Synchronization</string>
+    <string name="sync_finish">Synchronization is complete!</string>
+    <string name="sync_timeout">Synchronization timeout</string>
+    <string name="sync_fail">Synchronization fail</string>
+    <string name="stop_sync">Stop Synchronization</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="successfully_posted_post">Successfully posted the image to facebook.\nPost ID: %1$s</string>
+    <string name="Successfully_shared_to_facebook">Successfully shared to facebook</string>
+    <string name="Successfully_shared_to_twitter">Successfully shared to twitter</string>
+    <string name="ppm">/Min.</string>
+    <string name="declaration">Declaration</string>
+    <string name="impressum">Impressum</string>
+    <string name="declaration_content_1">DECLARATION:</string>
+    <string name="declaration_content_2">Technaxx Deutschland GmbH &amp; Co. KG takes the protection of its customer data very 
+serious. We would therefore like you to know, when we collect what data and how we plan on 
+using it. Any data you transfer to us is handeled responsibly and according to the law, more 
+specifically according to the German Bundesdatenschutzgesetzes (BDSG) and 
+Telemediengesetzes (TMG) of data handling and storage. </string>
+    <string name="declaration_content_3">1. Data collection and processing</string>
+    <string name="declaration_content_4">Personal data will only be transferred to the extent you personally authorized. Furthermore,
+we only collect the data we need in order to uphold the service our company provides for you.\n\n
+We collect and process the data provided by you in our system for the time the contract is 
+effective, in other words for as long the My Fitness App and fitness bracelet are used. Unless 
+you explicitly allow further processing, your data will be made inaccessible once the contract 
+is fulfilled and deleted after the tax- and trade respites for data storage have expired.</string>
+    <string name="declaration_content_5">App Usage</string>
+    <string name="declaration_content_6">In Detail the following Data collected when using the App\n\n
+- IP address of the user\n\n
+- Log-In data of you mobile device (including the ID of device)\n\n
+- Username\n\n
+- Gender, Weight, Age and Height\n\n
+- Information about your Bluetooth connection\n\n
+- Data which is generated by using our App, My Fitness, throughout the use of the fitness 
+bracelet, like Date and Time of the call, amount of data will be transmitted from our fitness 
+bracelet to your mobile device.\n\n
+To use this app, you must be registered either at iTunes Store or the Google Play Store. 
+Therefore you must have submitted your personal data such as name, e- mail address, etc. 
+Parts of the provided data will be given to us by the online store operators. The collected data 
+will be saved and is necessary for the performance of the contract.</string>
+    <string name="declaration_content_7">2. Responsible office and contact</string>
+    <string name="declaration_content_8">Responsible agency for the collection, processing and use of personal information within the 
+meaning of the Federal Data Protection Act is Technaxx Germany GmbH &amp; Co. KG 
+represented by the Technaxx administrative and Beteiligungsgesellschaft mbH represented by 
+the managing Deniz Isik and Pascal Pekcan , Krupp Straße 105 , 60388 Frankfurt am Main.\n\n
+For questions regarding the collection, processing or use of personal information, the 
+disclosure, correction, blocking or deletion of data please contact:\n
+Technaxx Deutschland GmbH &amp; Co. KG\n 
+Kruppstraße 105\n 
+60388 Frankfurt am Main\n 
+Fax +49 [69] 90 47552 16\n
+E-Mail: info@technaxx.de</string>
+    <string name="declaration_content_9">3. Information and deletion</string>
+    <string name="declaration_content_10">According to the Federal Data Protection Act you have the right of free information about the 
+data stored of your person, and the right to authorize, blocking or deleting of data.</string>
+    <string name="impressum_content_1">IMPRESSUM:</string>
+    <string name="impressum_content_2">Technaxx Deutschland GmbH &amp; Co. KG\n
+represented by the managment- and associates company mbH represented by the managers Deniz Isik and Pascal Pekcan\n
+Kruppstraße 105\n 
+60388 Frankfurt am Main\n
+Fon: 1805 - 012643 (Charge: 0,14 €/Minute for German landline, max. 0,42 €/Minute for German mobile network)\n
+Fax: +49 [69] 90 47552 16\n\n
+E-Mail: info@technaxx.de\n\n
+HRA: 43080 Registergericht: Amtsgericht Frankfurt am Main\n
+Steuernummer: 133 740 1969\n
+Ust-Id-Nr.: DE 226513614\n
+EORI: DE5177790\n
+BattG-Reg-Nr.: 21003703\n
+WEEE-Reg-Nr.: DE94626913</string>
+    <string name="impressum_content_3"></string>
+
+</resources>

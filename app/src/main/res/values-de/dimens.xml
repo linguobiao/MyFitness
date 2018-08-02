@@ -1,0 +1,104 @@
+<resources>
+
+    <dimen name="text_size_public_title">20sp</dimen>
+    <dimen name="text_size_public_save">10sp</dimen>
+    
+    <dimen name="text_size_connect_sync">30sp</dimen>
+    <dimen name="text_size_connect_to_device">15sp</dimen>
+    <dimen name="text_size_connect_update_your_progress">15sp</dimen>
+    
+    <dimen name="text_size_main_tab">13sp</dimen>
+    
+    <dimen name="text_size_progress_daily">10sp</dimen>
+    <dimen name="text_size_progress_average">10sp</dimen>
+    <dimen name="text_size_progress_daily_bigger">12sp</dimen>
+    <dimen name="text_size_progress_average_bigger">12sp</dimen>
+    <dimen name="text_size_progress_steps">10sp</dimen>
+    <dimen name="text_size_progress_sleep">10sp</dimen>
+    <dimen name="text_size_progress_kcals">12sp</dimen>
+    <dimen name="text_size_progress_burned">12sp</dimen>
+    <dimen name="text_size_progress_graph">12sp</dimen>
+    <dimen name="text_size_progress_data">12sp</dimen>
+    <dimen name="text_size_progress_tab">11sp</dimen>
+    <dimen name="text_size_progress_awake">7sp</dimen>
+    <dimen name="text_size_progress_asleep">7sp</dimen>
+    <dimen name="value_size_progress_steps">23sp</dimen>
+    <dimen name="value_size_progress_sleep">23sp</dimen>
+    <dimen name="value_size_progress_burn">25sp</dimen>
+   
+  	<dimen name="text_size_activity_tab">11sp</dimen>
+    <dimen name="text_size_activity_todays">15sp</dimen>
+    <dimen name="text_size_activity_calories_goal">15sp</dimen>
+    <dimen name="text_size_activity_calories_kcals">10sp</dimen>
+    <dimen name="text_size_activity_calories_km">10sp</dimen>
+    <dimen name="text_size_activity_calories_steps">10sp</dimen>
+    <dimen name="text_size_activity_calories_burned">13sp</dimen>
+    <dimen name="text_size_activity_calories_distance">13sp</dimen>
+    <dimen name="text_size_activity_calories_Steps">13sp</dimen>
+    <dimen name="value_size_activity_calories_goal">32sp</dimen>
+    <dimen name="value_size_activity_calories_burned">10sp</dimen>
+    <dimen name="value_size_activity_calories_distance">10sp</dimen>
+    <dimen name="value_size_activity_calories_steps">10sp</dimen>
+    
+    
+    <dimen name="text_size_activity_steps_steps">15sp</dimen>
+    <dimen name="text_size_activity_steps_hours">10sp</dimen>
+    <dimen name="text_size_activity_steps_active">13sp</dimen>
+    <dimen name="text_size_activity_steps_inactive">13sp</dimen>
+    <dimen name="text_size_activity_steps_average">13sp</dimen>
+    <dimen name="value_size_activity_steps_steps">32sp</dimen>
+    <dimen name="value_size_activity_steps_active">10sp</dimen>
+    <dimen name="value_size_activity_steps_inactive">10sp</dimen>
+    <dimen name="value_size_activity_steps_average">10sp</dimen>
+    
+    <dimen name="text_size_activity_sleep_sleep">15sp</dimen>
+    <dimen name="text_size_activity_sleep_hours">10sp</dimen>
+    <dimen name="text_size_activity_sleep_deep">13sp</dimen>
+    <dimen name="text_size_activity_sleep_light">13sp</dimen>
+    <dimen name="text_size_activity_sleep_awake">13sp</dimen>
+    <dimen name="value_size_activity_sleep_sleep">28sp</dimen>
+    <dimen name="value_size_activity_sleep_deep">10sp</dimen>
+    <dimen name="value_size_activity_sleep_light">10sp</dimen>
+    <dimen name="value_size_activity_sleep_awake">10sp</dimen>
+
+    
+    <dimen name="text_size_settings_my_profile">15sp</dimen>
+    <dimen name="text_size_settings_workout_goal">15sp</dimen>
+    <dimen name="text_size_settings_reminder_settings">15sp</dimen>
+    <dimen name="text_size_settings_wake_up_alarm">15sp</dimen>
+    <dimen name="text_size_settings_about_us">15sp</dimen>
+    <dimen name="text_size_settings_lost_mode">10sp</dimen>
+    <dimen name="text_size_settings_sync">10sp</dimen>
+    
+    <dimen name="text_size_profile_select">20sp</dimen>
+    <dimen name="text_size_profile_select_type">13sp</dimen>
+    <dimen name="text_size_profile_language">15sp</dimen>
+    <dimen name="text_size_profile_time_display">15sp</dimen>
+    <dimen name="text_size_profile_unit">15sp</dimen>
+    <dimen name="text_size_profile_unit_calories">15sp</dimen>
+    
+    <dimen name="text_size_about_us_user_manual">20sp</dimen>
+    <dimen name="text_size_about_us_introduce">11sp</dimen>
+    <dimen name="text_size_about_us_version">13sp</dimen>
+    <dimen name="text_size_about_us_version_code">13sp</dimen>
+    
+    <dimen name="text_size_alarm_date">13sp</dimen>
+    
+    <dimen name="text_size_lost_mode_stauts">20sp</dimen>
+    <dimen name="text_size_lost_mode_distance">30sp</dimen>
+    
+    <dimen name="text_size_goal_steps">15sp</dimen>
+    <dimen name="text_size_goal_calories">15sp</dimen>
+    <dimen name="text_size_goal_sleep">15sp</dimen>
+    <dimen name="text_size_goal_reset">20sp</dimen>
+    <dimen name="value_size_goal_steps">18sp</dimen>
+    <dimen name="value_size_goal_calories">18sp</dimen>
+    <dimen name="value_size_goal_sleep">18sp</dimen>
+    
+    <dimen name="tab_height">60dp</dimen>
+    <dimen name="fragment_gap">70dp</dimen>
+    
+    
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+</resources>

@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height"
+        android:background="@drawable/background_main_bottom"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        
+        <com.facebook.widget.LoginButton
+            android:id="@+id/loginbutton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radio_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:background="@drawable/button_history"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/image_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/background_button_check"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radio_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:background="@drawable/button_activity"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/image_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/background_button_check"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radio_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:background="@drawable/button_setting"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/image_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/background_button_check"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/text_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/radio_settings"
+                android:layout_alignLeft="@id/radio_settings"
+                android:layout_alignRight="@id/radio_settings"
+                android:layout_alignTop="@id/radio_settings" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+       
+
+</FrameLayout>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_setting" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_main_bend_bottom" >
+
+        <ImageView
+            android:id="@+id/image_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/image_settings_reminder" />
+
+        <TextView
+            android:id="@+id/smatr_alarm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_reminder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/Reminders"
+            android:textColor="#5db2e8" />
+
+        <ImageView
+            android:id="@+id/image_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smatr_alarm_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/image_title_logo" />
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/button_left_no_font" />
+
+        <com.lgb.myfitness.view.TextViewShow
+            android:id="@+id/progerss_textviewshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="22dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp"
+            android:text="@string/Back"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/button_right_no_font" />
+
+        <com.lgb.myfitness.view.TextViewShow_
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="22dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp"
+            android:text="@string/Save"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/tab_height"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_reminder"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/text_label_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/Reminder"
+                    android:textColor="@android:color/white" />
+
+                <ToggleButton
+                    android:id="@+id/button_reminder_switch"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_switch_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/text_label_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/Start_Hour"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/text_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_light_blue" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/text_label_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/End_Hour"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/text_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_light_blue" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/text_label_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/Interval"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/text_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_light_blue" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_week_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/button_mon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_mon_selector"
+                android:text="@string/MON"
+                android:textColor="@android:color/white"
+                android:textOff="@string/MON"
+                android:textOn="@string/MON"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <ToggleButton
+                android:id="@+id/button_tue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_tue_selector"
+                android:text="@string/TUE"
+                android:textColor="@android:color/white"
+                android:textOff="@string/TUE"
+                android:textOn="@string/TUE"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <ToggleButton
+                android:id="@+id/button_wed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_tue_selector"
+                android:text="@string/WED"
+                android:textColor="@android:color/white"
+                android:textOff="@string/WED"
+                android:textOn="@string/WED"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <ToggleButton
+                android:id="@+id/button_thu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_tue_selector"
+                android:text="@string/THU"
+                android:textColor="@android:color/white"
+                android:textOff="@string/THU"
+                android:textOn="@string/THU"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <ToggleButton
+                android:id="@+id/button_fri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_tue_selector"
+                android:text="@string/FRI"
+                android:textColor="@android:color/white"
+                android:textOff="@string/FRI"
+                android:textOn="@string/FRI"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <ToggleButton
+                android:id="@+id/button_sat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_tue_selector"
+                android:text="@string/SAT"
+                android:textColor="@android:color/white"
+                android:textOff="@string/SAT"
+                android:textOn="@string/SAT"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <ToggleButton
+                android:id="@+id/button_sun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_date_sun_selector"
+                android:text="@string/SUN"
+                android:textColor="@android:color/white"
+                android:textOff="@string/SUN"
+                android:textOn="@string/SUN"
+                android:textSize="@dimen/text_size_alarm_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_week_button_fake"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_fake_mon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_mon_uncheck"
+                android:text="@string/MON"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <Button
+                android:id="@+id/button_fake_tue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_tue_uncheck"
+                android:text="@string/TUE"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <Button
+                android:id="@+id/button_fake_wed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_tue_uncheck"
+                android:text="@string/WED"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <Button
+                android:id="@+id/button_fake_thu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_tue_uncheck"
+                android:text="@string/THU"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <Button
+                android:id="@+id/button_fake_fri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_tue_uncheck"
+                android:text="@string/FRI"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <Button
+                android:id="@+id/button_fake_sat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_tue_uncheck"
+                android:text="@string/SAT"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+
+            <Button
+                android:id="@+id/button_fake_sun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_tue_uncheck"
+                android:text="@string/SUN"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_alarm_date" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_wheel_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/tab_height"
+        android:visibility="gone" >
+
+        <include layout="@layout/view_two_wheel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_wheel_interval"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/tab_height"
+        android:visibility="gone" >
+
+        <include layout="@layout/view_one_wheel" />
+    </RelativeLayout>
+
+</RelativeLayout>

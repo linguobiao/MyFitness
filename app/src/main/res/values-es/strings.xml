@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	
+    <string name="app_name">My Fitness</string>
+    
+    <!-- activity_type -->
+    <string name="Technaxx_Fitness_Scale">Technaxx Fitness Bascula</string>
+    <string name="Technaxx_Wristband">Technaxx Pulsera</string>
+    <string name="Choose_Your_Device_">Elije tu dispositivo</string>
+    
+    <!-- activity_main -->
+    <string name="History">Historial</string>
+    <string name="Activity">Actividad</string>
+    <string name="Settings">Ajustes</string>
+   
+    <!-- fragment_progress -->
+	<string name="DAILY_REPORT">REPORTE DIARIO</string>
+	<string name="WEEKLY_REPORT">REPORTE SEMANAL</string>
+	<string name="MONTHLY_REPORT">REPORTE MENSUAL</string>
+	<string name="YEARLY_REPORT">REPORTE ANUAL</string>
+	<string name="DAY">DIA</string>
+	<string name="WEEK">SEMANA</string>
+	<string name="MONTH">MES</string>
+	<string name="YEAR">AÑO</string>
+	<string name="DAILY">DIARIO</string>
+	<string name="AVERAGE">PROMEDIO</string>
+	<string name="KCALS">KCALS</string>
+	<string name="CALS">CALS</string>
+	<string name="BURNED">QUEMADAS</string>
+	<string name="STEPS">PASOS</string>
+	<string name="SLEEP">SUEÑO</string>
+	<string name="Awake">Despertar</string>
+	<string name="Asleep">Dormida</string>
+	
+	<!-- fragment_activity -->
+	<string name="TODAYS">DE HOY</string>
+	<string name="GOAL">OBJETIVO</string>
+	<string name="kcals">KCALS</string>
+	<string name="cals">cals</string>
+	<string name="Burned">Quemadas</string>
+	<string name="km">km</string>
+	<string name="mile">milla</string>
+	<string name="Distance">Distancia</string>
+	<string name="steps">pasos</string>
+	<string name="Steps">Pasos</string>
+	<string name="hours">horas</string>
+	<string name="Active">Activa</string>
+	<string name="In_active">inactiva</string>
+	<string name="percent_of_Average">% de objetivo</string>
+	<string name="Deep">Profundidad</string>
+	<string name="Light">Encender</string>
+	<string name="CALORIES">Calorias</string>
+	
+	<!-- chart -->
+	<string name="Calories_kcals">Calorias (Kcals)</string>
+	<string name="Calories_cals">Calorias (Cals)</string>
+	<string name="Sleep_Pattern">Patron de sueño</string>
+	<string name="Sleep_Rating">Calificacion del sueño</string>
+	<string name="Calories_Steps_Trend">Calorias/Pasos andados</string>
+	<string name="Calories">Calorias</string>
+	<string name="DATE">Fecha</string>
+	<string name="MONTH_">Mes</string>
+	<string name="TIME">horas</string>
+	<string name="Low">Bajo</string>
+	<string name="Opti">óptima</string>
+	<string name="Norm">Normal</string>
+	<string name="Mild">innocua</string>
+	<string name="Midd">Medio</string>
+	<string name="High">Alto</string>
+	
+	<!-- fragment_settings -->
+	<string name="SETTINGS">AJUSTES</string>
+	<string name="My_Profile">Mi Perfil</string>
+	<string name="Workout_Goal">Objetivo de entrenamiento</string>
+	<string name="Smart_Alarm">Alarma Inteligente</string>
+	<string name="Reminders">Recordatorios</string>
+	<string name="About_Us">Sobre Nosotros</string>
+	<string name="LOST_MODE">MODO PERDIDA</string>
+	<string name="left">izquierda</string>
+	<string name="right">derecha</string>
+	<string name="Back">atrás</string>
+	<string name="Save">guardar</string>
+	<string name="Choose_Device">Selecciona tu dispositivo</string>
+	<string name="SYNC">SINCRONIZAR</string>
+	
+	<!-- fragment_settings_scale -->
+    <string name="SCALE">ESCALA</string>
+    <string name="Scales">escala</string>
+    <string name="Male">M</string>
+	<string name="Female">Fecha</string>
+    <string name="Weight">Peso</string>
+    <string name="Kg">Kg</string>
+    <string name="BMI">IMC</string>
+    <string name="Weight_data">0.0</string>
+    <string name="BMI_data">0.00</string>
+    <string name="Weight_Kg">Peso (Kg)</string>
+    <string name="Goal_Weight_">Peso Objetivo</string>
+    
+	<!-- fragment_settings_profile -->
+	<string name="Name">Nombre</string>
+	<string name="SELECT">SELECCIONAR</string>
+	<string name="LANGUAGE">IDIOMA</string>
+	<string name="Age">Edad</string>
+	<string name="Age_18">18</string>
+	<string name="height_cm">Altura (Cm)</string>
+	<string name="Weight_kg">Peso (Kg)</string>
+	<string name="height_feet">Altura (pies)</string>
+	<string name="Weight_lbs">Peso (Lbs)</string>
+	<string name="height_example">180</string>
+	<string name="weight_example">70</string>
+	<string name="marker_1">~</string>
+	<string name="marker_2">:</string>
+	<string name="MALE">HOMBRE</string>
+	<string name="FEMALE">MUJER</string>
+	<string name="Commit">Cumplir</string>
+	<string name="Cancel">Cancelar</string>
+	
+	<!-- fragment_settings_goal -->
+	<string name="Set_Goals">Jfijar objetivos</string>
+	<string name="Steps_">Pasos:</string>
+	<string name="Calories_">Calorias:</string>
+	<string name="Sleep_">Sueño:</string>
+	<string name="goal_notice">Manteniendote centrado en mejorar día a día</string>
+	<string name="steps_day">pasos/día</string>
+	<string name="kcals_day">kcals/día</string>
+	<string name="cals_day">cals/día</string>
+	<string name="hours_day">horas/día</string>
+	<string name="H">H</string>
+	
+	<!-- fragment_settings_alarm -->
+	<string name="Alarm_Clock">Alarma del reloj</string>
+	<string name="Alarm_Time">Hora de alarma</string>
+	<string name="Monitoring_period">Intervalo de monitorizacion</string>
+	<string name="mins">mins.</string>
+	<string name="MON">LUN</string>
+	<string name="TUE">MAR</string>
+	<string name="WED">MIER</string>
+	<string name="THU">JUE</string>
+	<string name="FRI">VIE</string>
+	<string name="SAT">SAB</string>
+	<string name="SUN">DOM</string>
+	
+	<!-- fragment_settings_reminder -->
+	<string name="Reminder">Recordatorio</string>
+	<string name="Start_Hour">Hora de comienzo</string>
+	<string name="End_Hour">Hora de Finalizar</string>
+	<string name="Interval">Intervalo</string>
+	
+	<!-- fragment_settings_about_us -->
+	<string name="Version">My Fitness Version</string>
+	
+	<string name="about_us_introduction_1">Technaxx Deutschland GmbH &amp; Co.KG</string>
+	<string name="about_us_introduction_2">Kruppstrasse 105</string>
+	<string name="about_us_introduction_3">D-60388 Frankfurt am Main</string>
+	
+	<!-- fragment_settings_lost_mode -->
+	<string name="Lost_Mode">Modo perdida</string>
+	<string name="Found_Within">Encontrado cerca de…</string>
+	<string name="distance_1">0 – 1m</string>
+	<string name="distance_2">1 – 2m</string>
+	<string name="distance_3">2 – 3m</string>
+	<string name="distance_4">> 3m</string>
+	<string name="Searching">Buscando…</string>
+	
+	<!-- fragment_scale_settings_profile -->
+	<string name="Set_Your_Goal_">Define tu objetivo:</string>
+	<string name="kg">kg</string>
+	<string name="weight_goal_example">80</string>
+	
+	<!-- fragment_bpm_home -->
+	<string name="SYS">SYS</string>
+	<string name="DIA">DIA</string>
+	<string name="mmHg">mmHg</string>
+	<string name="Bluetooth_Device">Dispositivo Bluetooth</string>
+	
+	<!-- fragment_bpm_test -->
+	<string name="BP_Monitor">Monitor BP</string>
+	<string name="Unconnected">Desconectado</string>
+	<string name="Connected">Conectado</string>
+	<string name="state_disconnected">Ningún Dispositivo</string>
+	<string name="state_connected">Dispositivo conectado, Coloque la cinta correctamente y asegurese de que la flecha azul apunta hacia abajo y la flecha roja hacia arriba: /nLa cinta 2cm por encima del codo!</string>
+	<string name="state_start">Midiendo… Por favor, no se mueva y manten el puño a la altura del corazon</string>
+	<string name="RECONNECT">RECONECTANDO</string>
+	<string name="SEARCHING_">BUSCANDO…</string>
+	<string name="START">EMPEZAR</string>
+	<string name="STOP">PARAR</string>
+	<string name="Pressure">Presion</string>
+	
+	<!-- fragment_bpm_statistics -->
+	<!-- fragment_bpm_statistics_detail -->
+	<string name="H_R">H.R.</string>
+	<string name="bpm">bpm</string>
+	<string name="Analyse_result">Resultado del analisis</string>
+	<string name="result_low">\t\tDeberias elegir comida sana nutritiva y fácil de digerir.. No hacer dieta en exceso , y es indispensable respetar las 3 comidas diarias. Realiza ejercicio fisico paramejorar tu condicion. Incrementa la nutricion, bebe mucha agua, come mas sopas, incrementa ligeramente la sal en los alimentos; Si existieran sintomas obvios, acuda al doctor para un tratamiento personalizado..</string>
+	<string name="result_opti">\t\tSu presion sanguinea es ideal, continue manteniendo una vida sana.</string>
+	<string name="result_norm">\t\tSu presion sanguinea es normal, porfavor, evite sobreesfuerzos, coma alimentos con poca sal y bajos en grasas, intente tener habbitos de vida saludable y mantenga un estado de animo positivo y optimista.</string>
+	<string name="result_mild">\t\tSi no nota sintomas, porfavor, no tome medicinas. Body fitness can be adjusted and improved by diet. coma alimentos con menos sal, evite comer comidas fuertes, coma mas vegetales y fruta y lleve una vida relajada, deje de fumar y no ingiera bebidas alcoholicas, Realize ejercicios apropiados a su condicion y respete las horas de sueño recomendadas. Monitorice periodicamente la presion sanguinea. Porfavor, indique a su doctor cualquier estado anormal de salud que detecte.</string>
+	<string name="result_midd">\t\tSi no nota sintomas, porfavor, no tome medicinas. Body fitness can be adjusted and improved by diet. coma alimentos con menos sal, evite comer comidas fuertes, coma mas vegetales y fruta y lleve una vida relajada, deje de fumar y no ingiera bebidas alcoholicas, Realize ejercicios apropiados a su condicion y respete las horas de sueño recomendadas. Monitorice periodicamente la presion sanguinea. Porfavor, indique a su doctor cualquier estado anormal de salud que detecte.</string>
+	<string name="result_high">\t\tDeberias elegir comida sana nutritiva y fácil de digerir.. No hacer dieta en exceso , y es indispensable respetar las 3 comidas diarias. Realiza ejercicio fisico paramejorar tu condicion. Incrementa la nutricion, bebe mucha agua, come mas sopas, incrementa ligeramente la sal en los alimentos; Si existieran sintomas obvios, acuda al doctor para un tratamiento personalizado..</string>
+	
+	<!-- fragment_bpm_settings -->
+	<string name="BP_Monitor_Language">Monitor BP Idioma</string>
+	<string name="Language">Idioma</string>
+	
+	<!-- fragment_bpm_settings_language -->
+	<string name="Select_language_in_BP_Monitor">Select language in BP Monitor.</string>
+	
+	<!-- dialog -->
+	<string name="Notice">Notificacion</string>
+	<string name="notice_unbound">Deseas desconectar la pulsera?</string>
+	<string name="exit_app">Salir de My Fitness?</string>
+	<string name="Exit">Salir</string>
+	<string name="bluetooth_connecting">Conectando bluetooth…</string>
+	<string name="synchronizing">Sincronizando…</string>
+	<string name="Share_via">Compartir via</string>
+	<string-array name="item">  
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>  
+    <string name="cancelled">Cancelado</string>
+    <string name="ok">OK</string>
+    <string name="Sharing_to_facebook">Compartiendo en Facebook…</string>
+    <string name="Loading">Cargando…</string>
+    <string name="Sharing_to_twitter">Compartiendo en Twitter…</string>
+    <string name="notice_reset">Su banda se reseteo por algún motivo, para mantener dicha informacion. \n\n si quiere mantener la informacion en la APP, porfavor, pulse "Limpiar informacion hoy" en la app. \n O pulse "Retener" para mantener dicha informacion.  pero esto podria disponer de mas informacion para la APP que el aparato.</string>
+	<string name="Retain">Retener</string>
+	<string name="Clear">Limpiar</string>
+	<string name="BPM_unusual_data">Resultado anomalo, no se guardara.</string>
+	<string name="English">English</string>
+	<string name="German">Deutsch</string>
+	<string name="French">French</string>
+	<string name="Test_fail">Test is fail, the result will not be saved.</string>
+    
+	<!-- toast -->
+	<string name="Save_succeeded">Guardado completado</string>
+	<string name="Reminder_save_fail">Error: Hora de finalizacion debe ser mayor que la de comienzo</string>
+	<string name="Profile_save_fail_height">Error: Altura introducida errónea</string>
+	<string name="Profile_save_fail_weight">Error: Peso introducido erróneo</string>
+	<string name="No_bluetooth_in_device">Sin Conexion Bluetooth</string>
+	<string name="Please_enable_bluetooth">Porfavor, encienda el bluetooth para conectar el dispositivo</string>
+	<string name="name_can_not_be_empty">Nombre no puede estar vacio</string>
+	<string name="Unbound_succeeded">Desconexion completada</string>
+	<string name="Do_not_find_bounded_device">No encuentra el dispositivo</string>
+	<string name="mm35_time_out_request_sync_again">tiempo de espera agotado. Sincronice de nuevo</string>
+	<string name="mm35_sync_fail_please_light_up_your_device_and_try_again">Sinc. Fallida, intentelo de nuevo</string>
+	<string name="can_not_use_BLE">No puede usar BLE en su telefono, conecte el jack de audio para sincronizar</string>
+	<string name="no_internet_connect">Sin acceso a internet…</string>
+	<string name="Please_select_a_language">Please select a language.</string>
+	
+	<string name="connect_timeout">Tiempo de conexion agotada</string>
+	<string name="stop_connecting">Parar conexion</string>
+	<string name="connect_fail">conexion fallida</string>
+	<string name="disconnected">Bluetooth desconectado…</string>
+	<string name="stop_synchronizing">parar sincronizacion</string>
+	<string name="sync_finish">Sinc. Finalizada!</string>
+	<string name="sync_timeout">Tiempo de sinc. Agotado</string>
+	<string name="sync_fail">fallo de sinc.</string>
+	<string name="stop_sync">parar sinc</string>
+	
+    <string name="permission_not_granted">No se puede realizar la acción solicitada por falta de permisos</string>
+    <string name="success">Éxito</string>
+    <string name="error">Error</string>
+    <string name="successfully_posted_post">Imagen publicada en facebook correctamente.\nPost ID: %1$s</string>
+    <string name="Successfully_shared_to_facebook">Compartida en Facebook correctamente</string>
+    <string name="Successfully_shared_to_twitter">Compartida en Twitter correctamente</string>
+
+</resources>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Fitness</string>
+
+    <!-- activity_type -->
+    <string name="Technaxx_Fitness_Scale">Technaxx Fitness Waage</string>
+    <string name="Technaxx_Wristband">Technaxx Fitness Armband</string>
+    <string name="Choose_Your_Device_">Wählen Sie Ihr Produkt!</string>
+
+    <!-- activity_main -->
+    <string name="History">Verlauf</string>
+    <string name="Activity">Aktivität</string>
+    <string name="Settings">Einstellungen</string>
+
+    <!-- fragment_progress -->
+    <string name="DAILY_REPORT">Tagesbericht</string>
+    <string name="WEEKLY_REPORT">Wochenbericht</string>
+    <string name="MONTHLY_REPORT">Monatsbericht</string>
+    <string name="YEARLY_REPORT">Jahresbericht</string>
+    <string name="DAY">TAG</string>
+    <string name="WEEK">WOCHE</string>
+    <string name="MONTH">MONAT</string>
+    <string name="YEAR">JAHR</string>
+    <string name="DAILY">Tages-</string>
+    <string name="AVERAGE">durchschnitt</string>
+    <string name="KCALS">verbrannte</string>
+    <string name="CALS">CALS</string>
+    <string name="BURNED">Kalorien</string>
+    <string name="STEPS">Schritte</string>
+    <string name="SLEEP">Schlaf</string>
+    <string name="Awake">Aufwachphase</string>
+    <string name="Asleep">Schlafphase</string>
+
+    <!-- fragment_activity -->
+    <string name="TODAYS">heutiger Tag</string>
+    <string name="GOAL">Ziele</string>
+    <string name="kcals">Kcal.</string>
+    <string name="cals">cals</string>
+    <string name="Burned">verbrannte Kalorien</string>
+    <string name="km">km</string>
+    <string name="mile">mile</string>
+    <string name="Distance">Streckenmessung</string>
+    <string name="steps">Schritte</string>
+    <string name="Steps">Schritte</string>
+    <string name="hours">Stunden</string>
+    <string name="Active">aktiv</string>
+    <string name="In_active">inaktiv</string>
+    <string name="percent_of_Average">prozentualer Durchschnitt</string>
+    <string name="Deep">Tiefschlafphase</string>
+    <string name="Light">leicht</string>
+    <string name="CALORIES">Kalorien</string>
+
+    <!-- chart -->
+    <string name="Calories_kcals">Kalorien (Kcal.)</string>
+    <string name="Calories_cals">Kalorien (cals)</string>
+    <string name="Sleep_Pattern">Schlafmuster</string>
+    <string name="Sleep_Rating">Bewertung</string>
+    <string name="Calories_Steps_Trend">Kalorien/Schritte Trend</string>
+    <string name="Calories">Kalorien</string>
+    <string name="DATE">Datum</string>
+    <string name="MONTH_">Monat</string>
+    <string name="TIME">ZEIT</string>
+    <string name="Low">Niedrig</string>
+    <string name="Opti">Optimal</string>
+    <string name="Norm">Normal</string>
+    <string name="Mild">Harmlos</string>
+    <string name="Midd">Mittel</string>
+    <string name="High">Hoch</string>
+
+    <!-- fragment_settings -->
+    <string name="SETTINGS">EINSTELLUNGEN</string>
+    <string name="My_Profile">Mein Profil</string>
+    <string name="Workout_Goal">Trainingsziele</string>
+    <string name="Smart_Alarm">Alarmsignal</string>
+    <string name="Reminders">Erinnerungen</string>
+    <string name="About_Us">über uns</string>
+    <string name="LOST_MODE">Verlust Modus</string>
+    <string name="left">links</string>
+    <string name="right">rechts</string>
+    <string name="Back">Zurück</string>
+    <string name="Save">Speichern</string>
+    <string name="Choose_Device">Wählen Sie lhr Produkt</string>
+    <string name="SYNC">SYNC</string>
+
+    <!-- fragment_settings_scale -->
+    <string name="SCALE">Waage</string>
+    <string name="Scales">Waage</string>
+    <string name="Male">M</string>
+    <string name="Female">W</string>
+    <string name="Weight">Gewicht</string>
+    <string name="Kg">Kg</string>
+    <string name="BMI">BMI</string>
+    <string name="Weight_data">0.0</string>
+    <string name="BMI_data">0.00</string>
+    <string name="Weight_Kg">Gewicht(Kg)</string>
+    <string name="Goal_Weight_">Ziel Gewicht:</string>
+
+    <!-- fragment_settings_profile -->
+    <string name="Name">Namen</string>
+    <string name="SELECT">Auswahl</string>
+    <string name="LANGUAGE">Sprache</string>
+    <string name="Age">Alter</string>
+    <string name="Age_18">18</string>
+    <string name="height_cm">Größe (cm)</string>
+    <string name="Weight_kg">Gewicht (kg)</string>
+    <string name="height_feet">Größe (feet)</string>
+    <string name="Weight_lbs">Gewicht (lbs)</string>
+    <string name="height_example">180</string>
+    <string name="weight_example">70</string>
+    <string name="marker_1">~</string>
+    <string name="marker_2">:</string>
+    <string name="MALE">Männlich</string>
+    <string name="FEMALE">Weiblich</string>
+    <string name="Commit">Speichern</string>
+    <string name="Cancel">Abbrechen</string>
+
+    <!-- fragment_settings_goal -->
+    <string name="Set_Goals">Ziele einrichten</string>
+    <string name="Steps_">Schritte:</string>
+    <string name="Calories_">Kalorien:</string>
+    <string name="Sleep_">Schlafen:</string>
+    <string name="goal_notice">Achten Sie auf lhre tägliche Verbesserung!</string>
+    <string name="steps_day">Schritte/TAG</string>
+    <string name="kcals_day">Kcal./TAG</string>
+    <string name="cals_day">cals/TAG</string>
+    <string name="hours_day">Stunden/TAG</string>
+    <string name="H">Std.</string>
+
+    <!-- fragment_settings_alarm -->
+    <string name="Alarm_Clock">Alarm Uhr</string>
+    <string name="Alarm_Time">Alarm Zeit</string>
+    <string name="Monitoring_period">Anzeige Zeit</string>
+    <string name="mins">Min.</string>
+    <string name="MON">Mo</string>
+    <string name="TUE">Di</string>
+    <string name="WED">Mi</string>
+    <string name="THU">Do</string>
+    <string name="FRI">Fr</string>
+    <string name="SAT">Sa</string>
+    <string name="SUN">So</string>
+
+    <!-- fragment_settings_reminder -->
+    <string name="Reminder">Erinnerungen</string>
+    <string name="Start_Hour">Startzeit</string>
+    <string name="End_Hour">Endzeit</string>
+    <string name="Interval">Intervall</string>
+
+    <!-- fragment_settings_about_us -->
+    <string name="Version">My Fitness Version</string>
+    <string name="about_us_introduction_1">Technaxx Deutschland GmbH &amp; Co.KG</string>
+    <string name="about_us_introduction_2">Kruppstrasse 105</string>
+    <string name="about_us_introduction_3">D-60388 Frankfurt am Main</string>
+
+    <!-- fragment_settings_lost_mode -->
+    <string name="Lost_Mode">Verlust Modus</string>
+    <string name="Found_Within">Gefunden innerhalb…</string>
+    <string name="distance_1">0 – 1m</string>
+    <string name="distance_2">1 – 2m</string>
+    <string name="distance_3">2 – 3m</string>
+    <string name="distance_4">> 3m</string>
+    <string name="Searching">Suche…</string>
+
+    <!-- fragment_scale_settings_profile -->
+    <string name="Set_Your_Goal_">Ihr Ziel:</string>
+    <string name="kg">kg</string>
+    <string name="weight_goal_example">80</string>
+
+    <!-- fragment_bpm_home -->
+    <string name="SYS">SYS</string>
+    <string name="DIA">DIA</string>
+    <string name="mmHg">mmHg</string>
+    <string name="Bluetooth_Device">Bluetooth Gerät</string>
+
+    <!-- fragment_bpm_test -->
+    <string name="BP_Monitor">Blutdruckmessgerät</string>
+    <string name="Unconnected">Nicht verbunden</string>
+    <string name="Connected">Verbunden</string>
+    <string name="state_disconnected">Kein Gerät</string>
+    <string name="state_connected">Ihr Blutdruckmessgerät ist verbunden. Legen Sie die Manschette um Ihren Oberarm an, so dass der blaue Pfeil Richtung Finger zeigt. Die Manschette 2cm oberhalb vom Ellbogen anbringen!</string>
+    <string name="state_start">Messung läuft, bitte nicht bewegen. Halten Sie die Manschette in Ihrer Herzhöhe!</string>
+    <string name="RECONNECT">Erneut verbinden!</string>
+    <string name="SEARCHING_">Suchen…</string>
+    <string name="START">START</string>
+    <string name="STOP">Stopp</string>
+    <string name="Pressure">Blutdruck</string>
+
+    <!-- fragment_bpm_statistics -->
+    <!-- fragment_bpm_statistics_detail -->
+    <string name="H_R">PUL</string>
+    <string name="bpm">bpm</string>
+    <string name="Analyse_result">Analyse Ergebnis</string>
+    <string name="result_low">\t\tIhr Blutdruckmessergebnis ist niedrig. Ernähren Sie sich mit leicht verdaulicher und nahrhafter Nahrung. Drei Mahlzeiten pro Tag sollten eingenommen werden, Diäten sollten vermieden werden. Achten Sie auf körperliche Bewegung um Ihre Fitness zu verbessern. Wenn Ihr Blutdruckmessergebnis niedrig bleibt, kontaktieren Sie bitte Ihren Arzt.</string>
+    <string name="result_opti">\t\tIhr Blutdruckmessergebnis ist optimal. Behalten Sie weiterhin einen gesunden Lebensstil!</string>
+    <string name="result_norm">\t\tIhr Blutdruckmessergebnis ist normal. Behalten Sie einen gesunden Lebensstil, indem Sie lange Bewegungslosigkeit vermeiden. Ernähren Sie sich mit Nahrung mit niedrigem Salzgehalt und wenig Fett. </string>
+    <string name="result_mild">\t\tIhr Blutdruckmessergebnis ist leicht erhöht. Verzehren Sie mehr frisches Obst und Gemüse und meiden Sie Lebensmittel mit einem hohen Salzgehalt. Vermeiden Sie übermäßigen Genuss von Zigaretten und Alkohol, überprüfen Sie Ihren Blutdruck einmal am Tag. Bitte kontaktieren Sie Ihren Arzt.</string>
+    <string name="result_midd">\t\tIhr Blutdruckmessergebnis ist  erhöht. Verzehren Sie mehr frisches Obst und Gemüse und meiden Sie Lebensmittel mit einem hohen Salzgehalt. Vermeiden Sie übermäßigen Genuss von Zigaretten und Alkohol, überprüfen Sie Ihren Blutdruck einmal am Tag. Bitte kontaktieren Sie Ihren Arzt.</string>
+    <string name="result_high">\t\tIhr Blutdruckmessergebnis ist zu hoch. Verzehren Sie mehr frisches Obst und Gemüse und meiden Sie Lebensmittel mit einem hohen Salzgehalt. Vermeiden Sie übermäßigen Genuss von Zigaretten und Alkohol, überprüfen Sie Ihren Blutdruck mehrmals am Tag. Bitte kontaktieren Sie umgehend Ihren Arzt.</string>
+
+    <!-- fragment_bpm_settings -->
+    <string name="BP_Monitor_Language">Sprache</string>
+    <string name="Language">Sprache</string>
+
+    <!-- fragment_bpm_settings_language -->
+    <string name="Select_language_in_BP_Monitor">Wählen Sie eine Sprache aus</string>
+
+    <!-- dialog -->
+    <string name="Notice">Notizen</string>
+    <string name="notice_unbound">Möchten Sie Ihr Armband abnehmen?</string>
+    <string name="exit_app">Möchten Sie My Fitness beenden?</string>
+    <string name="Exit">Beenden</string>
+    <string name="bluetooth_connecting">Bluetooth verbinden…</string>
+    <string name="synchronizing">Synchronisierung…</string>
+    <string name="Share_via">Senden via</string>
+
+    <string-array name="item">
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string name="cancelled">Abgesagt</string>
+    <string name="ok">OK</string>
+    <string name="Sharing_to_facebook">Teilen zu Facebook…</string>
+    <string name="Loading">Loading…</string>
+    <string name="Sharing_to_twitter">Teilen zu twitter…</string>
+    <string name="notice_reset">Ihre Armband wurde aus irgendwelchen Gründen zurückgesetzt, was zu einem Datenverlust führte. \n\n Wenn Sie die gleichen Daten Anzeige zwischen APP und Band behalten wollen, klicken Sie auf "Beibehalten". Um die vorhandene Daten in der App zu löschen, klicken Sie auf "Löschen".</string>
+    <string name="Retain">Beibehalten</string>
+    <string name="Clear">Löschen</string>
+    <string name="BPM_unusual_data">Messung fehlgeschlagen, daher werden die Daten nicht gespeichert!</string>
+    <string name="English">English</string>
+    <string name="German">Deutsch</string>
+    <string name="French">French</string>
+    <string name="Test_fail">Test is fail, the result will not be saved.</string>
+    <string name="Delete_bpm">Do you want to delete this bpm data?</string>
+    <string name="Measuring_Done">Messung beendet</string>
+    <string name="Test_complete">Sie können Ihr Messergebnis überprüfen</string>
+    <string name="Check">überprüfen</string>
+
+    <!-- toast -->
+    <string name="Save_succeeded">Speichern erfolgreich!</string>
+    <string name="Reminder_save_fail">Speichern gescheitert! Ende Zeit sollte später als Startzeit.</string>
+    <string name="Profile_save_fail_height">Speichern gescheitert! Höheneinstellung unvernünftig.</string>
+    <string name="Profile_save_fail_weight">Speichern gescheitert! Gewichtssatz unvernünftig.</string>
+    <string name="No_bluetooth_in_device">Kein Bluetooth-Gerät in</string>
+    <string name="Please_enable_bluetooth">Bitte aktivieren Sie Bluetooth-Verbindung zum Gerät</string>
+    <string name="name_can_not_be_empty">Name darf nicht leer sein</string>
+    <string name="Unbound_succeeded">Trennung erfolgreich!</string>
+    <string name="Do_not_find_bounded_device">Sie beschränkte Gerät finden nicht</string>
+    <string name="mm35_time_out_request_sync_again">Synchronisation fehlgeschlagen! Bitte erneut versuchen.</string>
+    <string name="mm35_sync_fail_please_light_up_your_device_and_try_again">Synchronisation fehlgeschlagen! Bitte erneut versuchen.</string>
+    <string name="can_not_use_BLE">BLE kann nicht auf Ihrem Telefon verwendet werden, Bitte verwenden Sie Audio-Buchse für die Synchronisierung.</string>
+    <string name="no_internet_connect">Keine Internetverbindung.</string>
+    <string name="Please_select_a_language">Please select a language.</string>
+    <string name="connect_timeout">Bluetooth Verbindung getrennt!</string>
+    <string name="stop_connecting">Bluetooth scannen stoppen</string>
+    <string name="connect_fail">Bluetooth Verbindung getrennt!</string>
+    <string name="disconnected">Bluetooth Verbindung getrennt…</string>
+    <string name="stop_synchronizing">die Synchronisierung</string>
+    <string name="sync_finish">Synchronisierung abgeschlossen!</string>
+    <string name="sync_timeout">Synchronisation fehlgeschlagen! Bitte erneut versuchen.</string>
+    <string name="sync_fail">Synchronisation fehlgeschlagen! Bitte erneut versuchen.</string>
+    <string name="stop_sync">Synchronisation fehlgeschlagen! Bitte erneut versuchen.</string>
+    <string name="permission_not_granted">Nicht in der Lage, ausgewählte Aktion durchführen, da die Berechtigungen nicht gewährt.</string>
+    <string name="success">Erfolg</string>
+    <string name="error">Fehler</string>
+    <string name="successfully_posted_post">Erfolgreich verbucht das Bild auf Facebook.\nPost ID: %1$s</string>
+    <string name="Successfully_shared_to_facebook">Erfolgreich in facebook geteilt</string>
+    <string name="Successfully_shared_to_twitter">Erfolgreich in twitter geteilt</string>
+    <string name="declaration">Datenschutzhinweis</string>
+    <string name="declaration_content_1">DATENSCHUTZHINWEIS:</string>
+    <string name="declaration_content_2">Technaxx Deutschland GmbH &amp; Co. KG nimmt den Schutz Ihrer personenbezogenen Daten 
+ernst. Wir möchten, dass Sie wissen, wann wir welche Daten erheben und wie wir sie 
+verwenden. Alle von Ihnen an uns übertragenen Daten werden von uns 
+verantwortungsbewusst behandelt und nach allen gesetzlichen Bestimmungen zum 
+Datenschutz, insbesondere des Bundesdatenschutzgesetzes (BDSG) und des 
+Telemediengesetzes (TMG) zur Datenverarbeitung und Speicherung verarbeitet.</string>
+    <string name="declaration_content_3">1. Datenerhebung und -verarbeitung</string>
+    <string name="declaration_content_4">Personenbezogene Daten werden nur in dem von Ihnen persönlich autorisierten Umfang 
+übertragen. Dabei werden von uns nur die Daten erhoben, die zur Aufrechterhaltung und 
+Nutzung der Ihnen zur Verfügung gestellten Dienstleistungen unbedingt notwendig sind.\n\n
+Wir erheben und verarbeiten die von Ihnen zur Verfügung gestellten personenbezogenen 
+Daten in unserem System und nutzen diese für die Dauer der Vertragsabwicklung, d.h. für die 
+Nutzung der App FittyPet und des FittyPet Gerates. Ist der Vertrag vollständig erfüllt, werden 
+Ihre Daten gesperrt und nach Ablauf der steuer- und handelsrechtlichen 
+Aufbewahrungsfristen gelöscht, sofern Sie nicht ausdrücklich in die weitere Nutzung Ihrer 
+Daten eingewilligt haben.</string>
+    <string name="declaration_content_5">Nutzung der App</string>
+    <string name="declaration_content_6">Im Einzelnen werden für die Nutzung der App folgende Daten erhoben:
+- IP-Adresse des Nutzers\n\n
+- Anmeldedaten Ihres mobilen Endgeräts (Inklusive der Geräte-ID)\n\n
+- Benutzername\n\n
+- Geschlecht, Körpergewicht, Alter, Größe\n\n
+- Informationen zur Bluetooth-Verbindung\n\n
+- Daten, die Sie durch die Verwendung unserer App erzeugen, nämlich Datum und Uhrzeit 
+des Aufrufs, Datenmengen, die von unserem Fitness-Armband übertragen werden, 
+Daten, die Sie durch die Verwendung unserer App erzeugen, nämlich Datum und Uhrzeit 
+des Aufrufs, Datenmengen, die von unserem Fitness-Armband übertragen werden, 
+Meldungen über erfolgreiche Übertragungen an Ihr mobiles Endgerät.</string>
+    <string name="declaration_content_7">2. Verantwortliche Stelle und Kontakt</string>
+    <string name="declaration_content_8">Verantwortliche Stelle für die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen 
+Daten im Sinne des Bundesdatenschutzgesetzes ist Technaxx Deutschland GmbH &amp; Co. KG 
+vertreten durch die Technaxx Verwaltungs- und Beteiligungsgesellschaft mbH vertreten durch 
+die Geschäftsführer Deniz Isik und Pascal Pekcan, Kruppstraße 105, 60388 Frankfurt am Main.\n\n
+Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei 
+Auskünften, Berichtigung, Sperrung oder Löschung von Daten wenden Sie sich bitte an:\n
+Technaxx Deutschland GmbH &amp; Co. KG\n 
+Kruppstraße 105\n 
+60388 Frankfurt am Main\n 
+Fax +49 [69] 90 47552 16\n
+E-Mail: info@technaxx.de</string>
+    <string name="declaration_content_9">3. Auskunft und Löschung</string>
+    <string name="declaration_content_10">Nach dem Bundesdatenschutzgesetz haben Sie ein Recht auf unentgeltliche Auskunft über die 
+zu Ihrer Person bei uns gespeicherten Daten sowie ggf. ein Recht auf Berichtigung, Sperrung 
+oder Löschung dieser Daten.</string>
+    <string name="impressum">Impressum</string>
+    <!--<string name="impressum_content">IMPRESSUM:-->
+<!--Technaxx Deutschland GmbH &amp; Co. KG -->
+<!--vertreten durch die Technaxx Verwaltungs- und Beteiligungsgesellschaft mbH vertreten durch die Geschäftsführer Deniz Isik und Pascal Pekcan -->
+<!--Kruppstraße 105 -->
+<!--60388 Frankfurt am Main -->
+<!--Fon: 01805 - 012643 (Kosten: 0,14 €/Minute aus dem dt. Festnetz max. 0,42 €/Minute aus dem Mobilfunknetz)-->
+<!--Fax: +49 [69] 90 47552 16 -->
+<!--E-Mail: info@technaxx.de-->
+<!--HRA: 43080 Registergericht: Amtsgericht Frankfurt am Main -->
+<!--Steuernummer: 133 740 1969 -->
+<!--Ust-Id-Nr.: DE 226513614 -->
+<!--EORI: DE5177790 -->
+<!--BattG-Reg-Nr.: 21003703 -->
+<!--WEEE-Reg-Nr.: DE94626913 </string>-->
+    <string name="impressum_content_1">IMPRESSUM:</string>
+    <string name="impressum_content_2">Technaxx Deutschland GmbH &amp; Co. KG\n 
+represented by the managment- and associates company mbH represented by the managers Deniz Isik and Pascal Pekcan\n
+Kruppstraße 105\n 
+60388 Frankfurt am Main\n
+Fon: 1805 - 012643 (Charge: 0,14 €/Minute for German landline, max. 0,42 €/Minute for German mobile network)\n
+Fax: +49 [69] 90 47552 16\n\n
+E-Mail: info@technaxx.de\n\n
+HRA: 43080 Registergericht: Amtsgericht Frankfurt am Main\n 
+Steuernummer: 133 740 1969\n 
+Ust-Id-Nr.: DE 226513614\n 
+EORI: DE5177790\n 
+BattG-Reg-Nr.: 21003703\n 
+WEEE-Reg-Nr.: DE94626913</string>
+
+</resources>
