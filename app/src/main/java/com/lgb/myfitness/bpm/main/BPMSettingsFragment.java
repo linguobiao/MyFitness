@@ -1,6 +1,6 @@
 package com.lgb.myfitness.bpm.main;
 
-import com.lgb.myfitness.bpm.settings.BPMSettingsAboutUsFragment;
+import com.lgb.myfitness.module.bpm.settings.BPMSettingsAboutUsFragment;
 import com.lgb.myfitness.bpm.settings.BPMSettingsLanguageFragment;
 import com.lgb.myfitness.bpm.settings.BPMSettingsProfileFragment;
 import com.lgb.myfitness.global.Global;
