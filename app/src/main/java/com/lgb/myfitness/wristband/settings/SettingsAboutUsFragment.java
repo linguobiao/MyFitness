@@ -10,8 +10,8 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.lgb.myfitness.bpm.main.DecalrartionFragment;
-import com.lgb.myfitness.bpm.main.ImpressumFragment;
+import com.lgb.myfitness.module.bpm.settings.about.BPMDeclarationFragment;
+import com.lgb.myfitness.module.bpm.settings.about.BPMImpressumFragment;
 import com.lgb.myfitness.global.Global;
 import com.lgb.myfitness.helper.FragmentHelper;
 import com.lgb.myfitness.wristband.main.ActivityFragment;
@@ -34,7 +34,7 @@ public class SettingsAboutUsFragment extends Fragment {
 					public void onClick(View v) {
 						hideAboutUsFragment();
 
-						Fragment fragment_reminder = new DecalrartionFragment();
+						Fragment fragment_reminder = new BPMDeclarationFragment();
 						FragmentHelper.addFragment(fMgr, fragment_reminder,
 								Global.FRAGMENT_IMPRESSUM);
 					}
@@ -47,7 +47,7 @@ public class SettingsAboutUsFragment extends Fragment {
 					public void onClick(View v) {
 						hideAboutUsFragment();
 
-						Fragment fragment_reminder = new ImpressumFragment();
+						Fragment fragment_reminder = new BPMImpressumFragment();
 						FragmentHelper.addFragment(fMgr, fragment_reminder,
 								Global.FRAGMENT_DECALRARTION);
 					}

@@ -1,7 +1,7 @@
 package com.lgb.myfitness.helper;
 
 import com.lgb.myfitness.R;
-import com.lgb.myfitness.bpm.main.BPMSettingsFragment;
+import com.lgb.myfitness.module.bpm.BPMSettingsFragment;
 import com.lgb.myfitness.global.Global;
 import com.lgb.myfitness.scale.main.ScaleSettingFragment;
 import com.lgb.myfitness.wristband.main.SettingsFragment;

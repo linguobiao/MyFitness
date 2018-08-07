@@ -3,6 +3,7 @@ package com.lgb.xpro.utils;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class XFragment {
 	 * 显示一个fragment
 	 * @param tag	需要显示的fragment的标签
 	 */
-	public boolean showFragment(@NonNull String tag) {
+	public boolean showFragment(@NonNull String tag, Bundle bundle) {
 		Fragment fragment = fMgr.findFragmentByTag(tag);
 		if (fragment != null) {
 			showFragment(fragment);
@@ -49,6 +50,7 @@ public class XFragment {
 						for (String sonTag : sonMap.keySet()) {
 							if (sonTag.equalsIgnoreCase(tag)) {
 								fragment = (Fragment) sonMap.get(sonTag).newInstance();
+								fragment.setArguments(bundle);
 								break;	// 属于二级fragment，停止遍历
 							}
 						}
@@ -66,7 +68,11 @@ public class XFragment {
 		return false;
 	}
 
-	public void showFragment(@NonNull Class cls) {showFragment(cls.getName());}
+	public void showFragment(@NonNull String tag) {showFragment(tag, null);}
+
+	public void showFragment(@NonNull Class cls, Bundle bundle) {showFragment(cls.getName(), bundle);}
+
+	public void showFragment(@NonNull Class cls) {showFragment(cls.getName(), null);}
 
 	/**
 	 * 显示一级fragment

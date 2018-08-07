@@ -3,25 +3,24 @@ package com.lgb.myfitness.module.bpm;
 import android.support.annotation.NonNull;
 
 import com.lgb.mvp.AppActivity;
-import com.lgb.myfitness.R;
-import com.lgb.myfitness.bpm.main.BPMFragment;
-import com.lgb.myfitness.bpm.main.BPMSettingsFragment;
 import com.lgb.myfitness.bpm.main.BPMStatisticsDetailFragment;
-import com.lgb.myfitness.bpm.main.BPMStatisticsFragment;
-import com.lgb.myfitness.bpm.main.BPMTestFragment;
-import com.lgb.myfitness.bpm.settings.BPMSettingsLanguageFragment;
-import com.lgb.myfitness.bpm.settings.BPMSettingsProfileFragment;
+import com.lgb.myfitness.module.bpm.settings.about.BPMDeclarationFragment;
+import com.lgb.myfitness.module.bpm.settings.about.BPMImpressumFragment;
+import com.lgb.myfitness.module.bpm.main.BPMStatisticsFragment;
+import com.lgb.myfitness.module.bpm.main.BPMTestFragment;
+import com.lgb.myfitness.module.bpm.settings.BPMSettingsLanguageFragment;
+import com.lgb.myfitness.module.bpm.settings.BPMSettingsProfileFragment;
 import com.lgb.myfitness.module.bpm.settings.BPMSettingsAboutUsFragment;
 import com.lgb.xpro.utils.XFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FragmentManager {
+public class BPMFragmentManager {
 
     //单例
-    private static class Instance {public static final FragmentManager instance = new FragmentManager();}
-    public static FragmentManager getInstance() {return FragmentManager.Instance.instance;}
+    private static class Instance {public static final BPMFragmentManager instance = new BPMFragmentManager();}
+    public static BPMFragmentManager getInstance() {return BPMFragmentManager.Instance.instance;}
 
     private XFragment xFragment;
     private AppActivity appActivity;
@@ -38,6 +37,8 @@ public class FragmentManager {
         bean2.add(BPMSettingsProfileFragment.class);
         bean2.add(BPMSettingsLanguageFragment.class);
         bean2.add(BPMSettingsAboutUsFragment.class);
+        bean2.add(BPMDeclarationFragment.class);
+        bean2.add(BPMImpressumFragment.class);
 
         tagList.add(bean1);
         tagList.add(bean2);

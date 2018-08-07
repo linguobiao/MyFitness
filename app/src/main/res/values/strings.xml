@@ -149,7 +149,7 @@
 
     <!-- fragment_settings_about_us -->
     <string name="Version">My Fitness Version</string>
-    <string name="version_code">Version:V2.6.0</string>
+    <string name="version_code">Version:V%1s</string>
     <string name="about_us_introduction_1">Technaxx Deutschland GmbH &amp; Co.KG</string>
     <string name="about_us_introduction_2">Kruppstrasse 105</string>
     <string name="about_us_introduction_3">D-60388 Frankfurt am Main</string>

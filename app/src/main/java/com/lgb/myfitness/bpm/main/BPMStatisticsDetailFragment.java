@@ -1,11 +1,13 @@
 package com.lgb.myfitness.bpm.main;
 
+import com.lgb.mvp.SimpleBaseFragment;
 import com.lgb.myfitness.been.BPM;
 import com.lgb.myfitness.global.Global;
 import com.lgb.myfitness.helper.CalculateHelper;
 import com.lgb.myfitness.helper.FragmentHelper;
 import com.lgb.myfitness.helper.ProfileHelper;
 import com.lgb.myfitness.R;
+import com.lgb.myfitness.module.bpm.main.BPMStatisticsFragment;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -19,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class BPMStatisticsDetailFragment extends Fragment{
+public class BPMStatisticsDetailFragment extends SimpleBaseFragment{
 
 	private BPM bpm;
 	
@@ -28,22 +30,26 @@ public class BPMStatisticsDetailFragment extends Fragment{
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_bpm_home_statistics_detail, container, false);
 		initUI(view);
-		
+
 		if (savedInstanceState == null) {
 			bpm = (BPM) getArguments().getSerializable(Global.KEY_BPM);
-			
+
 		} else {
 			bpm = (BPM) savedInstanceState.getSerializable(Global.KEY_BPM);
 		}
-		
+
 		initProfile();
 		setValue(bpm);
 		setGraphState(bpm);
 		
 		return view;
 	}
-	
-	
+
+	@Override public void initView() { }
+
+	@Override protected int getLayoutId() { return R.layout.fragment_bpm_home_statistics_detail; }
+
+
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		outState.putSerializable(Global.KEY_BPM, bpm);
@@ -251,8 +257,8 @@ public class BPMStatisticsDetailFragment extends Fragment{
 	private TextView text_result;
 	
 	private ViewFlipper viewFlipper;
-	
-	
+
+
 	private Animation leftInAnimation;
 	private Animation leftOutAnimation;
 	private Animation rightInAnimation;

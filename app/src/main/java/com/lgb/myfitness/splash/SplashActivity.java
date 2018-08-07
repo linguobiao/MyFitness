@@ -3,7 +3,7 @@ package com.lgb.myfitness.splash;
 import java.util.Timer;
 import java.util.TimerTask;
 import com.lgb.myfitness.R;
-import com.lgb.myfitness.bpm.main.BPMMainActivity;
+import com.lgb.myfitness.module.bpm.BPMMainActivity;
 import com.lgb.myfitness.global.Global;
 import com.lgb.myfitness.scale.main.ScaleMainActivity;
 import com.lgb.myfitness.wristband.main.MainActivity;
