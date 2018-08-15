@@ -41,7 +41,6 @@
             android:src="@drawable/image_title_logo" />
 
         <ImageView
-            android:id="@+id/button_left_no_font"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -51,7 +50,6 @@
             android:src="@drawable/button_left_no_font" />
 
         <ImageView
-            android:id="@+id/button_right_no_font"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -101,7 +99,6 @@
                     android:src="@drawable/button_setting_right_arrow" />
 
                 <TextView
-                    android:id="@+id/text_profile"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -140,7 +137,6 @@
                     android:src="@drawable/button_setting_right_arrow" />
 
                 <TextView
-                    android:id="@+id/text_about_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"

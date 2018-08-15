@@ -80,7 +80,6 @@
             android:src="@drawable/button_left_no_font" />
 
         <com.lgb.myfitness.view.TextViewShow
-            android:id="@+id/progerss_textviewshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"

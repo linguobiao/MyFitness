@@ -5,14 +5,7 @@
     <string name="app_name">My Fitness</string>
 
     <!-- activity_type -->
-    <string name="Technaxx_Fitness_Scale">Technaxx Fitness Scale</string>
-    <string name="Technaxx_Wristband">Technaxx Wristband</string>
     <string name="Choose_Your_Device_">Choose Your Device!</string>
-
-    <!-- activity_main -->
-    <string name="History">History</string>
-    <string name="Activity">Activity</string>
-    <string name="Settings">Settings</string>
 
     <!-- fragment_progress -->
     <string name="DAILY_REPORT">DAILY REPORT</string>
@@ -26,7 +19,6 @@
     <string name="DAILY">DAILY</string>
     <string name="AVERAGE">AVERAGE</string>
     <string name="KCALS">KCALS</string>
-    <string name="CALS">CALS</string>
     <string name="BURNED">BURNED</string>
     <string name="STEPS">STEPS</string>
     <string name="SLEEP">SLEEP</string>
@@ -37,7 +29,6 @@
     <string name="TODAYS">TODAYS</string>
     <string name="GOAL">GOAL</string>
     <string name="kcals">kcals</string>
-    <string name="cals">cals</string>
     <string name="Burned">Burned</string>
     <string name="km">km</string>
     <string name="mile">mile</string>
@@ -52,41 +43,18 @@
     <string name="Light">Light</string>
     <string name="CALORIES">CALORIES</string>
 
-    <!-- chart -->
-    <string name="Calories_kcals">Calories (kcals)</string>
-    <string name="Calories_cals">Calories (cals)</string>
-    <string name="Sleep_Pattern">Sleep Pattern</string>
-    <string name="Sleep_Rating">Sleep Rating</string>
-    <string name="Calories_Steps_Trend">Calories/Steps Trend</string>
-    <string name="Calories">Calories</string>
-    <string name="DATE">Date</string>
-    <string name="MONTH_">Month</string>
-    <string name="TIME">TIME</string>
-    <string name="Low">Low</string>
-    <string name="Opti">Opti</string>
-    <string name="Norm">Norm</string>
-    <string name="Mild">Mild</string>
-    <string name="Midd">Midd</string>
-    <string name="High">High</string>
-
     <!-- fragment_settings -->
-    <string name="SETTINGS">SETTINGS</string>
-    <string name="My_Profile">My Profile</string>
     <string name="Workout_Goal">Workout Goal</string>
     <string name="Smart_Alarm">Smart Alarm</string>
     <string name="Reminders">Reminders</string>
-    <string name="About_Us">About Us</string>
     <string name="LOST_MODE">LOST MODE</string>
     <string name="left">left</string>
     <string name="right">right</string>
-    <string name="Back">Back</string>
-    <string name="Save">Save</string>
     <string name="Choose_Device">Choose Device</string>
     <string name="SYNC">SYNC</string>
 
     <!-- fragment_settings_scale -->
     <string name="SCALE">SCALES</string>
-    <string name="Scales">Scales</string>
     <string name="Male">M</string>
     <string name="Female">F</string>
     <string name="Weight">Weight</string>
@@ -96,25 +64,6 @@
     <string name="BMI_data">0.00</string>
     <string name="Weight_Kg">Weight(Kg)</string>
     <string name="Goal_Weight_">Goal Weight:</string>
-
-    <!-- fragment_settings_profile -->
-    <string name="Name">Name</string>
-    <string name="SELECT">SELECT</string>
-    <string name="LANGUAGE">LANGUAGE</string>
-    <string name="Age">Age</string>
-    <string name="Age_18">18</string>
-    <string name="height_cm">Height (cm)</string>
-    <string name="Weight_kg">Weight (kg)</string>
-    <string name="height_feet">Height (feet)</string>
-    <string name="Weight_lbs">Weight (lbs)</string>
-    <string name="height_example">180</string>
-    <string name="weight_example">70</string>
-    <string name="marker_1">~</string>
-    <string name="marker_2">:</string>
-    <string name="MALE">MALE</string>
-    <string name="FEMALE">FEMALE</string>
-    <string name="Commit">Commit</string>
-    <string name="Cancel">Cancel</string>
 
     <!-- fragment_settings_goal -->
     <string name="Set_Goals">Set Goals</string>
@@ -148,11 +97,7 @@
     <string name="Interval">Interval</string>
 
     <!-- fragment_settings_about_us -->
-    <string name="Version">My Fitness Version</string>
     <string name="version_code">Version:V%1s</string>
-    <string name="about_us_introduction_1">Technaxx Deutschland GmbH &amp; Co.KG</string>
-    <string name="about_us_introduction_2">Kruppstrasse 105</string>
-    <string name="about_us_introduction_3">D-60388 Frankfurt am Main</string>
 
     <!-- fragment_settings_lost_mode -->
     <string name="Lost_Mode">Lost Mode</string>
@@ -167,6 +112,85 @@
     <string name="Set_Your_Goal_">Set Your Goal:</string>
     <string name="kg">kg</string>
     <string name="weight_goal_example">80</string>
+
+    <!-- dialog -->
+    <string name="notice_unbound">Do you want to unbind your band?</string>
+    <string name="Share_via">Share via</string>
+
+    <string-array name="item">
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string name="cancelled">Cancelled</string>
+    <string name="Sharing_to_facebook">Sharing to facebook…</string>
+
+    <string name="Sharing_to_twitter">Sharing to twitter…</string>
+    <string name="notice_reset">Your band was once reset for some reasons, leading to loss of data within your band. \n\n If you want to keep the same data display between APP and band, please click CLEAR to clear data today in app. \n Or click RETAIN to retain those data, but this may possibly make app display larger data than your band\'s</string>
+    <string name="Retain">Retain</string>
+    <string name="Clear">Clear</string>
+
+    <!-- toast -->
+    <string name="Reminder_save_fail">Save failed! End time should be later than begin time.</string>
+    <string name="Unbound_succeeded">Unbound succeeded</string>
+    <string name="mm35_sync_fail_please_light_up_your_device_and_try_again">sync fail, please light up your device and try again</string>
+    <string name="can_not_use_BLE">Can not use BLE in your phone, please use audio jack to sync.</string>
+    <string name="no_internet_connect">No internet connection.</string>
+    <string name="band_is_reset">Your band was once power off, data in the band will be clear to start</string>
+    <string name="stop_connecting">Stop connecting</string>
+    <string name="connect_fail">Connect fail</string>
+    <string name="disconnected">Bluetooth disconnected…</string>
+    <string name="sync_finish">Synchronization is complete!</string>
+    <string name="sync_fail">Synchronization fail</string>
+    <string name="stop_sync">Stop Synchronization</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="successfully_posted_post">Successfully posted the image to facebook.\nPost ID: %1$s</string>
+    <string name="Successfully_shared_to_facebook">Successfully shared to facebook</string>
+    <string name="Successfully_shared_to_twitter">Successfully shared to twitter</string>
+
+    <!-- ### bpm ###-->
+
+
+    <!-- chart -->
+    <string name="Calories_kcals">Calories (kcals)</string>
+    <string name="Calories_cals">Calories (cals)</string>
+    <string name="Sleep_Pattern">Sleep Pattern</string>
+    <string name="Sleep_Rating">Sleep Rating</string>
+    <string name="Calories_Steps_Trend">Calories/Steps Trend</string>
+    <string name="Calories">Calories</string>
+    <string name="DATE">Date</string>
+    <string name="TIME">TIME</string>
+    <string name="Low">Low</string>
+    <string name="Opti">Opti</string>
+    <string name="Norm">Norm</string>
+    <string name="Mild">Mild</string>
+    <string name="Midd">Midd</string>
+    <string name="High">High</string>
+
+    <!-- fragment_settings -->
+    <string name="SETTINGS">SETTINGS</string>
+    <string name="My_Profile">My Profile</string>
+    <string name="About_Us">About Us</string>
+    <string name="Back">Back</string>
+    <string name="Save">Save</string>
+
+    <!-- fragment_settings_profile -->
+    <string name="Name">Name</string>
+    <string name="SELECT">SELECT</string>
+    <string name="LANGUAGE">LANGUAGE</string>
+    <string name="Age">Age</string>
+    <string name="Age_18">18</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="Weight_kg">Weight (kg)</string>
+    <string name="height_example">180</string>
+    <string name="weight_example">70</string>
+    <string name="MALE">MALE</string>
+    <string name="FEMALE">FEMALE</string>
+    <string name="Commit">Commit</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- activity_main -->
+    <string name="History">History</string>
 
     <!-- fragment_bpm_home -->
     <string name="SYS">SYS</string>
@@ -190,7 +214,6 @@
     <!-- fragment_bpm_statistics -->
     <!-- fragment_bpm_statistics_detail -->
     <string name="H_R">PUL</string>
-    <string name="bpm">bpm</string>
     <string name="Analyse_result">Analyse result</string>
     <string name="result_low">\t\tYou should choose healthy food easy to digest and nutritious. Do not excessive dieting, and three meals a day is indispensable. Take part in physical exercise to improve physical fitness. Increase nutrition, drink more water, eat more soup, daily salt slightly more than the average man; If there are obvious symptoms, turn to your doctor and take the treatment actively.</string>
     <string name="result_opti">\t\tNow your blood pressure is in a state of ideal, continue to maintain a healthy lifestyle.</string>
@@ -206,28 +229,14 @@
     <!-- fragment_bpm_settings_language -->
     <string name="Select_language_in_BP_Monitor">Select language in BP Monitor.</string>
 
-    <!-- dialog -->
+    <!-- ### bpm ###-->
     <string name="Notice">Notice</string>
-    <string name="notice_unbound">Do you want to unbind your band?</string>
     <string name="exit_app">Do you want to exit My Fitness?</string>
     <string name="Exit">Exit</string>
     <string name="bluetooth_connecting">Bluetooth connecting…</string>
     <string name="synchronizing">Synchronizing…</string>
-    <string name="Share_via">Share via</string>
-
-    <string-array name="item">
-        <item>Facebook</item>
-        <item>Twitter</item>
-    </string-array>
-
-    <string name="cancelled">Cancelled</string>
     <string name="ok">OK</string>
-    <string name="Sharing_to_facebook">Sharing to facebook…</string>
     <string name="Loading">Loading…</string>
-    <string name="Sharing_to_twitter">Sharing to twitter…</string>
-    <string name="notice_reset">Your band was once reset for some reasons, leading to loss of data within your band. \n\n If you want to keep the same data display between APP and band, please click CLEAR to clear data today in app. \n Or click RETAIN to retain those data, but this may possibly make app display larger data than your band\'s</string>
-    <string name="Retain">Retain</string>
-    <string name="Clear">Clear</string>
     <string name="BPM_unusual_data">Your result is unnormal high, data will not be saved.</string>
     <string name="English">English</string>
     <string name="German">Deutsch</string>
@@ -237,38 +246,15 @@
     <string name="Measuring_Done">Measuring Done</string>
     <string name="Test_complete">You can now check the result.</string>
     <string name="Check">Check</string>
-
-    <!-- toast -->
     <string name="Save_succeeded">Save succeeded!</string>
-    <string name="Reminder_save_fail">Save failed! End time should be later than begin time.</string>
     <string name="Profile_save_fail_height">Save failed! Height setting unreasonable.</string>
     <string name="Profile_save_fail_weight">Save failed! Weight set unreasonable.</string>
     <string name="No_bluetooth_in_device">No bluetooth in device</string>
-    <string name="Please_enable_bluetooth">Please enable bluetooth to connect device</string>
-    <string name="name_can_not_be_empty">Name can not be empty</string>
-    <string name="Unbound_succeeded">Unbound succeeded</string>
-    <string name="Do_not_find_bounded_device">Do not find bounded device</string>
-    <string name="mm35_time_out_request_sync_again">time out request sync again</string>
-    <string name="mm35_sync_fail_please_light_up_your_device_and_try_again">sync fail, please light up your device and try again</string>
-    <string name="can_not_use_BLE">Can not use BLE in your phone, please use audio jack to sync.</string>
-    <string name="no_internet_connect">No internet connection.</string>
-    <string name="Please_select_a_language">Please select a language.</string>
-    <string name="band_is_reset">Your band was once power off, data in the band will be clear to start</string>
     <string name="connect_timeout">Timed out. Stop scanning!</string>
-    <string name="stop_connecting">Stop connecting</string>
-    <string name="connect_fail">Connect fail</string>
-    <string name="disconnected">Bluetooth disconnected…</string>
-    <string name="stop_synchronizing">Stop Synchronization</string>
-    <string name="sync_finish">Synchronization is complete!</string>
-    <string name="sync_timeout">Synchronization timeout</string>
-    <string name="sync_fail">Synchronization fail</string>
-    <string name="stop_sync">Stop Synchronization</string>
-    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="name_can_not_be_empty">Name can not be empty</string>
+    <string name="Please_select_a_language">Please select a language.</string>
     <string name="success">Success</string>
     <string name="error">Error</string>
-    <string name="successfully_posted_post">Successfully posted the image to facebook.\nPost ID: %1$s</string>
-    <string name="Successfully_shared_to_facebook">Successfully shared to facebook</string>
-    <string name="Successfully_shared_to_twitter">Successfully shared to twitter</string>
     <string name="ppm">/Min.</string>
     <string name="declaration">Declaration</string>
     <string name="impressum">Impressum</string>
@@ -328,6 +314,5 @@ Ust-Id-Nr.: DE 226513614\n
 EORI: DE5177790\n
 BattG-Reg-Nr.: 21003703\n
 WEEE-Reg-Nr.: DE94626913</string>
-    <string name="impressum_content_3"></string>
 
 </resources>

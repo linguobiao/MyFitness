@@ -55,7 +55,6 @@
                 android:src="@drawable/button_left_no_font" />
 
             <com.lgb.myfitness.view.TextViewShow
-                android:id="@+id/progerss_textviewshow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="22dp"
@@ -91,7 +90,6 @@
         </RelativeLayout>
 
         <ScrollView
-            android:id="@+id/view_scroll"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_above="@id/layout_title"
@@ -138,7 +136,6 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/text_select"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -147,7 +144,6 @@
                                 android:textSize="@dimen/text_size_profile_select" />
 
                             <TextView
-                                android:id="@+id/text_label_language"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"

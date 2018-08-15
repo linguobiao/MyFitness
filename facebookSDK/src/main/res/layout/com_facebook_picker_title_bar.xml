@@ -16,8 +16,7 @@
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/com_facebook_picker_top_bar"
-                android:layout_width="fill_parent"
+    android:layout_width="fill_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/com_facebook_top_background"
                 android:gravity="right">

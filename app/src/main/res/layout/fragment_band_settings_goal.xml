@@ -51,7 +51,6 @@
             android:src="@drawable/button_left_no_font" />
 
         <com.lgb.myfitness.view.TextViewShow
-            android:id="@+id/progerss_textviewshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
@@ -101,7 +100,6 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/text_set_goals"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -116,7 +114,6 @@
                 android:layout_marginTop="@dimen/activity_vertical_margin" >
 
                 <TextView
-                    android:id="@+id/text_label_step"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -141,7 +138,6 @@
                 android:layout_marginTop="@dimen/activity_vertical_margin" >
 
                 <TextView
-                    android:id="@+id/text_label_burn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -166,7 +162,6 @@
                 android:layout_marginTop="@dimen/activity_vertical_margin" >
 
                 <TextView
-                    android:id="@+id/text_label_sleep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -186,7 +181,6 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/text_introduction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

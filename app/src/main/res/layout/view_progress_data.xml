@@ -56,8 +56,7 @@
 	            android:orientation="vertical" >
             
 	             <TextView
-	                android:id="@+id/text_label_burn_daily"
-	                android:layout_width="wrap_content"
+                     android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:layout_marginTop="5dp"
 	                android:layout_gravity="center_horizontal"
@@ -66,8 +65,7 @@
 	                android:textSize="@dimen/text_size_progress_daily_bigger" />
 	
 	            <TextView
-	                android:id="@+id/text_label_burn_average"
-	                android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:layout_gravity="center_horizontal"
 	                android:text="@string/AVERAGE"
@@ -95,8 +93,7 @@
 	                android:textSize="@dimen/text_size_progress_kcals" />
 	
 	            <TextView
-	                android:id="@+id/text_label_burn"
-	                android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:layout_gravity="center_horizontal"
 	                android:text="@string/BURNED"
@@ -141,7 +138,6 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/text_label_step_daily"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -150,7 +146,6 @@
                     android:textSize="@dimen/text_size_progress_daily" />
 
                 <TextView
-                    android:id="@+id/text_label_step_average"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -169,7 +164,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_label_step"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -207,7 +201,6 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/text_label_sleep_daily"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -216,7 +209,6 @@
                     android:textSize="@dimen/text_size_progress_daily" />
 
                 <TextView
-                    android:id="@+id/text_label_sleep_average"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -235,7 +227,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_label_sleep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"

@@ -49,7 +49,6 @@
             android:src="@drawable/button_left_no_font" />
 
         <com.lgb.myfitness.view.TextViewShow
-            android:id="@+id/progerss_textviewshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
@@ -85,7 +84,6 @@
     </RelativeLayout>
 
     <ScrollView
-        android:id="@+id/scroll_view"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@id/layout_title"
@@ -93,13 +91,11 @@
         android:layout_marginTop="@dimen/tab_height" >
 
         <LinearLayout
-            android:id="@+id/layout_progress_content"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
             <RelativeLayout
-                android:id="@+id/layout_circle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp" >
@@ -108,7 +104,6 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/layout_bar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" >
 

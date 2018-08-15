@@ -51,7 +51,6 @@
             android:src="@drawable/button_left_no_font" />
 
         <com.lgb.myfitness.view.TextViewShow
-            android:id="@+id/progerss_textviewshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
@@ -109,7 +108,6 @@
                 android:layout_weight="1" >
 
                 <TextView
-                    android:id="@+id/text_label_clock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -135,7 +133,6 @@
                 android:layout_weight="1" >
 
                 <TextView
-                    android:id="@+id/text_label_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -159,7 +156,6 @@
                 android:layout_weight="1" >
 
                 <TextView
-                    android:id="@+id/text_label_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -276,7 +272,6 @@
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/button_fake_mon"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -286,7 +281,6 @@
                 android:textSize="@dimen/text_size_alarm_date" />
 
             <Button
-                android:id="@+id/button_fake_tue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -296,7 +290,6 @@
                 android:textSize="@dimen/text_size_alarm_date" />
 
             <Button
-                android:id="@+id/button_fake_wed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -306,7 +299,6 @@
                 android:textSize="@dimen/text_size_alarm_date" />
 
             <Button
-                android:id="@+id/button_fake_thu"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -316,7 +308,6 @@
                 android:textSize="@dimen/text_size_alarm_date" />
 
             <Button
-                android:id="@+id/button_fake_fri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -326,7 +317,6 @@
                 android:textSize="@dimen/text_size_alarm_date" />
 
             <Button
-                android:id="@+id/button_fake_sat"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -336,7 +326,6 @@
                 android:textSize="@dimen/text_size_alarm_date" />
 
             <Button
-                android:id="@+id/button_fake_sun"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
