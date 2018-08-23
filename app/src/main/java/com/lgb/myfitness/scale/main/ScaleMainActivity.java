@@ -1,14 +1,12 @@
 package com.lgb.myfitness.scale.main;
 
 import com.lgb.myfitness.R;
-import com.facebook.Session;
 import com.lgb.myfitness.global.Global;
 import com.lgb.myfitness.helper.FragmentHelper;
 import com.lgb.myfitness.helper.KeyBoardHelper;
 import com.lgb.myfitness.scale.settings.ScaleSettingProfileFragment;
 import com.lgb.myfitness.scale.settings.ScaleSettingProfileFragment.OnProfileUpdateListener;
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -67,7 +65,6 @@ public class ScaleMainActivity extends Activity implements OnProfileUpdateListen
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
 		
 		if (requestCode == Global.REQUEST_ENABLE_BLUETOOTH) {
 			if (resultCode == Activity.RESULT_OK) {
@@ -91,10 +88,7 @@ public class ScaleMainActivity extends Activity implements OnProfileUpdateListen
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				ScaleMainActivity.this.finish();
-				System.exit(0);  
-				
-				ActivityManager am = (ActivityManager)getSystemService (Context.ACTIVITY_SERVICE);
-				am.killBackgroundProcesses(getPackageName());
+				System.exit(0);
 			}
 		})
 		.setNegativeButton(R.string.Cancel, new DialogInterface.OnClickListener() {	

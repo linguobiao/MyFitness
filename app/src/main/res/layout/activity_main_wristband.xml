@@ -18,11 +18,11 @@
         android:baselineAligned="false"
         android:orientation="horizontal" >
         
-        <com.facebook.widget.LoginButton
-            android:id="@+id/loginbutton"
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:visibility="gone" />
+        <!--<com.facebook.widget.LoginButton-->
+            <!--android:id="@+id/loginbutton"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:visibility="gone" />-->
 
         <RelativeLayout
             android:layout_width="0dp"

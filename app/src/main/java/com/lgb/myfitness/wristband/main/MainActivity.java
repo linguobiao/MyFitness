@@ -1,38 +1,38 @@
 package com.lgb.myfitness.wristband.main;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Timer;
-import java.util.TimerTask;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.ProgressDialog;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.ServiceConnection;
+import android.graphics.Bitmap;
+import android.media.AudioManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import twitter4j.Status;
-import twitter4j.StatusUpdate;
-import twitter4j.Twitter;
-import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
-import twitter4j.auth.AccessToken;
-import twitter4j.auth.RequestToken;
-import twitter4j.conf.Configuration;
-import twitter4j.conf.ConfigurationBuilder;
-import com.facebook.FacebookAuthorizationException;
-import com.facebook.FacebookOperationCanceledException;
-import com.facebook.FacebookRequestError;
-import com.facebook.Request;
-import com.facebook.Response;
-import com.facebook.Session;
-import com.facebook.SessionState;
-import com.facebook.UiLifecycleHelper;
-import com.facebook.model.GraphObject;
-import com.facebook.model.GraphUser;
-import com.facebook.widget.FacebookDialog;
-import com.facebook.widget.LoginButton;
 import com.lgb.myfitness.R;
 import com.lgb.myfitness.audio.AudioTrackManager;
 import com.lgb.myfitness.audio.RecordTask;
@@ -57,52 +57,20 @@ import com.lgb.myfitness.service.MyFitnessService;
 import com.lgb.myfitness.wristband.main.ActivityFragment.OnShareListener;
 import com.lgb.myfitness.wristband.main.ProgressFragment.ProgressCheckListener;
 import com.lgb.myfitness.wristband.main.SettingsFragment.SettingsClickListener;
-import com.lgb.myfitness.wristband.settings.SettingsProfileFragment;
 import com.lgb.myfitness.wristband.settings.SettingsAlarmFragment.OnAlarmUpdateListener;
 import com.lgb.myfitness.wristband.settings.SettingsGoalFragment.OnGoalUpdateListener;
 import com.lgb.myfitness.wristband.settings.SettingsLostModeFragment.LostModeListener;
+import com.lgb.myfitness.wristband.settings.SettingsProfileFragment;
 import com.lgb.myfitness.wristband.settings.SettingsProfileFragment.OnProfileUpdateListener;
-import android.media.AudioManager;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Message;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.ProgressDialog;
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.content.BroadcastReceiver;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.ServiceConnection;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.content.pm.ActivityInfo;
-import android.graphics.Bitmap;
-import android.graphics.Bitmap.CompressFormat;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup.LayoutParams;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.CompoundButton;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends Activity implements OnProfileUpdateListener, OnGoalUpdateListener, OnAlarmUpdateListener, ProgressCheckListener, OnShareListener, SettingsClickListener, LostModeListener{
 
@@ -154,10 +122,10 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 	private boolean isAlive = false;
 	
 	private Bitmap bmp;
-	private UiLifecycleHelper uiHelper;
+//	private UiLifecycleHelper uiHelper;
 	private boolean canPresentShareDialogWithPhotos;
 	private static final String PERMISSION = "publish_actions";
-	private GraphUser user;
+//	private GraphUser user;
 	private final String PENDING_ACTION_BUNDLE_KEY = "com.facebook.samples.hellofacebook:PendingAction";
 	private static enum PendingAction {NONE, POST_PHOTO, POST_STATUS_UPDATE};
 	private PendingAction pendingAction = PendingAction.NONE;
@@ -168,20 +136,20 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 	
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			if (webview != null) {
-				if (webview.canGoBack()) {
-					webview.goBack();
-				} else {
-					System.out.println("webview = " + webview);
-					layout_main.removeView(webview);
-					view_bottom.setVisibility(View.VISIBLE);
-					view_content.setVisibility(View.VISIBLE);
-					webview = null;
-				}
-				return true;
-			} else {
+//			if (webview != null) {
+//				if (webview.canGoBack()) {
+//					webview.goBack();
+//				} else {
+//					System.out.println("webview = " + webview);
+//					layout_main.removeView(webview);
+//					view_bottom.setVisibility(View.VISIBLE);
+//					view_content.setVisibility(View.VISIBLE);
+//					webview = null;
+//				}
+//				return true;
+//			} else {
 				showQuitAPPDialog(this, keyCode);
-			}
+//			}
 		}
 		return super.onKeyDown(keyCode, event);
 	}
@@ -205,8 +173,8 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 		initServiceConnection();
 		initBLEBroadcastReceiver();
 		
-		initFacebook(savedInstanceState);
-		initTwitter();
+//		initFacebook(savedInstanceState);
+//		initTwitter();
 		
 		if (isNewStartup) {
 			radio_settings.setChecked(true);
@@ -221,7 +189,7 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 		super.onResume();
 		
 		initReceiver();
-		uiHelper.onResume();
+//		uiHelper.onResume();
 
 		isAlive = true;
 	}
@@ -232,7 +200,7 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 		super.onPause();
 		
 		unregisterReceiver(myBroadcastReceiver);
-		uiHelper.onPause();
+//		uiHelper.onPause();
 		
 		isAlive = false;
 	}
@@ -257,15 +225,15 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 		DialogHelper.cancelDialog(dialog_connecting);
 		DialogHelper.cancelDialog(dialog_ble_sync);
 		DialogHelper.cancelDialog(dialog_sharing);
-		
-		uiHelper.onDestroy();
+
+//		uiHelper.onDestroy();
 	}
 	
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
+//		Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
 		
 		if (requestCode == Global.REQUEST_ENABLE_BLUETOOTH) {
 			if (resultCode == Activity.RESULT_OK) {
@@ -1361,10 +1329,10 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 	 */
 	private void sendImg(int shareTo) {
 		if (shareTo == Global.TYPE_SHARE_TO_FACEBOOK) {
-			shareToFacebook();
+//			shareToFacebook();
 			
 		} else if (shareTo == Global.TYPE_SHARE_TO_TWITTER) {
-			shareToTwitter();
+//			shareToTwitter();
 			
 		} else {
 
@@ -1373,434 +1341,434 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 
 	
 	private Map<String, String> mapPackageName;
-	/**
-	 * share to Facebook
-	 */
-	public void shareToFacebook() {
-		if (mapPackageName != null){
-			String packageName = mapPackageName.get(Global.PACKAGE_NAME_FACEBOOK);
-			if (packageName != null){
-				System.out.println("********************facebook app");
-
-				//create a file to write bitmap data
-				ShareHelper.actionShare_facebook(packageName, MainActivity.this, bmp, "www.technaxx.de/My Fitness");
-			
-			} else {
-//				Toast.makeText(MainActivity.this, getString(R.string.no_facebook_in_your_phone), Toast.LENGTH_SHORT).show();
-				System.out.println("****************************no facebook app");
-				Session session = Session.getActiveSession();
-				System.out.println("session.isOpened() = " + session.isOpened());
-				if (session.isOpened()) {
-					performPublish(PendingAction.POST_PHOTO,
-							canPresentShareDialogWithPhotos);
-					
-				} else {
-					loginButton.callOnClick();
-					performPublish(PendingAction.POST_PHOTO,
-							canPresentShareDialogWithPhotos);
-				}
-			}
-		}
-		
-
-	}
-
-	
-	private void performPublish(PendingAction action, boolean allowNoSession) {
-		Session session = Session.getActiveSession();
-		if (session != null) {
-			pendingAction = action;
-			if (session != null
-					&& session.getPermissions().contains("publish_actions")) {
-				handlePendingAction();
-				return;
-			} else if (session.isOpened()) {
-				session.requestNewPublishPermissions(new Session.NewPermissionsRequest(
-						this, PERMISSION));
-				return;
-			}
-		}
-
-		if (allowNoSession) {
-			pendingAction = action;
-			handlePendingAction();
-		}
-	}
-
-	
-	private void handlePendingAction() {
-		PendingAction previouslyPendingAction = pendingAction;
-		pendingAction = PendingAction.NONE;
-
-		switch (previouslyPendingAction) {
-		case POST_PHOTO:
-			postPhoto();
-			break;
-		// case POST_STATUS_UPDATE:
-		// postStatusUpdate();
-		// break;
-		default:
-			break;
-		}
-	}
-
-	/**
-	 * 发送图片
-	 */
-	private void postPhoto() {
-		Session session = Session.getActiveSession();
-		if (bmp != null) {
-			if (canPresentShareDialogWithPhotos) {
-				FacebookDialog shareDialog = createShareDialogBuilderForPhoto(
-						bmp).build();
-				uiHelper.trackPendingDialogCall(shareDialog.present());
-				
-			} else if (session != null
-					&& session.getPermissions().contains("publish_actions")) {
-				
-				Request request = Request.newUploadPhotoRequest(
-						Session.getActiveSession(), bmp,
-						new Request.Callback() {
-							@Override
-							public void onCompleted(Response response) {
-									DialogHelper.cancelDialog(dialog_sharing);
-								showPublishResult(response.getGraphObject(),
-										response.getError());
-							}
-						});
-				request.executeAsync();
-				dialog_sharing = DialogHelper.showProgressDialog(MainActivity.this, getString(R.string.Sharing_to_facebook));
-				dialog_sharing.setCanceledOnTouchOutside(false);
-				dialog_sharing.show();
-				
-			} else {
-				pendingAction = PendingAction.POST_PHOTO;
-			}
-		}
-	}
-
-	
-	private FacebookDialog.PhotoShareDialogBuilder createShareDialogBuilderForPhoto(
-			Bitmap... photos) {
-		return new FacebookDialog.PhotoShareDialogBuilder(this)
-				.addPhotos(Arrays.asList(photos));
-	}
-
-	
-	/**
-	 * 显示分享结果
-	 */
-	private void showPublishResult(GraphObject result,
-			FacebookRequestError error) {
-		String title = null;
-		String message = null;
-		if (error == null) {
-			title = getString(R.string.success);
-			
-			//获取发送成功的ID
-//			String id = result.cast(GraphObjectWithId.class).getId();
-			message = getString(R.string.Successfully_shared_to_facebook);
-		} else {
-			title = getString(R.string.error);
-			message = error.getErrorMessage();
-		}
-		DialogHelper.showAlertDialog(MainActivity.this, title, message, false);
-	}
-
-	
-	private Session.StatusCallback callback = new Session.StatusCallback() {
-		@Override
-		public void call(Session session, SessionState state,
-				Exception exception) {
-			onSessionStateChange(session, state, exception);
-		}
-	};
-
-	
-	private void onSessionStateChange(Session session, SessionState state,
-			Exception exception) {
-		System.out.println("state = " + state);
-		if (pendingAction != PendingAction.NONE
-				&& (exception instanceof FacebookOperationCanceledException || exception instanceof FacebookAuthorizationException)) {
-			new AlertDialog.Builder(MainActivity.this)
-					.setTitle(R.string.cancelled)
-					.setMessage(R.string.permission_not_granted)
-					.setPositiveButton(R.string.ok, null).show();
-			pendingAction = PendingAction.NONE;
-
-		} else if (state == SessionState.OPENED_TOKEN_UPDATED) {
-			System.out.println("OPENED_TOKEN_UPDATED");
-			handlePendingAction();
-
-		} else if (state == SessionState.OPENED) {
-			System.out.println("OPENED");
-//			shareToFacebook();
-			String packageName = mapPackageName.get(Global.PACKAGE_NAME_FACEBOOK);
-			if (packageName == null){
-			System.out.println("****************************no facebook app");
-				Session session1 = Session.getActiveSession();
-				System.out.println("session.isOpened() = " + session1.isOpened());
-				if (session1.isOpened()) {
-					performPublish(PendingAction.POST_PHOTO,
-							canPresentShareDialogWithPhotos);
-				} else {
-					loginButton.callOnClick();
-					performPublish(PendingAction.POST_PHOTO,
-							canPresentShareDialogWithPhotos);
-				}
-			}
-
-		} else if (state == SessionState.CLOSED_LOGIN_FAILED) {
-			System.out.println("CLOSED_LOGIN_FAILED");
-		}
-	}
+//	/**
+//	 * share to Facebook
+//	 */
+//	public void shareToFacebook() {
+//		if (mapPackageName != null){
+//			String packageName = mapPackageName.get(Global.PACKAGE_NAME_FACEBOOK);
+//			if (packageName != null){
+//				System.out.println("********************facebook app");
+//
+//				//create a file to write bitmap data
+//				ShareHelper.actionShare_facebook(packageName, MainActivity.this, bmp, "www.technaxx.de/My Fitness");
+//
+//			} else {
+////				Toast.makeText(MainActivity.this, getString(R.string.no_facebook_in_your_phone), Toast.LENGTH_SHORT).show();
+//				System.out.println("****************************no facebook app");
+//				Session session = Session.getActiveSession();
+//				System.out.println("session.isOpened() = " + session.isOpened());
+//				if (session.isOpened()) {
+//					performPublish(PendingAction.POST_PHOTO,
+//							canPresentShareDialogWithPhotos);
+//
+//				} else {
+//					loginButton.callOnClick();
+//					performPublish(PendingAction.POST_PHOTO,
+//							canPresentShareDialogWithPhotos);
+//				}
+//			}
+//		}
+//
+//
+//	}
+//
+//
+//	private void performPublish(PendingAction action, boolean allowNoSession) {
+//		Session session = Session.getActiveSession();
+//		if (session != null) {
+//			pendingAction = action;
+//			if (session != null
+//					&& session.getPermissions().contains("publish_actions")) {
+//				handlePendingAction();
+//				return;
+//			} else if (session.isOpened()) {
+//				session.requestNewPublishPermissions(new Session.NewPermissionsRequest(
+//						this, PERMISSION));
+//				return;
+//			}
+//		}
+//
+//		if (allowNoSession) {
+//			pendingAction = action;
+//			handlePendingAction();
+//		}
+//	}
+//
+//
+//	private void handlePendingAction() {
+//		PendingAction previouslyPendingAction = pendingAction;
+//		pendingAction = PendingAction.NONE;
+//
+//		switch (previouslyPendingAction) {
+//		case POST_PHOTO:
+//			postPhoto();
+//			break;
+//		// case POST_STATUS_UPDATE:
+//		// postStatusUpdate();
+//		// break;
+//		default:
+//			break;
+//		}
+//	}
+//
+//	/**
+//	 * 发送图片
+//	 */
+//	private void postPhoto() {
+//		Session session = Session.getActiveSession();
+//		if (bmp != null) {
+//			if (canPresentShareDialogWithPhotos) {
+//				FacebookDialog shareDialog = createShareDialogBuilderForPhoto(
+//						bmp).build();
+//				uiHelper.trackPendingDialogCall(shareDialog.present());
+//
+//			} else if (session != null
+//					&& session.getPermissions().contains("publish_actions")) {
+//
+//				Request request = Request.newUploadPhotoRequest(
+//						Session.getActiveSession(), bmp,
+//						new Request.Callback() {
+//							@Override
+//							public void onCompleted(Response response) {
+//									DialogHelper.cancelDialog(dialog_sharing);
+//								showPublishResult(response.getGraphObject(),
+//										response.getError());
+//							}
+//						});
+//				request.executeAsync();
+//				dialog_sharing = DialogHelper.showProgressDialog(MainActivity.this, getString(R.string.Sharing_to_facebook));
+//				dialog_sharing.setCanceledOnTouchOutside(false);
+//				dialog_sharing.show();
+//
+//			} else {
+//				pendingAction = PendingAction.POST_PHOTO;
+//			}
+//		}
+//	}
+//
+//
+//	private FacebookDialog.PhotoShareDialogBuilder createShareDialogBuilderForPhoto(
+//			Bitmap... photos) {
+//		return new FacebookDialog.PhotoShareDialogBuilder(this)
+//				.addPhotos(Arrays.asList(photos));
+//	}
+//
+//
+//	/**
+//	 * 显示分享结果
+//	 */
+//	private void showPublishResult(GraphObject result,
+//			FacebookRequestError error) {
+//		String title = null;
+//		String message = null;
+//		if (error == null) {
+//			title = getString(R.string.success);
+//
+//			//获取发送成功的ID
+////			String id = result.cast(GraphObjectWithId.class).getId();
+//			message = getString(R.string.Successfully_shared_to_facebook);
+//		} else {
+//			title = getString(R.string.error);
+//			message = error.getErrorMessage();
+//		}
+//		DialogHelper.showAlertDialog(MainActivity.this, title, message, false);
+//	}
+//
+//
+//	private Session.StatusCallback callback = new Session.StatusCallback() {
+//		@Override
+//		public void call(Session session, SessionState state,
+//				Exception exception) {
+//			onSessionStateChange(session, state, exception);
+//		}
+//	};
+//
+//
+//	private void onSessionStateChange(Session session, SessionState state,
+//			Exception exception) {
+//		System.out.println("state = " + state);
+//		if (pendingAction != PendingAction.NONE
+//				&& (exception instanceof FacebookOperationCanceledException || exception instanceof FacebookAuthorizationException)) {
+//			new AlertDialog.Builder(MainActivity.this)
+//					.setTitle(R.string.cancelled)
+//					.setMessage(R.string.permission_not_granted)
+//					.setPositiveButton(R.string.ok, null).show();
+//			pendingAction = PendingAction.NONE;
+//
+//		} else if (state == SessionState.OPENED_TOKEN_UPDATED) {
+//			System.out.println("OPENED_TOKEN_UPDATED");
+//			handlePendingAction();
+//
+//		} else if (state == SessionState.OPENED) {
+//			System.out.println("OPENED");
+////			shareToFacebook();
+//			String packageName = mapPackageName.get(Global.PACKAGE_NAME_FACEBOOK);
+//			if (packageName == null){
+//			System.out.println("****************************no facebook app");
+//				Session session1 = Session.getActiveSession();
+//				System.out.println("session.isOpened() = " + session1.isOpened());
+//				if (session1.isOpened()) {
+//					performPublish(PendingAction.POST_PHOTO,
+//							canPresentShareDialogWithPhotos);
+//				} else {
+//					loginButton.callOnClick();
+//					performPublish(PendingAction.POST_PHOTO,
+//							canPresentShareDialogWithPhotos);
+//				}
+//			}
+//
+//		} else if (state == SessionState.CLOSED_LOGIN_FAILED) {
+//			System.out.println("CLOSED_LOGIN_FAILED");
+//		}
+//	}
 
 	/***********************************************************************************
 	************************************************************************************
 		Share to Twitter 		
 	*/
-		private WebView webview = null;
-		private String Url;
-		
-		private static Twitter twitter;
-		private static RequestToken requestToken;
-		private static SharedPreferences mSharedPreferences;
-		private static Status responeStatus = null;
-
-		private void shareToTwitter() {
-			System.out.println("is twitter login " + isTwitterLoggedInAlready());
-			loginToTwitter();
-			if (isTwitterLoggedInAlready()) {
-				updateStatus();
-			}
-		}
-
-		/**
-		 * Function to login twitter
-		 * */
-		private void loginToTwitter() {
-			if (!isTwitterLoggedInAlready()) {
-				ConfigurationBuilder builder = new ConfigurationBuilder();
-				builder.setOAuthConsumerKey(Global.TWITTER_CONSUMER_KEY);
-				builder.setOAuthConsumerSecret(Global.TWITTER_CONSUMER_SECRET);
-				Configuration configuration = builder.build();
-				TwitterFactory factory = new TwitterFactory(configuration);
-				
-				twitter = factory.getInstance();
-				
-				webview = new WebView(this);
-				// 设置WebView属性，能够执行Javascript脚本
-				webview.getSettings().setJavaScriptEnabled(true);
-				
-				webview.setWebViewClient(new WebViewClient() {
-					@Override
-					public boolean shouldOverrideUrlLoading(WebView view, String url) {
-						System.out.println("url = " + url);
-						if (url.contains(Global.TWITTER_CALLBACK_URL)) {
-							Url = url;
-							new GetAndSaveToken().execute(url);
-
-						} else {
-							view.loadUrl(url);
-						}
-						return true;
-					}
-				});
-
-				new TwitterGetAccessTokenTask().execute();
-			} else {
-				System.out.println("Already Logged into twitter");
-			}
-		}
-
-		
-		class TwitterGetAccessTokenTask extends AsyncTask<String, RequestToken, String> {
-			ProgressDialog dialog_loading;
-			@Override
-			protected void onPreExecute() {
-				// TODO Auto-generated method stub
-				super.onPreExecute();
-				view_bottom.setVisibility(View.INVISIBLE);
-				view_content.setVisibility(View.INVISIBLE);
-				webview.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
-						LayoutParams.MATCH_PARENT));
-				layout_main.addView(webview);
-				dialog_loading = DialogHelper.showProgressDialog(MainActivity.this, getString(R.string.Loading));
-				dialog_loading.show();
-			}
-
-			@Override
-			protected String doInBackground(String... params) {
-				try {
-					System.out.println("request token start");
-					requestToken = twitter
-							.getOAuthRequestToken(Global.TWITTER_CALLBACK_URL);
-					// startActivity(new Intent(Intent.ACTION_VIEW, Uri
-					// .parse(requestToken.getAuthenticationURL())));
-				} catch (TwitterException e) {
-					e.printStackTrace();
-				}
-				return null;
-			}
-
-			protected void onPostExecute(String file_url) {
-				// 加载需要显示的网页
-				if (requestToken != null) {
-					webview.loadUrl(requestToken.getAuthenticationURL());
-					DialogHelper.cancelDialog(dialog_loading);
-				}
-			}
-		}
-
-		
-		class GetAndSaveToken extends AsyncTask<String, String, String> {
-			
-			protected String doInBackground(String... args) {
-				// Uri uri = getIntent().getData();
-				if (Url != null) {
-					final Uri uri = Uri.parse(Url);
-					if (uri != null && uri.toString().startsWith(Global.TWITTER_CALLBACK_URL)) {
-						String verifier = uri.getQueryParameter(Global.URL_TWITTER_OAUTH_VERIFIER);
-
-						try {
-							AccessToken accessToken = twitter.getOAuthAccessToken(requestToken, verifier);
-
-							Editor e = mSharedPreferences.edit();
-							e.putString(Global.PREF_KEY_OAUTH_TOKEN, accessToken.getToken());
-							e.putString(Global.PREF_KEY_OAUTH_SECRET, accessToken.getTokenSecret());
-							e.putBoolean(Global.PREF_KEY_TWITTER_LOGIN, true);
-							e.commit(); // save changes
-							Log.e("Twitter OAuth Token", "> " + accessToken.getToken());
-						} catch (Exception e) {
-							// Check log for login errors
-							Log.e("Twitter Login Error", "> " + e.getMessage());
-							e.printStackTrace();
-						}
-					}
-				}
-				return null;
-			}
-
-			@Override
-			protected void onPostExecute(String result) {
-				// TODO Auto-generated method stub
-				super.onPostExecute(result);
-				layout_main.removeView(webview);
-				view_bottom.setVisibility(View.VISIBLE);
-				view_content.setVisibility(View.VISIBLE);
-				webview = null;
-				updateStatus();
-			}
-			
-		}
-
-		/**
-		 * Function to update status
-		 * */
-		class updateTwitterStatus extends AsyncTask<String, String, String> {
-			
-			@Override
-			protected void onPreExecute() {
-				super.onPreExecute();
-//				pDialog = new ProgressDialog(MainActivity.this);
-//				pDialog.setMessage("Updating to twitter...");
-//				pDialog.setIndeterminate(false);
-//				pDialog.setCancelable(false);
-//				pDialog.show();
-				
-				if (MainActivity.this != null && isAlive) {
-					dialog_sharing = DialogHelper.showProgressDialog(MainActivity.this, getString(R.string.Sharing_to_twitter));
-					dialog_sharing.setCanceledOnTouchOutside(false);
-					dialog_sharing.show();
-				}
-			}
-
-			protected String doInBackground(String... args) {
-				Log.d("Tweet Text", "> " + args[0]);
-				String status = args[0];
-
-				ConfigurationBuilder builder = new ConfigurationBuilder();
-				builder.setOAuthConsumerKey(Global.TWITTER_CONSUMER_KEY);
-				builder.setOAuthConsumerSecret(Global.TWITTER_CONSUMER_SECRET);
-
-				String access_token = mSharedPreferences.getString(
-						Global.PREF_KEY_OAUTH_TOKEN, "");
-				String access_token_secret = mSharedPreferences.getString(
-						Global.PREF_KEY_OAUTH_SECRET, "");
-
-				AccessToken accessToken = new AccessToken(access_token,
-						access_token_secret);
-				Twitter twitter = new TwitterFactory(builder.build())
-						.getInstance(accessToken);
-
-				try {
-					uploadPic(status, twitter);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-				return null;
-			}
-
-			protected void onPostExecute(String file_url) {
-				DialogHelper.cancelDialog(dialog_sharing);
-				if (responeStatus != null) {
-					runOnUiThread(new Runnable() {
-						@Override
-						public void run() {
-							DialogHelper.showAlertDialog(MainActivity.this, getString(R.string.success), getString(R.string.Successfully_shared_to_twitter), false);
-							
-						}
-					});
-				}
-			}
-		}
-
-		/**
-		 * To upload a picture with some piece of text.
-		 * @param message Message to display with picture
-		 * @param twitter Instance of authorized Twitter class
-		 * @throws Exception exception if any
-		 */
-		public void uploadPic(String message, Twitter twitter) throws Exception {
-			responeStatus = null;
-			try {
-				StatusUpdate status = new StatusUpdate(message);
-				if (bmp != null) {
-					ByteArrayOutputStream baos = new ByteArrayOutputStream();
-					bmp.compress(CompressFormat.PNG, 0 /* ignored for PNG */, baos);
-					byte[] bitmapdata = baos.toByteArray();
-					ByteArrayInputStream bais = new ByteArrayInputStream(bitmapdata);
-					status.setMedia("a", bais);
-					responeStatus = twitter.updateStatus(status);
-					System.out.println("responeStatus = " +responeStatus);
-				} else {
-					System.out.println("bmp = null");
-				}
-			} catch (TwitterException e) {
-				Log.d("TAG", "Pic Upload error" + e.getErrorMessage());
-				throw e;
-			}
-		}
-
-		/**
-		 * Check user already logged in your application using twitter Login flag is
-		 * fetched from Shared Preferences
-		 * */
-		private boolean isTwitterLoggedInAlready() {
-			return mSharedPreferences.getBoolean(Global.PREF_KEY_TWITTER_LOGIN,
-					false);
-		}
-
-		
-		private void updateStatus() {
-			String status = "www.technaxx.de/My_Fitness";
-			if (status.trim().length() > 0) {
-				new updateTwitterStatus().execute(status);
-			} else {
-				Toast.makeText(getApplicationContext(),
-						"Please enter status message", Toast.LENGTH_SHORT).show();
-			}
-		}
+//		private WebView webview = null;
+//		private String Url;
+//
+//		private static Twitter twitter;
+//		private static RequestToken requestToken;
+//		private static SharedPreferences mSharedPreferences;
+//		private static Status responeStatus = null;
+//
+//		private void shareToTwitter() {
+//			System.out.println("is twitter login " + isTwitterLoggedInAlready());
+//			loginToTwitter();
+//			if (isTwitterLoggedInAlready()) {
+//				updateStatus();
+//			}
+//		}
+//
+//		/**
+//		 * Function to login twitter
+//		 * */
+//		private void loginToTwitter() {
+//			if (!isTwitterLoggedInAlready()) {
+//				ConfigurationBuilder builder = new ConfigurationBuilder();
+//				builder.setOAuthConsumerKey(Global.TWITTER_CONSUMER_KEY);
+//				builder.setOAuthConsumerSecret(Global.TWITTER_CONSUMER_SECRET);
+//				Configuration configuration = builder.build();
+//				TwitterFactory factory = new TwitterFactory(configuration);
+//
+//				twitter = factory.getInstance();
+//
+//				webview = new WebView(this);
+//				// 设置WebView属性，能够执行Javascript脚本
+//				webview.getSettings().setJavaScriptEnabled(true);
+//
+//				webview.setWebViewClient(new WebViewClient() {
+//					@Override
+//					public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//						System.out.println("url = " + url);
+//						if (url.contains(Global.TWITTER_CALLBACK_URL)) {
+//							Url = url;
+//							new GetAndSaveToken().execute(url);
+//
+//						} else {
+//							view.loadUrl(url);
+//						}
+//						return true;
+//					}
+//				});
+//
+//				new TwitterGetAccessTokenTask().execute();
+//			} else {
+//				System.out.println("Already Logged into twitter");
+//			}
+//		}
+//
+//
+//		class TwitterGetAccessTokenTask extends AsyncTask<String, RequestToken, String> {
+//			ProgressDialog dialog_loading;
+//			@Override
+//			protected void onPreExecute() {
+//				// TODO Auto-generated method stub
+//				super.onPreExecute();
+//				view_bottom.setVisibility(View.INVISIBLE);
+//				view_content.setVisibility(View.INVISIBLE);
+//				webview.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
+//						LayoutParams.MATCH_PARENT));
+//				layout_main.addView(webview);
+//				dialog_loading = DialogHelper.showProgressDialog(MainActivity.this, getString(R.string.Loading));
+//				dialog_loading.show();
+//			}
+//
+//			@Override
+//			protected String doInBackground(String... params) {
+//				try {
+//					System.out.println("request token start");
+//					requestToken = twitter
+//							.getOAuthRequestToken(Global.TWITTER_CALLBACK_URL);
+//					// startActivity(new Intent(Intent.ACTION_VIEW, Uri
+//					// .parse(requestToken.getAuthenticationURL())));
+//				} catch (TwitterException e) {
+//					e.printStackTrace();
+//				}
+//				return null;
+//			}
+//
+//			protected void onPostExecute(String file_url) {
+//				// 加载需要显示的网页
+//				if (requestToken != null) {
+//					webview.loadUrl(requestToken.getAuthenticationURL());
+//					DialogHelper.cancelDialog(dialog_loading);
+//				}
+//			}
+//		}
+//
+//
+//		class GetAndSaveToken extends AsyncTask<String, String, String> {
+//
+//			protected String doInBackground(String... args) {
+//				// Uri uri = getIntent().getData();
+//				if (Url != null) {
+//					final Uri uri = Uri.parse(Url);
+//					if (uri != null && uri.toString().startsWith(Global.TWITTER_CALLBACK_URL)) {
+//						String verifier = uri.getQueryParameter(Global.URL_TWITTER_OAUTH_VERIFIER);
+//
+//						try {
+//							AccessToken accessToken = twitter.getOAuthAccessToken(requestToken, verifier);
+//
+//							Editor e = mSharedPreferences.edit();
+//							e.putString(Global.PREF_KEY_OAUTH_TOKEN, accessToken.getToken());
+//							e.putString(Global.PREF_KEY_OAUTH_SECRET, accessToken.getTokenSecret());
+//							e.putBoolean(Global.PREF_KEY_TWITTER_LOGIN, true);
+//							e.commit(); // save changes
+//							Log.e("Twitter OAuth Token", "> " + accessToken.getToken());
+//						} catch (Exception e) {
+//							// Check log for login errors
+//							Log.e("Twitter Login Error", "> " + e.getMessage());
+//							e.printStackTrace();
+//						}
+//					}
+//				}
+//				return null;
+//			}
+//
+//			@Override
+//			protected void onPostExecute(String result) {
+//				// TODO Auto-generated method stub
+//				super.onPostExecute(result);
+//				layout_main.removeView(webview);
+//				view_bottom.setVisibility(View.VISIBLE);
+//				view_content.setVisibility(View.VISIBLE);
+//				webview = null;
+//				updateStatus();
+//			}
+//
+//		}
+//
+//		/**
+//		 * Function to update status
+//		 * */
+//		class updateTwitterStatus extends AsyncTask<String, String, String> {
+//
+//			@Override
+//			protected void onPreExecute() {
+//				super.onPreExecute();
+////				pDialog = new ProgressDialog(MainActivity.this);
+////				pDialog.setMessage("Updating to twitter...");
+////				pDialog.setIndeterminate(false);
+////				pDialog.setCancelable(false);
+////				pDialog.show();
+//
+//				if (MainActivity.this != null && isAlive) {
+//					dialog_sharing = DialogHelper.showProgressDialog(MainActivity.this, getString(R.string.Sharing_to_twitter));
+//					dialog_sharing.setCanceledOnTouchOutside(false);
+//					dialog_sharing.show();
+//				}
+//			}
+//
+//			protected String doInBackground(String... args) {
+//				Log.d("Tweet Text", "> " + args[0]);
+//				String status = args[0];
+//
+//				ConfigurationBuilder builder = new ConfigurationBuilder();
+//				builder.setOAuthConsumerKey(Global.TWITTER_CONSUMER_KEY);
+//				builder.setOAuthConsumerSecret(Global.TWITTER_CONSUMER_SECRET);
+//
+//				String access_token = mSharedPreferences.getString(
+//						Global.PREF_KEY_OAUTH_TOKEN, "");
+//				String access_token_secret = mSharedPreferences.getString(
+//						Global.PREF_KEY_OAUTH_SECRET, "");
+//
+//				AccessToken accessToken = new AccessToken(access_token,
+//						access_token_secret);
+//				Twitter twitter = new TwitterFactory(builder.build())
+//						.getInstance(accessToken);
+//
+//				try {
+//					uploadPic(status, twitter);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//				return null;
+//			}
+//
+//			protected void onPostExecute(String file_url) {
+//				DialogHelper.cancelDialog(dialog_sharing);
+//				if (responeStatus != null) {
+//					runOnUiThread(new Runnable() {
+//						@Override
+//						public void run() {
+//							DialogHelper.showAlertDialog(MainActivity.this, getString(R.string.success), getString(R.string.Successfully_shared_to_twitter), false);
+//
+//						}
+//					});
+//				}
+//			}
+//		}
+//
+//		/**
+//		 * To upload a picture with some piece of text.
+//		 * @param message Message to display with picture
+//		 * @param twitter Instance of authorized Twitter class
+//		 * @throws Exception exception if any
+//		 */
+//		public void uploadPic(String message, Twitter twitter) throws Exception {
+//			responeStatus = null;
+//			try {
+//				StatusUpdate status = new StatusUpdate(message);
+//				if (bmp != null) {
+//					ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//					bmp.compress(CompressFormat.PNG, 0 /* ignored for PNG */, baos);
+//					byte[] bitmapdata = baos.toByteArray();
+//					ByteArrayInputStream bais = new ByteArrayInputStream(bitmapdata);
+//					status.setMedia("a", bais);
+//					responeStatus = twitter.updateStatus(status);
+//					System.out.println("responeStatus = " +responeStatus);
+//				} else {
+//					System.out.println("bmp = null");
+//				}
+//			} catch (TwitterException e) {
+//				Log.d("TAG", "Pic Upload error" + e.getErrorMessage());
+//				throw e;
+//			}
+//		}
+//
+//		/**
+//		 * Check user already logged in your application using twitter Login flag is
+//		 * fetched from Shared Preferences
+//		 * */
+//		private boolean isTwitterLoggedInAlready() {
+//			return mSharedPreferences.getBoolean(Global.PREF_KEY_TWITTER_LOGIN,
+//					false);
+//		}
+//
+//
+//		private void updateStatus() {
+//			String status = "www.technaxx.de/My_Fitness";
+//			if (status.trim().length() > 0) {
+//				new updateTwitterStatus().execute(status);
+//			} else {
+//				Toast.makeText(getApplicationContext(),
+//						"Please enter status message", Toast.LENGTH_SHORT).show();
+//			}
+//		}
 
 //		***********************************************************************************
 //		***********************************************************************************
@@ -2031,47 +1999,47 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 	}
 	
 	
-	/**
-	 * 初始化facebook
-	 */
-	private void initFacebook(Bundle savedInstanceState) {
-		loginButton = (LoginButton) findViewById(R.id.loginbutton);
-		loginButton.setUserInfoChangedCallback(new LoginButton.UserInfoChangedCallback() {
-					@Override
-					public void onUserInfoFetched(GraphUser user) {
-						System.out.println("onUserInfoFetched");
-						MainActivity.this.user = user;
-					}
-				});
-		uiHelper = new UiLifecycleHelper(this, callback);
-		uiHelper.onCreate(savedInstanceState);
+//	/**
+//	 * 初始化facebook
+//	 */
+//	private void initFacebook(Bundle savedInstanceState) {
+//		loginButton = (LoginButton) findViewById(R.id.loginbutton);
+//		loginButton.setUserInfoChangedCallback(new LoginButton.UserInfoChangedCallback() {
+//					@Override
+//					public void onUserInfoFetched(GraphUser user) {
+//						System.out.println("onUserInfoFetched");
+//						MainActivity.this.user = user;
+//					}
+//				});
+//		uiHelper = new UiLifecycleHelper(this, callback);
+//		uiHelper.onCreate(savedInstanceState);
+//
+//		if (savedInstanceState != null) {
+//			String name = savedInstanceState
+//					.getString(PENDING_ACTION_BUNDLE_KEY);
+//
+//			if (name != null) {
+//				pendingAction = PendingAction.valueOf(name);
+//			}
+//		}
+//		canPresentShareDialogWithPhotos = FacebookDialog.canPresentShareDialog(
+//				this, FacebookDialog.ShareDialogFeature.PHOTOS);
+//		mapPackageName = ShareHelper.setImage(this);
+//	}
 
-		if (savedInstanceState != null) {
-			String name = savedInstanceState
-					.getString(PENDING_ACTION_BUNDLE_KEY);
-		
-			if (name != null) {
-				pendingAction = PendingAction.valueOf(name);
-			}
-		}
-		canPresentShareDialogWithPhotos = FacebookDialog.canPresentShareDialog(
-				this, FacebookDialog.ShareDialogFeature.PHOTOS);
-		mapPackageName = ShareHelper.setImage(this);
-	}
-
-	/**
-	 * 初始化twitter
-	 */
-	private void initTwitter() {
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-		mSharedPreferences = getApplicationContext().getSharedPreferences(
-				"MyPref", 0);
-
-		if (!isTwitterLoggedInAlready()) {
-			new GetAndSaveToken().execute();
-		}
-	}
+//	/**
+//	 * 初始化twitter
+//	 */
+//	private void initTwitter() {
+//		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//
+//		mSharedPreferences = getApplicationContext().getSharedPreferences(
+//				"MyPref", 0);
+//
+//		if (!isTwitterLoggedInAlready()) {
+//			new GetAndSaveToken().execute();
+//		}
+//	}
 	
 	/**
 	 * 初始化UI
@@ -2104,7 +2072,7 @@ public class MainActivity extends Activity implements OnProfileUpdateListener, O
 	private RadioButton radio_progress, radio_activity, radio_settings;
 	private ImageView image_progress, image_activity, image_settings;
 	private TextView text_settings;
-	private LoginButton loginButton;
+//	private LoginButton loginButton;
 	private FrameLayout layout_main;
 	private View view_bottom, view_content;
 	

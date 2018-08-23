@@ -9,9 +9,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.facebook.FacebookRequestError;
-import com.facebook.model.GraphObject;
-import com.lgb.myfitness.R;
 import com.lgb.myfitness.global.Global;
 
 import android.app.Activity;
@@ -47,26 +44,26 @@ public class ShareHelper {
 		return false;
 	}
 	
-	/**
-	 * Show publish result by a dialog, success or fail.
-	 * **/
-	public static void showPublishResult(Context context, GraphObject result, FacebookRequestError error) {
-        String title = null;
-        String message = null;
-        if (error == null) {
-            title = context.getString(R.string.success);
-            String id = result.cast(GraphObjectWithId.class).getId();
-            message = context.getString(R.string.successfully_posted_post, id);
-        } else {
-            title = context.getString(R.string.error);
-            message = error.getErrorMessage();
-        }
-        DialogHelper.showAlertDialog(context, title, message, false);
-    }
-	
-	private interface GraphObjectWithId extends GraphObject {
-        String getId();
-    }
+//	/**
+//	 * Show publish result by a dialog, success or fail.
+//	 * **/
+//	public static void showPublishResult(Context context, GraphObject result, FacebookRequestError error) {
+//        String title = null;
+//        String message = null;
+//        if (error == null) {
+//            title = context.getString(R.string.success);
+//            String id = result.cast(GraphObjectWithId.class).getId();
+//            message = context.getString(R.string.successfully_posted_post, id);
+//        } else {
+//            title = context.getString(R.string.error);
+//            message = error.getErrorMessage();
+//        }
+//        DialogHelper.showAlertDialog(context, title, message, false);
+//    }
+//
+//	private interface GraphObjectWithId extends GraphObject {
+//        String getId();
+//    }
 	
 	public static Map<String, String> setImage(Activity activity){
 		Map<String, String> mapPackageName = new LinkedHashMap<String, String>();
