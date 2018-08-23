@@ -7,11 +7,18 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.guoou.sdk.bean.BpmBatteryBean;
+import com.guoou.sdk.bean.BpmPressureBean;
+import com.guoou.sdk.global.SdkManager;
 import com.lgb.mvp.SimpleBaseFragment;
 import com.lgb.myfitness.R;
+import com.lgb.myfitness.helper.LanguageHelper;
 import com.lgb.myfitness.helper.ProfileHelper;
 import com.lgb.myfitness.module.bpm.BPMFragment;
 import com.lgb.myfitness.module.bpm.BPMFragmentManager;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import butterknife.BindView;
 
@@ -32,17 +39,9 @@ public class BPMTestFragment extends SimpleBaseFragment{
 	@Override
 	public void initView() {
 
-		text_pressure.setText("0");
+		EventBus.getDefault().register(this);
 
-		image_connection.setBackgroundResource(R.drawable.background_bpm_pressure_uncheck);
-		image_connection.setImageResource(R.drawable.image_bpm_plug_uncheck);
-
-		image_battery.setBackgroundResource(R.drawable.background_bpm_pressure_uncheck);
-		image_battery.setImageResource(R.drawable.image_bpm_battery_0_uncheck);
-
-		text_connection.setText(getString(R.string.Unconnected));
-		text_battery.setText("0%");
-		text_state.setText(getString(R.string.state_disconnected));
+		stateDisconnected();
 
 		button_state.setOnClickListener(myOnClickListener);
 		button_state.setText(getString(R.string.SEARCHING_));
@@ -60,41 +59,36 @@ public class BPMTestFragment extends SimpleBaseFragment{
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
-
 		try {
 			mCallback = (OnTestListener) activity;
 		} catch (ClassCastException e) {
-			throw new ClassCastException(activity.toString()
-					+ " must implement OnTestListener");
+			throw new ClassCastException(activity.toString() + " must implement OnTestListener");
 		}
 	}
 
-	
 	public interface OnTestListener {
 		public void onTestConnect();
 		public void onTestDisconnect();
-		public void onTestStart();
-		public void onTestStop();
 	}
-	
-	
+
 	private OnClickListener myOnClickListener = new OnClickListener() {
-		
 		@Override
 		public void onClick(View v) {
 			switch (v.getId()) {
 			case R.id.button_back:
-				mCallback.onTestDisconnect();
 				BPMFragmentManager.getInstance().returnMainFragment(BPMFragment.class);
 				break;
 			case R.id.button_state:
 				String state = button_state.getText().toString();
 				
 				if (state.equals(getString(R.string.START))) {
-					mCallback.onTestStart();
-					
+//					mCallback.onTestStart();
+					SdkManager.getInstance().writeBpmLanguage(LanguageHelper.getLanguageOrder(getActivity()));
+					stateStart();
 				} else if (state.equals(getString(R.string.STOP))) {
-					mCallback.onTestStop();
+//					mCallback.onTestStop();
+					SdkManager.getInstance().writeBpm(0xa2);
+					stateStop();
 					
 				} else if (state.equals(getString(R.string.RECONNECT))) {
 					mCallback.onTestConnect();
@@ -106,61 +100,42 @@ public class BPMTestFragment extends SimpleBaseFragment{
 		}
 	};
 	
-	
 	public void stateConnected() {
 		image_connection.setBackgroundResource(R.drawable.background_bpm_pressure_check);
 		image_connection.setImageResource(R.drawable.image_bpm_plug_check);
-		
 		text_connection.setText(getString(R.string.Connected));
-		
 		text_state.setText(getString(R.string.state_connected));
-		
 		button_state.setText(getString(R.string.START));
 	}
-	
-	
+
 	public void stateDisconnected() {
 		image_connection.setBackgroundResource(R.drawable.background_bpm_pressure_uncheck);
 		image_connection.setImageResource(R.drawable.image_bpm_plug_uncheck);
-		
 		text_connection.setText(getString(R.string.Unconnected));
-		
 		image_battery.setBackgroundResource(R.drawable.background_bpm_pressure_uncheck);
 		image_battery.setImageResource(R.drawable.image_bpm_battery_0_uncheck);
-		
 		text_battery.setText("0%");
 		text_pressure.setText("0");
-		
 		text_state.setText(getString(R.string.state_disconnected));
-		
 		button_state.setText(getString(R.string.RECONNECT));
 	}
 	
-	
-	public void stateStart() {
+	private void stateStart() {
 		image_connection.setBackgroundResource(R.drawable.background_bpm_pressure_check);
 		image_connection.setImageResource(R.drawable.image_bpm_plug_check);
-		
 		text_connection.setText(getString(R.string.Connected));
-		
 		text_state.setText(getString(R.string.state_start));
-		
 		button_state.setText(getString(R.string.STOP));
 	}
 	
-	
 	public void stateStop() {
 		text_pressure.setText("0");
-		
 		text_state.setText(getString(R.string.state_connected));
-		
 		button_state.setText(getString(R.string.START));
 	}
 	
-	
 	public void setBattery(int batteryValue) {
 		image_battery.setBackgroundResource(R.drawable.background_bpm_pressure_check);
-		
 		if (batteryValue >= 0 && batteryValue <= 25) {
 			image_battery.setImageResource(R.drawable.image_bpm_battery_0_check);
 		} else if (batteryValue > 25 && batteryValue <= 50) {
@@ -170,21 +145,34 @@ public class BPMTestFragment extends SimpleBaseFragment{
 		} else if (batteryValue > 75 && batteryValue <= 100) {
 			image_battery.setImageResource(R.drawable.image_bpm_battery_3_check);
 		}
-		
-		
 		text_battery.setText(String.valueOf(batteryValue) + "%");
 	}
-	
 	
 	public void setPressure(int pressure) {
 		text_pressure.setText(String.valueOf(pressure));
 	}
-	
-	
+
 	private void initProfile() {
 		String name = ProfileHelper.getCurrentUseProfileName(getActivity());
 		if (name != null) {
 			text_name.setText(name);
 		}
+	}
+
+	@Subscribe
+	public void onEventPressure(BpmPressureBean event) {
+		text_pressure.setText(String.valueOf(event.getPressure()));
+	}
+
+	@Subscribe
+	public void onEventBattery(BpmBatteryBean event) {
+		setBattery(event.getBatteryPercent());
+	}
+
+	@Override
+	public void onDetach() {
+		super.onDetach();
+		mCallback.onTestDisconnect();
+		EventBus.getDefault().unregister(this);
 	}
 }

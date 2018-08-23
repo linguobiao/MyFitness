@@ -28,35 +28,36 @@ public class SplashActivity extends Activity{
 			
 			@Override
 			public void run() {
-				
-				SharedPreferences mPref = getSharedPreferences(Global.KEY_PREF, Context.MODE_PRIVATE);
-				
-				int defaultDevice = mPref.getInt(Global.KEY_DEFALUT_DEVICE, Global.TYPE_DEVICE_NULL);
-				if (defaultDevice == Global.TYPE_DEVICE_NULL) {
-					Intent intent = new Intent(SplashActivity.this, TypeActivity.class);
-					startActivity(intent);
-					
-				} else if (defaultDevice == Global.TYPE_DEVICE_SCALE) {
-					boolean isNewStartup = mPref.getBoolean(Global.KEY_IS_NEW_START_UP_SCALE, true);
-					
-					Intent intent = new Intent(SplashActivity.this, ScaleMainActivity.class);
-					intent.putExtra(Global.KEY_IS_NEW_START_UP_SCALE, isNewStartup);
-					startActivity(intent);
-					
-				} else if (defaultDevice == Global.TYPE_DEVICE_WRISTBAND) {
-					boolean isNewStartup = mPref.getBoolean(Global.KEY_IS_NEW_START_UP_WRISTBAND, true);
-					
-					Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-					intent.putExtra(Global.KEY_IS_NEW_START_UP_WRISTBAND, isNewStartup);
-					startActivity(intent);
-					
-				} else if (defaultDevice == Global.TYPE_DEVICE_BPM) {
-					boolean isNewStartup = mPref.getBoolean(Global.KEY_IS_NEW_START_UP_BPM, true);
-					
-					Intent intent = new Intent(SplashActivity.this, BPMMainActivity.class);
-					intent.putExtra(Global.KEY_IS_NEW_START_UP_BPM, isNewStartup);
-					startActivity(intent);
-				}
+
+				Intent intent = new Intent(SplashActivity.this, BPMMainActivity.class);
+				startActivity(intent);
+
+//				int defaultDevice = mPref.getInt(Global.KEY_DEFALUT_DEVICE, Global.TYPE_DEVICE_NULL);
+//				if (defaultDevice == Global.TYPE_DEVICE_NULL) {
+//					Intent intent = new Intent(SplashActivity.this, TypeActivity.class);
+//					startActivity(intent);
+//
+//				} else if (defaultDevice == Global.TYPE_DEVICE_SCALE) {
+//					boolean isNewStartup = mPref.getBoolean(Global.KEY_IS_NEW_START_UP_SCALE, true);
+//
+//					Intent intent = new Intent(SplashActivity.this, ScaleMainActivity.class);
+//					intent.putExtra(Global.KEY_IS_NEW_START_UP_SCALE, isNewStartup);
+//					startActivity(intent);
+//
+//				} else if (defaultDevice == Global.TYPE_DEVICE_WRISTBAND) {
+//					boolean isNewStartup = mPref.getBoolean(Global.KEY_IS_NEW_START_UP_WRISTBAND, true);
+//
+//					Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+//					intent.putExtra(Global.KEY_IS_NEW_START_UP_WRISTBAND, isNewStartup);
+//					startActivity(intent);
+//
+//				} else if (defaultDevice == Global.TYPE_DEVICE_BPM) {
+//					boolean isNewStartup = mPref.getBoolean(Global.KEY_IS_NEW_START_UP_BPM, true);
+//
+//					Intent intent = new Intent(SplashActivity.this, BPMMainActivity.class);
+//					intent.putExtra(Global.KEY_IS_NEW_START_UP_BPM, isNewStartup);
+//					startActivity(intent);
+//				}
 
 				SplashActivity.this.finish();
 				

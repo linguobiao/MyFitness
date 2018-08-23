@@ -1,5 +1,6 @@
 package com.lgb.myfitness.helper;
 
+import com.lgb.myfitness.R;
 import com.lgb.myfitness.global.Global;
 
 import android.content.Context;
@@ -31,5 +32,16 @@ public class LanguageHelper {
 			editor.commit();
 			
 		}
+	}
+
+	public static int getLanguageOrder(Context context) {
+		String language = LanguageHelper.getBPLanguage(context);
+		int languageMark = Global.TYPE_BPM_LANGUAGE_GERMAN;
+		if (language.equals(context.getString(R.string.English))) {
+			languageMark = Global.TYPE_BPM_LANGUAGE_ENGLISH;
+		} else if (language.equals(context.getString(R.string.French))) {
+			languageMark = Global.TYPE_BPM_LANGUAGE_FRENCH;
+		}
+		return languageMark;
 	}
 }

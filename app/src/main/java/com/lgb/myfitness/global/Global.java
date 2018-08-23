@@ -294,7 +294,8 @@ public class Global {
 	// ////////////////////////////////////////////////
 	public static String DEVICE_NAME_WRISTBAND = "wb013";
 	public static String DEVICE_NAME_SCALE = "ElecScalesBH";
-	public static String DEVICE_NAME_BPMONITOR = "Technaxx BP";
+	public static String DEVICE_NAME_BPMONITOR = "BPM-188";
+//	public static String DEVICE_NAME_BPMONITOR = "Technaxx BP";
 //	public static String DEVICE_NAME_BPMONITOR = "RG-BLE-12";
 	
 	// ////////////////////////////////////////////////

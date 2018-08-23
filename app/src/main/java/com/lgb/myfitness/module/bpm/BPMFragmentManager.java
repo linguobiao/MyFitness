@@ -1,9 +1,11 @@
 package com.lgb.myfitness.module.bpm;
 
+import android.app.Fragment;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 
 import com.lgb.mvp.AppActivity;
-import com.lgb.myfitness.bpm.main.BPMStatisticsDetailFragment;
+import com.lgb.myfitness.module.bpm.main.BPMStatisticsDetailFragment;
 import com.lgb.myfitness.module.bpm.settings.about.BPMDeclarationFragment;
 import com.lgb.myfitness.module.bpm.settings.about.BPMImpressumFragment;
 import com.lgb.myfitness.module.bpm.main.BPMStatisticsFragment;
@@ -46,9 +48,11 @@ public class BPMFragmentManager {
     }
 
     public void showFragment(@NonNull Class cls) {xFragment.showFragment(cls);}
+    public void showFragment(@NonNull Class cls, Bundle bundle) {xFragment.showFragment(cls, bundle);}
     public void showMainFragment(@NonNull Class cls) {xFragment.showMainFragment(cls);}
     public void returnMainFragment(@NonNull Class cls) {xFragment.returnMainFragment(cls);}
     public void removeFragment(@NonNull Class cls) {xFragment.removeFragment(cls);}
+    public Fragment findFragment(@NonNull Class cls) {return xFragment.findFragment(cls);}
 
     public void clean() {
         appActivity = null;

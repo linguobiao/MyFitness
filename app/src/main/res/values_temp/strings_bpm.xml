@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--&lt;!&ndash; ### bpm ###&ndash;&gt;-->
+    <!--&lt;!&ndash; chart &ndash;&gt;-->
+    <!--<string name="Calories_kcals">Calories (kcals)</string>-->
+    <!--<string name="Calories_cals">Calories (cals)</string>-->
+    <!--<string name="Sleep_Pattern">Sleep Pattern</string>-->
+    <!--<string name="Sleep_Rating">Sleep Rating</string>-->
+    <!--<string name="Calories_Steps_Trend">Calories/Steps Trend</string>-->
+    <!--<string name="Calories">Calories</string>-->
+    <!--<string name="DATE">Date</string>-->
+    <!--<string name="TIME">TIME</string>-->
+    <!--<string name="Low">Low</string>-->
+    <!--<string name="Opti">Opti</string>-->
+    <!--<string name="Norm">Norm</string>-->
+    <!--<string name="Mild">Mild</string>-->
+    <!--<string name="Midd">Midd</string>-->
+    <!--<string name="High">High</string>-->
+
+    <!--&lt;!&ndash; fragment_settings &ndash;&gt;-->
+    <!--<string name="SETTINGS">SETTINGS</string>-->
+    <!--<string name="My_Profile">My Profile</string>-->
+    <!--<string name="About_Us">About Us</string>-->
+    <!--<string name="Back">Back</string>-->
+    <!--<string name="Save">Save</string>-->
+
+    <!--&lt;!&ndash; fragment_settings_profile &ndash;&gt;-->
+    <!--<string name="Name">Name</string>-->
+    <!--<string name="SELECT">SELECT</string>-->
+    <!--<string name="LANGUAGE">LANGUAGE</string>-->
+    <!--<string name="Age">Age</string>-->
+    <!--<string name="height_cm">Height (cm)</string>-->
+    <!--<string name="Weight_kg">Weight (kg)</string>-->
+    <!--<string name="MALE">MALE</string>-->
+    <!--<string name="FEMALE">FEMALE</string>-->
+    <!--<string name="Commit">Commit</string>-->
+    <!--<string name="Cancel">Cancel</string>-->
+
+    <!--&lt;!&ndash; activity_main &ndash;&gt;-->
+    <!--<string name="History">History</string>-->
+
+    <!--&lt;!&ndash; fragment_bpm_home &ndash;&gt;-->
+    <!--<string name="SYS">SYS</string>-->
+    <!--<string name="DIA">DIA</string>-->
+    <!--<string name="mmHg">mmHg</string>-->
+    <!--<string name="Bluetooth_Device">Bluetooth Device</string>-->
+
+    <!--&lt;!&ndash; fragment_bpm_test &ndash;&gt;-->
+    <!--<string name="BP_Monitor">BP Monitor</string>-->
+    <!--<string name="Unconnected">Unconnected</string>-->
+    <!--<string name="Connected">Connected</string>-->
+    <!--<string name="state_disconnected">No device</string>-->
+    <!--<string name="state_connected">Device is connected, wear the cuff correctly; make sure the blue arrow pointed down, and red arrow pointed up; \nThe cuff is 2cm away from the elbow!</string>-->
+    <!--<string name="state_start">Measuring now, please don\'t move and keep cuff at your heart level.</string>-->
+    <!--<string name="RECONNECT">RECONNECT</string>-->
+    <!--<string name="SEARCHING_">SEARCHING…</string>-->
+    <!--<string name="START">START</string>-->
+    <!--<string name="STOP">STOP</string>-->
+    <!--<string name="Pressure">Pressure</string>-->
+
+    <!--&lt;!&ndash; fragment_bpm_statistics &ndash;&gt;-->
+    <!--&lt;!&ndash; fragment_bpm_statistics_detail &ndash;&gt;-->
+    <!--<string name="H_R">PUL</string>-->
+    <!--<string name="Analyse_result">Analyse result</string>-->
+    <!--<string name="result_low">\t\tYou should choose healthy food easy to digest and nutritious. Do not excessive dieting, and three meals a day is indispensable. Take part in physical exercise to improve physical fitness. Increase nutrition, drink more water, eat more soup, daily salt slightly more than the average man; If there are obvious symptoms, turn to your doctor and take the treatment actively.</string>-->
+    <!--<string name="result_opti">\t\tNow your blood pressure is in a state of ideal, continue to maintain a healthy lifestyle.</string>-->
+    <!--<string name="result_norm">\t\tYour blood pressure is normal, please keep a regular life, avoid long motionless; Keep eating food with low salt, low fat. Keep good reasonable working and resting habit; Keep a good, positive and optimistic mood.</string>-->
+    <!--<string name="result_mild">\t\tIf there is not any symptoms, please do not take any medicine. Body fitness can be adjusted and improved by diet. Eating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine, take some appropriate exercise and have rest in time. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>-->
+    <!--<string name="result_midd">\t\tEating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>-->
+    <!--<string name="result_high">\t\tEating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>-->
+
+    <!--&lt;!&ndash; fragment_bpm_settings &ndash;&gt;-->
+    <!--<string name="BP_Monitor_Language">BP Monitor Language</string>-->
+    <!--<string name="Language">Language</string>-->
+
+    <!--&lt;!&ndash; fragment_bpm_settings_language &ndash;&gt;-->
+    <!--<string name="Select_language_in_BP_Monitor">Select language in BP Monitor.</string>-->
+
+    <!--&lt;!&ndash; ### bpm ###&ndash;&gt;-->
+    <!--<string name="Notice">Notice</string>-->
+    <!--<string name="exit_app">Do you want to exit My Fitness?</string>-->
+    <!--<string name="Exit">Exit</string>-->
+    <!--<string name="bluetooth_connecting">Bluetooth connecting…</string>-->
+    <!--<string name="synchronizing">Synchronizing…</string>-->
+    <!--<string name="ok">OK</string>-->
+    <!--<string name="Loading">Loading…</string>-->
+    <!--<string name="BPM_unusual_data">Your result is unnormal high, data will not be saved.</string>-->
+    <!--<string name="English">English</string>-->
+    <!--<string name="German">Deutsch</string>-->
+    <!--<string name="French">French</string>-->
+    <!--<string name="Test_fail">Test is fail, the result will not be saved.</string>-->
+    <!--<string name="Delete_bpm">Do you want to delete this bpm data?</string>-->
+    <!--<string name="Measuring_Done">Measuring Done</string>-->
+    <!--<string name="Test_complete">You can now check the result.</string>-->
+    <!--<string name="Check">Check</string>-->
+    <!--<string name="Save_succeeded">Save succeeded!</string>-->
+    <!--<string name="Profile_save_fail_height">Save failed! Height setting unreasonable.</string>-->
+    <!--<string name="Profile_save_fail_weight">Save failed! Weight set unreasonable.</string>-->
+    <!--<string name="No_bluetooth_in_device">No bluetooth in device</string>-->
+    <!--<string name="connect_timeout">Timed out. Stop scanning!</string>-->
+    <!--<string name="name_can_not_be_empty">Name can not be empty</string>-->
+    <!--<string name="Please_select_a_language">Please select a language.</string>-->
+    <!--<string name="success">Success</string>-->
+    <!--<string name="error">Error</string>-->
+    <!--<string name="ppm">/Min.</string>-->
+    <!--<string name="declaration">Declaration</string>-->
+    <!--<string name="impressum">Impressum</string>-->
+    <!--<string name="declaration_content_1">DECLARATION:</string>-->
+    <!--<string name="declaration_content_2">Technaxx Deutschland GmbH &amp; Co. KG takes the protection of its customer data very -->
+<!--serious. We would therefore like you to know, when we collect what data and how we plan on -->
+<!--using it. Any data you transfer to us is handeled responsibly and according to the law, more -->
+<!--specifically according to the German Bundesdatenschutzgesetzes (BDSG) and -->
+<!--Telemediengesetzes (TMG) of data handling and storage. </string>-->
+    <!--<string name="declaration_content_3">1. Data collection and processing</string>-->
+    <!--<string name="declaration_content_4">Personal data will only be transferred to the extent you personally authorized. Furthermore,-->
+<!--we only collect the data we need in order to uphold the service our company provides for you.\n\n-->
+<!--We collect and process the data provided by you in our system for the time the contract is -->
+<!--effective, in other words for as long the My Fitness App and fitness bracelet are used. Unless -->
+<!--you explicitly allow further processing, your data will be made inaccessible once the contract -->
+<!--is fulfilled and deleted after the tax- and trade respites for data storage have expired.</string>-->
+    <!--<string name="declaration_content_5">App Usage</string>-->
+    <!--<string name="declaration_content_6">In Detail the following Data collected when using the App\n\n-->
+ <!-- - IP address of the user\n\n-->
+ <!-- - Log-In data of you mobile device (including the ID of device)\n\n-->
+ <!-- - Username\n\n-->
+ <!-- - Gender, Weight, Age and Height\n\n-->
+ <!-- - Information about your Bluetooth connection\n\n-->
+ <!-- - Data which is generated by using our App, My Fitness, throughout the use of the fitness -->
+<!--bracelet, like Date and Time of the call, amount of data will be transmitted from our fitness -->
+<!--bracelet to your mobile device.\n\n-->
+<!--To use this app, you must be registered either at iTunes Store or the Google Play Store. -->
+<!--Therefore you must have submitted your personal data such as name, e- mail address, etc. -->
+<!--Parts of the provided data will be given to us by the online store operators. The collected data -->
+<!--will be saved and is necessary for the performance of the contract.</string>-->
+    <!--<string name="declaration_content_7">2. Responsible office and contact</string>-->
+    <!--<string name="declaration_content_8">Responsible agency for the collection, processing and use of personal information within the -->
+<!--meaning of the Federal Data Protection Act is Technaxx Germany GmbH &amp; Co. KG -->
+<!--represented by the Technaxx administrative and Beteiligungsgesellschaft mbH represented by -->
+<!--the managing Deniz Isik and Pascal Pekcan , Krupp Straße 105 , 60388 Frankfurt am Main.\n\n-->
+<!--For questions regarding the collection, processing or use of personal information, the -->
+<!--disclosure, correction, blocking or deletion of data please contact:\n-->
+<!--Technaxx Deutschland GmbH &amp; Co. KG\n -->
+<!--Kruppstraße 105\n -->
+<!--60388 Frankfurt am Main\n -->
+<!--Fax +49 [69] 90 47552 16\n-->
+<!--E-Mail: info@technaxx.de</string>-->
+    <!--<string name="declaration_content_9">3. Information and deletion</string>-->
+    <!--<string name="declaration_content_10">According to the Federal Data Protection Act you have the right of free information about the -->
+<!--data stored of your person, and the right to authorize, blocking or deleting of data.</string>-->
+    <!--<string name="impressum_content_1">IMPRESSUM:</string>-->
+    <!--<string name="impressum_content_2">Technaxx Deutschland GmbH &amp; Co. KG\n-->
+<!--represented by the managment- and associates company mbH represented by the managers Deniz Isik and Pascal Pekcan\n-->
+<!--Kruppstraße 105\n -->
+<!--60388 Frankfurt am Main\n-->
+<!--Fon: 1805 - 012643 (Charge: 0,14 €/Minute for German landline, max. 0,42 €/Minute for German mobile network)\n-->
+<!--Fax: +49 [69] 90 47552 16\n\n-->
+<!--E-Mail: info@technaxx.de\n\n-->
+<!--HRA: 43080 Registergericht: Amtsgericht Frankfurt am Main\n-->
+<!--Steuernummer: 133 740 1969\n-->
+<!--Ust-Id-Nr.: DE 226513614\n-->
+<!--EORI: DE5177790\n-->
+<!--BattG-Reg-Nr.: 21003703\n-->
+<!--WEEE-Reg-Nr.: DE94626913</string>-->
+
+</resources>

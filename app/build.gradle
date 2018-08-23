@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId 'com.lgb.myfitness'
         minSdkVersion 18
-        targetSdkVersion 18
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0.1"
         //
@@ -96,11 +96,14 @@ static def releaseTime() {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:support-v4:27.0.2'
-    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
     api project(':facebookSDK')
+    api project(':sdk')
     implementation 'com.jakewharton:butterknife:8.7.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.inuker.bluetooth:library:1.4.0'
     //    compile files('libs/achartengine-1.1.0.jar')
     //    compile files('libs/twitter4j-core-4.0.2.jar')
 }

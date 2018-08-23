@@ -1,8 +1,6 @@
 package com.lgb.myfitness.module.bpm.main;
 
 import android.app.AlertDialog;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,12 +19,10 @@ import com.lgb.mvp.SimpleBaseFragment;
 import com.lgb.myfitness.R;
 import com.lgb.myfitness.adapter.BPMAdapter;
 import com.lgb.myfitness.been.BPM;
-import com.lgb.myfitness.bpm.main.BPMStatisticsDetailFragment;
 import com.lgb.myfitness.database.DatabaseProvider_bpm;
 import com.lgb.myfitness.global.Global;
 import com.lgb.myfitness.helper.CalculateHelper;
 import com.lgb.myfitness.helper.ChartHelper;
-import com.lgb.myfitness.helper.FragmentHelper;
 import com.lgb.myfitness.helper.ProfileHelper;
 import com.lgb.myfitness.helper.ShowValueHelper;
 import com.lgb.myfitness.module.bpm.BPMFragment;
@@ -144,19 +140,10 @@ public class BPMStatisticsFragment extends SimpleBaseFragment{
 				long id) {
 			if (bpm_desc != null && bpm_desc.size() > position) {
 				BPM bpm = bpm_desc.get(position);
-				
-				Fragment fragment_detial = new BPMStatisticsDetailFragment();
-				
 				Bundle bundle = new Bundle();
 				bundle.putSerializable(Global.KEY_BPM, bpm);
-				
-				fragment_detial.setArguments(bundle);
-				
-				FragmentManager fMgr = getFragmentManager();
-				FragmentHelper.removeFragment(fMgr, BPMStatisticsFragment.this);
-				FragmentHelper.addFragment(fMgr, fragment_detial, Global.FRAGMENT_BPM_STATISTICS_DETAIL);
+				BPMFragmentManager.getInstance().showFragment(BPMStatisticsDetailFragment.class, bundle);
 			}
-			
 		}
 	};
 

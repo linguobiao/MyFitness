@@ -24,9 +24,12 @@ public abstract class SimpleBaseFragment extends SuperAppFragment {
     //cache Fragment view
     private View mRootView;
 
+    public Bundle savedInstanceState;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        this.savedInstanceState = savedInstanceState;
         if (mRootView == null) {
             mRootView = inflater.inflate(getLayoutId(), container, false);
             mUnBinder = ButterKnife.bind(this, mRootView);

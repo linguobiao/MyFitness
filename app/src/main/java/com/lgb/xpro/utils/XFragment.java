@@ -226,6 +226,16 @@ public class XFragment {
 		}
 	}
 
+
+	/**
+	 * 查找fragment
+	 * @param cls
+	 * @return
+	 */
+	public Fragment findFragment(@NonNull Class cls) {
+		return fMgr.findFragmentByTag(cls.getName());
+	}
+
 	public static class XFragmentBean {
 		private Class parentClass;
 		private String parentTag;
