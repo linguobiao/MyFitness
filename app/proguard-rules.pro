@@ -117,6 +117,11 @@
 }
 ##EventBus-----------------
 
+#蒲公英
+-dontwarn com.pgyersdk.**
+-keep class com.pgyersdk.** { *; }
+-keep class com.pgyersdk.**$* { *; }
+
 #SDK
 -keep class com.guoou.sdk.bean.** { *; }
 -keep class com.guoou.sdk.bean.**
