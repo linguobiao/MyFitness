@@ -152,69 +152,69 @@
 
 
     <!-- chart -->
-    <string name="Calories_kcals">Calories (kcals)</string>
-    <string name="Calories_cals">Calories (cals)</string>
-    <string name="Sleep_Pattern">Sleep Pattern</string>
+    <string name="Calories_kcals">Kilocalorias (kcal)</string>
+    <string name="Calories_cals">Calorias (cal)</string>
+    <string name="Sleep_Pattern">Patrón de sueño</string>
     <string name="Sleep_Rating">Sleep Rating</string>
     <string name="Calories_Steps_Trend">Calories/Steps Trend</string>
-    <string name="Calories">Calories</string>
-    <string name="DATE">Date</string>
-    <string name="TIME">TIME</string>
-    <string name="Low">Low</string>
+    <string name="Calories">Calorias</string>
+    <string name="DATE">Fecha</string>
+    <string name="TIME">HORA</string>
+    <string name="Low">Baja</string>
     <string name="Opti">Opti</string>
-    <string name="Norm">Norm</string>
+    <string name="Norm">Normal</string>
     <string name="Mild">Mild</string>
     <string name="Midd">Midd</string>
-    <string name="High">High</string>
+    <string name="High">Alta</string>
 
     <!-- fragment_settings -->
-    <string name="SETTINGS">SETTINGS</string>
-    <string name="My_Profile">My Profile</string>
-    <string name="About_Us">About Us</string>
-    <string name="Back">Back</string>
-    <string name="Save">Save</string>
+    <string name="SETTINGS">CONFIGURACION</string>
+    <string name="My_Profile">Mi perfil</string>
+    <string name="About_Us">Sobre nosotros</string>
+    <string name="Back">Atrás</string>
+    <string name="Save">Guardar</string>
 
     <!-- fragment_settings_profile -->
-    <string name="Name">Name</string>
-    <string name="SELECT">SELECT</string>
-    <string name="LANGUAGE">LANGUAGE</string>
-    <string name="Age">Age</string>
+    <string name="Name">Nombre</string>
+    <string name="SELECT">SELECCIONAR</string>
+    <string name="LANGUAGE">IDIOMA</string>
+    <string name="Age">Edad</string>
     <string name="Age_18">18</string>
-    <string name="height_cm">Height (cm)</string>
-    <string name="Weight_kg">Weight (kg)</string>
+    <string name="height_cm">Altura (cm)</string>
+    <string name="Weight_kg">Peso (kg)</string>
     <string name="height_example">180</string>
     <string name="weight_example">70</string>
-    <string name="MALE">MALE</string>
-    <string name="FEMALE">FEMALE</string>
+    <string name="MALE">HOMBRE</string>
+    <string name="FEMALE">MUJER</string>
     <string name="Commit">Commit</string>
-    <string name="Cancel">Cancel</string>
+    <string name="Cancel">Cancelar</string>
 
     <!-- activity_main -->
-    <string name="History">History</string>
+    <string name="History">Historial</string>
 
     <!-- fragment_bpm_home -->
-    <string name="SYS">SYS</string>
+    <string name="SYS">SIS</string>
     <string name="DIA">DIA</string>
     <string name="mmHg">mmHg</string>
-    <string name="Bluetooth_Device">Bluetooth Device</string>
+    <string name="Bluetooth_Device">Dispositivo Bluetooth</string>
 
     <!-- fragment_bpm_test -->
-    <string name="BP_Monitor">BP Monitor</string>
-    <string name="Unconnected">Unconnected</string>
-    <string name="Connected">Connected</string>
-    <string name="state_disconnected">No device</string>
-    <string name="state_connected">Device is connected, wear the cuff correctly; make sure the blue arrow pointed down, and red arrow pointed up; \nThe cuff is 2cm away from the elbow!</string>
-    <string name="state_start">Measuring now, please don\'t move and keep cuff at your heart level.</string>
-    <string name="RECONNECT">RECONNECT</string>
-    <string name="SEARCHING_">SEARCHING…</string>
-    <string name="START">START</string>
-    <string name="STOP">STOP</string>
-    <string name="Pressure">Pressure</string>
+    <string name="BP_Monitor">Tensiómetro</string>
+    <string name="Unconnected">Desconectado</string>
+    <string name="Connected">Conectado</string>
+    <string name="state_disconnected">Ningún Dispositivo</string>
+    <string name="state_connected">Dispositivo conectado. Colóquese el brazalete de acuerdo a las intrucciones de uso, y asegúrese de que la flecha roja apunte hacia abajo. El brazalete debe estar entre 1 y 2 cm por encima de la articulación del codo.</string>
+    <string name="state_start">Midiendo…Por favor no se mueva y mantenga el brazalete a la altura del corazón</string>
+    <string name="RECONNECT">RECONECTANDO</string>
+    <string name="SEARCHING_">BUSCANDO…</string>
+    <string name="START">EMPEZAR</string>
+    <string name="STOP">PARAR</string>
+    <string name="Pressure">Presión</string>
 
     <!-- fragment_bpm_statistics -->
     <!-- fragment_bpm_statistics_detail -->
     <string name="H_R">PUL</string>
-    <string name="Analyse_result">Analyse result</string>
+    <string name="Analyse_result">Resultado de análisis</string>
     <string name="result_low">\t\tYou should choose healthy food easy to digest and nutritious. Do not excessive dieting, and three meals a day is indispensable. Take part in physical exercise to improve physical fitness. Increase nutrition, drink more water, eat more soup, daily salt slightly more than the average man; If there are obvious symptoms, turn to your doctor and take the treatment actively.</string>
     <string name="result_opti">\t\tNow your blood pressure is in a state of ideal, continue to maintain a healthy lifestyle.</string>
     <string name="result_norm">\t\tYour blood pressure is normal, please keep a regular life, avoid long motionless; Keep eating food with low salt, low fat. Keep good reasonable working and resting habit; Keep a good, positive and optimistic mood.</string>
@@ -230,28 +230,28 @@
     <string name="Select_language_in_BP_Monitor">Select language in BP Monitor.</string>
 
     <!-- ### bpm ###-->
-    <string name="Notice">Notice</string>
-    <string name="exit_app">Do you want to exit My Fitness?</string>
-    <string name="Exit">Exit</string>
-    <string name="bluetooth_connecting">Bluetooth connecting…</string>
-    <string name="synchronizing">Synchronizing…</string>
+    <string name="Notice">Notificación</string>
+    <string name="exit_app">¿Desea salir de la aplicación?</string>
+    <string name="Exit">Salir</string>
+    <string name="bluetooth_connecting">Conectando Bluetooth…</string>
+    <string name="synchronizing">Sincronizando…</string>
     <string name="ok">OK</string>
-    <string name="Loading">Loading…</string>
+    <string name="Loading">Cargando…</string>
     <string name="BPM_unusual_data">Your result is unnormal high, data will not be saved.</string>
     <string name="English">English</string>
     <string name="German">Deutsch</string>
     <string name="French">French</string>
-    <string name="Test_fail">Test is fail, the result will not be saved.</string>
+    <string name="Test_fail">Error en la medición, el resultado no será guardado</string>
     <string name="Delete_bpm">Do you want to delete this bpm data?</string>
-    <string name="Measuring_Done">Measuring Done</string>
+    <string name="Measuring_Done">Medición finalizada</string>
     <string name="Test_complete">You can now check the result.</string>
     <string name="Check">Check</string>
-    <string name="Save_succeeded">Save succeeded!</string>
-    <string name="Profile_save_fail_height">Save failed! Height setting unreasonable.</string>
-    <string name="Profile_save_fail_weight">Save failed! Weight set unreasonable.</string>
+    <string name="Save_succeeded">Guardado finalizado!</string>
+    <string name="Profile_save_fail_height">El guardado ha fallado! La altura no se encuentra dentro de los parametros aceptados.</string>
+    <string name="Profile_save_fail_weight">El guardado ha fallado! El peso no se encuentra dentro de los parametros aceptados.</string>
     <string name="No_bluetooth_in_device">No bluetooth in device</string>
-    <string name="connect_timeout">Timed out. Stop scanning!</string>
-    <string name="name_can_not_be_empty">Name can not be empty</string>
+    <string name="connect_timeout">Tiempo agotado. Tensiómetro no encontrado</string>
+    <string name="name_can_not_be_empty">El nombre no puede quedar vacío</string>
     <string name="Please_select_a_language">Please select a language.</string>
     <string name="success">Success</string>
     <string name="error">Error</string>
@@ -301,18 +301,8 @@ E-Mail: info@technaxx.de</string>
     <string name="declaration_content_10">According to the Federal Data Protection Act you have the right of free information about the
 data stored of your person, and the right to authorize, blocking or deleting of data.</string>
     <string name="impressum_content_1">IMPRESSUM:</string>
-    <string name="impressum_content_2">Technaxx Deutschland GmbH &amp; Co. KG\n
-represented by the managment- and associates company mbH represented by the managers Deniz Isik and Pascal Pekcan\n
-Kruppstraße 105\n
-60388 Frankfurt am Main\n
-Fon: 1805 - 012643 (Charge: 0,14 €/Minute for German landline, max. 0,42 €/Minute for German mobile network)\n
-Fax: +49 [69] 90 47552 16\n\n
-E-Mail: info@technaxx.de\n\n
-HRA: 43080 Registergericht: Amtsgericht Frankfurt am Main\n
-Steuernummer: 133 740 1969\n
-Ust-Id-Nr.: DE 226513614\n
-EORI: DE5177790\n
-BattG-Reg-Nr.: 21003703\n
-WEEE-Reg-Nr.: DE94626913</string>
+    <string name="impressum_content_2">TENACTA S.A.\n
+email: info@tenacta.com.ar\n
+Versión de la aplicación: %1s </string>
 
 </resources>
