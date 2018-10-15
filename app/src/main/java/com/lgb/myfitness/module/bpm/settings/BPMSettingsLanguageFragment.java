@@ -38,7 +38,7 @@ public class BPMSettingsLanguageFragment extends SimpleBaseFragment{
 
 	@Override
 	public void initView() {
-		array_language = new String[]{getString(R.string.English), getString(R.string.German), getString(R.string.French)};
+		array_language = new String[]{getString(R.string.Spanish)};
 		button_back.setOnClickListener(myOnClickListener);
 		button_save.setOnClickListener(myOnClickListener);
 		layout_language.setOnClickListener(myOnClickListener);
@@ -140,7 +140,10 @@ public class BPMSettingsLanguageFragment extends SimpleBaseFragment{
 				
 			} else if (language.equals(getString(R.string.French))) {
 				text_language.setText(getString(R.string.French));
-				
+
+			}  else if (language.equals(getString(R.string.Spanish))) {
+				text_language.setText(getString(R.string.Spanish));
+
 			}
 			
 		}

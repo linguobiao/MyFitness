@@ -83,7 +83,8 @@ public class BPMTestFragment extends SimpleBaseFragment{
 				
 				if (state.equals(getString(R.string.START))) {
 //					mCallback.onTestStart();
-					SdkManager.getInstance().writeBpmLanguage(LanguageHelper.getLanguageOrder(getActivity()));
+//					SdkManager.getInstance().writeBpmLanguage(LanguageHelper.getLanguageOrder(getActivity()));
+					SdkManager.getInstance().writeBpm(0xa1);
 					stateStart();
 				} else if (state.equals(getString(R.string.STOP))) {
 //					mCallback.onTestStop();
