@@ -11,8 +11,8 @@ android {
         applicationId 'com.lgb.aspentensio'
         minSdkVersion 18
         targetSdkVersion 26
-        versionCode 3
-        versionName "1.0.3"
+        versionCode 4
+        versionName "1.0.4"
         //
     }
 

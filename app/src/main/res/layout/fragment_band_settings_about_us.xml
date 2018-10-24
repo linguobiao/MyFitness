@@ -33,7 +33,8 @@
             android:padding="20dp"
             android:text="@string/declaration"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/impressum"
@@ -48,7 +49,8 @@
             android:layout_marginTop="10dp"
             android:text="@string/impressum"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="gone"/>
     </LinearLayout>
 
     <RelativeLayout

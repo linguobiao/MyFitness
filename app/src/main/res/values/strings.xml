@@ -302,18 +302,8 @@ E-Mail: info@technaxx.de</string>
     <string name="declaration_content_10">According to the Federal Data Protection Act you have the right of free information about the 
 data stored of your person, and the right to authorize, blocking or deleting of data.</string>
     <string name="impressum_content_1">IMPRESSUM:</string>
-    <string name="impressum_content_2">Technaxx Deutschland GmbH &amp; Co. KG\n
-represented by the managment- and associates company mbH represented by the managers Deniz Isik and Pascal Pekcan\n
-Kruppstraße 105\n 
-60388 Frankfurt am Main\n
-Fon: 1805 - 012643 (Charge: 0,14 €/Minute for German landline, max. 0,42 €/Minute for German mobile network)\n
-Fax: +49 [69] 90 47552 16\n\n
-E-Mail: info@technaxx.de\n\n
-HRA: 43080 Registergericht: Amtsgericht Frankfurt am Main\n
-Steuernummer: 133 740 1969\n
-Ust-Id-Nr.: DE 226513614\n
-EORI: DE5177790\n
-BattG-Reg-Nr.: 21003703\n
-WEEE-Reg-Nr.: DE94626913</string>
+    <string name="impressum_content_2">TENACTA S.A.\n
+email: info@tenacta.com.ar\n
+Versión de la aplicación: V%1s </string>
 
 </resources>

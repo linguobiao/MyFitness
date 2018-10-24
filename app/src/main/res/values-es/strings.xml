@@ -97,7 +97,7 @@
     <string name="Interval">Interval</string>
 
     <!-- fragment_settings_about_us -->
-    <string name="version_code">Version:V%1s</string>
+    <string name="version_code">Versión:V%1s</string>
 
     <!-- fragment_settings_lost_mode -->
     <string name="Lost_Mode">Lost Mode</string>
@@ -223,11 +223,11 @@
     <string name="result_high">\t\tEating food with less salt, do not take in acrimony excitant food, eat more fresh fruit and vegetables, and avoid excited or emotional mood, quit smoking and wine. Keep monitoring blood pressure every day. Please turn to your doctor at any unnormal health condition.</string>
 
     <!-- fragment_bpm_settings -->
-    <string name="BP_Monitor_Language">BP Monitor Language</string>
-    <string name="Language">Language</string>
+    <string name="BP_Monitor_Language">Idioma del tensiómetro</string>
+    <string name="Language">Idioma</string>
 
     <!-- fragment_bpm_settings_language -->
-    <string name="Select_language_in_BP_Monitor">Select language in BP Monitor.</string>
+    <string name="Select_language_in_BP_Monitor">Seleccione el idioma del tensiómetro.</string>
 
     <!-- ### bpm ###-->
     <string name="Notice">Notificación</string>
@@ -237,7 +237,7 @@
     <string name="synchronizing">Sincronizando…</string>
     <string name="ok">OK</string>
     <string name="Loading">Cargando…</string>
-    <string name="BPM_unusual_data">Your result is unnormal high, data will not be saved.</string>
+    <string name="BPM_unusual_data">El resultado de la medición es excesivamente elevado y se encuentra fuera de los parámetros aceptados. El resultado no será guardado.</string>
     <string name="English">English</string>
     <string name="German">Deutsch</string>
     <string name="French">French</string>
@@ -245,15 +245,15 @@
     <string name="Test_fail">Error en la medición, el resultado no será guardado</string>
     <string name="Delete_bpm">Do you want to delete this bpm data?</string>
     <string name="Measuring_Done">Medición finalizada</string>
-    <string name="Test_complete">You can now check the result.</string>
-    <string name="Check">Check</string>
+    <string name="Test_complete">Ahora puede comprobar el resultado</string>
+    <string name="Check">Comprobar</string>
     <string name="Save_succeeded">Guardado finalizado!</string>
     <string name="Profile_save_fail_height">El guardado ha fallado! La altura no se encuentra dentro de los parametros aceptados.</string>
     <string name="Profile_save_fail_weight">El guardado ha fallado! El peso no se encuentra dentro de los parametros aceptados.</string>
     <string name="No_bluetooth_in_device">No bluetooth in device</string>
     <string name="connect_timeout">Tiempo agotado. Tensiómetro no encontrado</string>
     <string name="name_can_not_be_empty">El nombre no puede quedar vacío</string>
-    <string name="Please_select_a_language">Please select a language.</string>
+    <string name="Please_select_a_language">Por favor seleccione un idioma.</string>
     <string name="success">Success</string>
     <string name="error">Error</string>
     <string name="ppm">/Min.</string>
@@ -304,6 +304,6 @@ data stored of your person, and the right to authorize, blocking or deleting of 
     <string name="impressum_content_1">IMPRESSUM:</string>
     <string name="impressum_content_2">TENACTA S.A.\n
 email: info@tenacta.com.ar\n
-Versión de la aplicación: %1s </string>
+Versión de la aplicación: V%1s </string>
 
 </resources>

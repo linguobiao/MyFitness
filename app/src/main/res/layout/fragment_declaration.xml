@@ -31,14 +31,14 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:text="@string/declaration"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:textSize="23sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/declaration_content_1"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:textStyle="bold" />
 
                 <TextView
@@ -47,13 +47,13 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/declaration_content_2"
-                    android:textColor="#FFF" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/declaration_content_3"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:textStyle="bold" />
 
                 <TextView
@@ -62,13 +62,13 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/declaration_content_4"
-                    android:textColor="#FFF" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/declaration_content_5"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:textStyle="bold" />
 
                 <TextView
@@ -77,13 +77,13 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/declaration_content_6"
-                    android:textColor="#FFF" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/declaration_content_7"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:textStyle="bold" />
 
                 <TextView
@@ -92,13 +92,13 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/declaration_content_8"
-                    android:textColor="#FFF" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/declaration_content_9"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:textStyle="bold" />
 
                 <TextView
@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="@string/declaration_content_10"
-                    android:textColor="#FFF" />
+                    android:textColor="#000" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

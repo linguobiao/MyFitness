@@ -320,27 +320,35 @@
                 android:textSize="@dimen/text_size_scale_middle" />
         </RelativeLayout>
 
-        <ViewFlipper
-            android:id="@+id/flipper_result"
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+            <include layout="@layout/view_bpm_detaill_graph" />
+        </LinearLayout>
 
-                <include layout="@layout/view_bpm_detaill_graph" />
-            </LinearLayout>
+        <!--<ViewFlipper-->
+            <!--android:id="@+id/flipper_result"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content" >-->
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal" >-->
 
-                <include layout="@layout/view_bpm_detaill_result" />
-            </LinearLayout>
-        </ViewFlipper>
+                <!--<include layout="@layout/view_bpm_detaill_graph" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<include layout="@layout/view_bpm_detaill_result" />-->
+            <!--</LinearLayout>-->
+        <!--</ViewFlipper>-->
     </LinearLayout>
 
 </RelativeLayout>

@@ -63,8 +63,6 @@ public class BPMMainActivity extends SimpleBaseActivity implements OnProfileUpda
 	@BindView(R.id.image_settings) ImageView image_settings;
 	@BindView(R.id.text_bpm) TextView text_bpm;
 	@BindView(R.id.text_settings) TextView text_settings;
-	private GestureDetector detector; //手势检测
-
 	private ProgressDialog dialog_connecting;
 	private AlertDialog dialog_result_unusual;
 	
@@ -93,7 +91,6 @@ public class BPMMainActivity extends SimpleBaseActivity implements OnProfileUpda
 		int densityDPI = ChartHelper.getDensityDpi(BPMMainActivity.this);
 		ChartHelper.setTextSize(densityDPI);
 
-		detector = new GestureDetector(BPMMainActivity.this, myOnGestureListener);
 		BPMFragmentManager.getInstance().init(this, R.id.layout_content);
 
 		profileID = ProfileHelper.initProfileID(BPMMainActivity.this);
@@ -185,36 +182,6 @@ public class BPMMainActivity extends SimpleBaseActivity implements OnProfileUpda
         default: break;
         }
     };
-	
-	
-	private OnGestureListener myOnGestureListener = new OnGestureListener() {
-		@Override public boolean onSingleTapUp(MotionEvent e) { return false; }
-		@Override public void onShowPress(MotionEvent e) { }
-		@Override public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) { return false; }
-		@Override public void onLongPress(MotionEvent e) { }
-		@Override
-		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-			BPMStatisticsDetailFragment fragment_detail = (BPMStatisticsDetailFragment) BPMFragmentManager.getInstance().findFragment(BPMStatisticsDetailFragment.class);
-			if (fragment_detail != null) {
-				if(e1.getX() - e2.getX() > 120){
-					fragment_detail.showNextPage();
-					return true;
-				}else if(e1.getX() - e2.getY() < -120){
-					fragment_detail.showPreviousPage();
-					return true;
-				}
-			}
-			return false;
-		}
-		@Override public boolean onDown(MotionEvent e) {
-			return false;
-		}
-	};
-	
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
-		return detector.onTouchEvent(event); //touch事件交给手势处理。
-	}
 
 	/**
 	 * 设置radio为选中状态
