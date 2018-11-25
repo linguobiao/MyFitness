@@ -7,7 +7,7 @@ import android.util.Log;
  */
 
 public class LogHelper {
-    private final static boolean SHOW_LOG = true;
+    private final static boolean SHOW_LOG = false;
     private final static String LGB_SDK = "LGB_SDK";
     public static void log(String msg) {
         if (!SHOW_LOG) return;

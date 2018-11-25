@@ -160,12 +160,13 @@
     <string name="Calories">Calorias</string>
     <string name="DATE">Fecha</string>
     <string name="TIME">HORA</string>
-    <string name="Low">Baja</string>
-    <string name="Opti">Opti</string>
-    <string name="Norm">Normal</string>
-    <string name="Mild">Mild</string>
-    <string name="Midd">Midd</string>
-    <string name="High">Alta</string>
+    <string name="L1">L1</string>
+    <string name="L2">L2</string>
+    <string name="L3">L3</string>
+    <string name="L4">L4</string>
+    <string name="L5">L5</string>
+    <string name="L6">L6</string>
+    <string name="L7">L7</string>
 
     <!-- fragment_settings -->
     <string name="SETTINGS">CONFIGURACION</string>
@@ -305,5 +306,16 @@ data stored of your person, and the right to authorize, blocking or deleting of 
     <string name="impressum_content_2">TENACTA S.A.\n
 email: info@tenacta.com.ar\n
 Versión de la aplicación: V%1s </string>
+
+    <string-array name="bpm_error_code">
+        <item>La señal del sensor es anormal.</item>
+        <item>No se puede obtener el resultado.</item>
+        <item>La Medición resultó anormal</item>
+        <item>El Brazalete está demasiado flojo o tiene fugas de aire.</item>
+        <item>El Brazalete esta demasiado apretado o hay fugas de aire en el circuito.</item>
+        <item>Interferencia en el proceso de medición.</item>
+        <item>La presión es superior a 300 mmHg.</item>
+        <item>El dispositivo no está calibrado correctamente , envíelo al centro de atención.</item>
+    </string-array>
 
 </resources>

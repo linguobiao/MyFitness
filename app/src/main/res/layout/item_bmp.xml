@@ -20,39 +20,39 @@
 
             <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_low">
                 <ImageView style="@style/style_bpm_level_item_iv" android:src="@drawable/image_bpm_point_blue" />
-                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/Low" />
+                <TextView style="@style/style_bpm_level_item_tv_level" android:id="@+id/tv_bpm_low" android:text="@string/L1" />
             </RelativeLayout>
 
-            <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_opti">
+            <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_opti" android:visibility="gone">
                 <ImageView style="@style/style_bpm_level_item_iv" android:src="@drawable/image_bpm_point_green" />
-                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/Norm" />
+                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/L2" />
             </RelativeLayout>
 
-            <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_norm">
+            <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_norm" android:visibility="gone">
                 <ImageView style="@style/style_bpm_level_item_iv" android:src="@drawable/image_bpm_point_yellow" />
-                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/Norm" />
+                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/L3" />
             </RelativeLayout>
 
             <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_mild">
                 <ImageView style="@style/style_bpm_level_item_iv" android:src="@drawable/image_bpm_point_orange" />
-                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/Norm" />
+                <TextView style="@style/style_bpm_level_item_tv_level" android:id="@+id/tv_bpm_mild" android:text="@string/L4" />
             </RelativeLayout>
 
             <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_midd">
                 <ImageView style="@style/style_bpm_level_item_iv" android:src="@drawable/image_bpm_point_red" />
-                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/Norm" />
+                <TextView style="@style/style_bpm_level_item_tv_level" android:id="@+id/tv_bpm_midd" android:text="@string/L5" />
             </RelativeLayout>
 
-            <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_high">
+            <RelativeLayout style="@style/style_bpm_level_item_ly" android:id="@+id/image_bpm_high" android:visibility="gone">
                 <ImageView style="@style/style_bpm_level_item_iv" android:src="@drawable/image_bpm_point_purple" />
-                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/High" />
+                <TextView style="@style/style_bpm_level_item_tv_level" android:text="@string/L6" />
             </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="6dp"
-            android:background="@drawable/image_bpm_color_line" >
+            android:background="@drawable/image_bpm_color_line_2" >
         </LinearLayout>
 
         <LinearLayout
@@ -67,14 +67,14 @@
                 </LinearLayout>
             </RelativeLayout>
 
-            <RelativeLayout style="@style/style_bpm_level_item_ly">
+            <RelativeLayout style="@style/style_bpm_level_item_ly" android:visibility="gone">
                 <LinearLayout style="@style/style_bpm_level_item_ly_2">
                     <TextView style="@style/style_bpm_level_item_tv_value" android:id="@+id/text_opti_value" />
                     <TextView style="@style/style_bpm_level_item_tv_date" android:id="@+id/text_opti_date" />
                 </LinearLayout>
             </RelativeLayout>
 
-            <RelativeLayout style="@style/style_bpm_level_item_ly">
+            <RelativeLayout style="@style/style_bpm_level_item_ly" android:visibility="gone">
                 <LinearLayout style="@style/style_bpm_level_item_ly_2">
                     <TextView style="@style/style_bpm_level_item_tv_value" android:id="@+id/text_norm_value" />
                     <TextView style="@style/style_bpm_level_item_tv_date" android:id="@+id/text_norm_date" />
@@ -95,7 +95,7 @@
                 </LinearLayout>
             </RelativeLayout>
 
-            <RelativeLayout style="@style/style_bpm_level_item_ly">
+            <RelativeLayout style="@style/style_bpm_level_item_ly" android:visibility="gone">
                 <LinearLayout style="@style/style_bpm_level_item_ly_2">
                     <TextView style="@style/style_bpm_level_item_tv_value" android:id="@+id/text_high_value" />
                     <TextView style="@style/style_bpm_level_item_tv_date" android:id="@+id/text_high_date" />

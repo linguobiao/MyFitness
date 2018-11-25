@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.lgb.myfitness.R;
 import com.lgb.myfitness.been.HistoryDay;
 import com.lgb.myfitness.been.HistoryHour;
 import com.lgb.myfitness.been.HistoryMonth;
@@ -637,61 +638,152 @@ public class CalculateHelper {
 	}
 	
 	
-	public static int getBPMType(int sys) {
-//		if (sys <= 90 ) {
+//	public static int getBPMType(int sys) {
+////		if (sys <= 90 ) {
+////			return Global.TYPE_BPM_TYPE_LOW;
+////
+////		} else if (sys <= 120) {
+////			return Global.TYPE_BPM_TYPE_OPTI;
+////
+////		} else if (sys <= 130) {
+////			return Global.TYPE_BPM_TYPE_NORM;
+////
+////		} else if (sys <= 160) {
+////			return Global.TYPE_BPM_TYPE_MILD;
+////
+////		} else if (sys <= 180) {
+////			return Global.TYPE_BPM_TYPE_MIDD;
+////
+////		} else {
+////			return Global.TYPE_BPM_TYPE_HIGH;
+////		}
+//
+//		if (sys < 60 ) {
 //			return Global.TYPE_BPM_TYPE_LOW;
-//			
-//		} else if (sys <= 120) {
+//
+//		} else if (sys < 90) {
 //			return Global.TYPE_BPM_TYPE_OPTI;
-//			
-//		} else if (sys <= 130) {
+//
+//		} else if (sys < 120) {
 //			return Global.TYPE_BPM_TYPE_NORM;
-//			
-//		} else if (sys <= 160) {
+//
+//		} else if (sys < 140) {
 //			return Global.TYPE_BPM_TYPE_MILD;
-//			
-//		} else if (sys <= 180) {
+//
+//		} else if (sys < 180) {
 //			return Global.TYPE_BPM_TYPE_MIDD;
-//			
+//
 //		} else {
 //			return Global.TYPE_BPM_TYPE_HIGH;
 //		}
-		
-		if (sys < 60 ) {
-			return Global.TYPE_BPM_TYPE_LOW;
-			
-		} else if (sys < 90) {
-			return Global.TYPE_BPM_TYPE_OPTI;
-			
-		} else if (sys < 120) {
-			return Global.TYPE_BPM_TYPE_NORM;
-			
-		} else if (sys < 140) {
-			return Global.TYPE_BPM_TYPE_MILD;
-			
-		} else if (sys < 180) {
-			return Global.TYPE_BPM_TYPE_MIDD;
-			
-		} else {
-			return Global.TYPE_BPM_TYPE_HIGH;
-		}
-	}
-	
+//	}
+//
+//	/**
+//	 * 计算圆圈中间的等级
+//	 * @param sys
+//	 * @param dia
+//	 * @return
+//	 */
+//	public static int getBPMTypeCenter(int sys, int dia) {
+//
+//		if (dia < 60 && sys < 90){
+//			return Global.TYPE_BPM_TYPE_LOW;
+//		} else if (dia > 90 || sys > 140) {
+//			return Global.TYPE_BPM_TYPE_HIGH;
+//		}
+//
+//		return Global.TYPE_BPM_TYPE_NORM;
+//
+//	}
+
 	/**
-	 * 计算圆圈中间的等级
+	 * 计算等级（7级）
 	 * @param sys
 	 * @param dia
 	 * @return
 	 */
-	public static int getBPMTypeCenter(int sys, int dia) {
-		
-		if (dia < 60 && sys < 90){ 
-			return Global.TYPE_BPM_TYPE_LOW;
-		} else if (dia > 90 || sys > 140) {
-			return Global.TYPE_BPM_TYPE_HIGH;
+	public static int getBPMLevel(int sys, int dia) {
+
+		int levelDia;
+		int levelSys;
+
+		if (dia < 60){
+			levelDia = Global.TYPE_BPM_LEVEL_1;//Low  蓝色
+		} else if (dia < 80) {
+			levelDia = Global.TYPE_BPM_LEVEL_2;//Opti  蓝色
+		} else if (dia < 85) {
+			levelDia = Global.TYPE_BPM_LEVEL_3;//Norm  蓝色
+		} else if (dia < 90) {
+			levelDia = Global.TYPE_BPM_LEVEL_4;//High-Normal  蓝色
+		} else if (dia < 100) {
+			levelDia = Global.TYPE_BPM_LEVEL_5;//Mild Hypertension  橙色
+		} else if (dia < 110) {
+			levelDia = Global.TYPE_BPM_LEVEL_6;//Moderate Hypertension  橙色
+		} else {
+			levelDia = Global.TYPE_BPM_LEVEL_7;//Severe Hypertension  红色
 		}
-		
-		return Global.TYPE_BPM_TYPE_NORM;
-		
+
+		if (sys < 90){
+			levelSys = Global.TYPE_BPM_LEVEL_1;//Low  蓝色
+		} else if (sys < 120) {
+			levelSys = Global.TYPE_BPM_LEVEL_2;//Opti  蓝色
+		} else if (sys < 130) {
+			levelSys = Global.TYPE_BPM_LEVEL_3;//Norm  蓝色
+		} else if (sys < 140) {
+			levelSys = Global.TYPE_BPM_LEVEL_4;//High-Normal  蓝色
+		} else if (sys < 160) {
+			levelSys = Global.TYPE_BPM_LEVEL_5;//Mild Hypertension  橙色
+		} else if (sys < 180) {
+			levelSys = Global.TYPE_BPM_LEVEL_6;//Moderate Hypertension  橙色
+		} else {
+			levelSys = Global.TYPE_BPM_LEVEL_7;//Severe Hypertension  红色
+		}
+
+//		if (dia < 60 && sys < 90){
+//			return Global.TYPE_BPM_LEVEL_1;//Low  蓝色
+//		} else if (dia >= 60 && dia < 80 && sys >= 90 && sys < 120) {
+//			return Global.TYPE_BPM_LEVEL_2;//Opti  蓝色
+//		} else if (dia >= 80 && dia < 85 && sys >= 120 && sys < 130) {
+//			return Global.TYPE_BPM_LEVEL_3;//Norm  蓝色
+//		} else if (dia >= 85 && dia < 90 && sys >= 130 && sys < 140) {
+//			return Global.TYPE_BPM_LEVEL_4;//High-Normal  蓝色
+//		} else if (dia >= 90 && dia < 100 && sys >= 140 && sys < 160) {
+//			return Global.TYPE_BPM_LEVEL_5;//Mild Hypertension  橙色
+//		} else if (dia >= 100 && dia < 110 && sys >= 160 && sys < 180) {
+//			return Global.TYPE_BPM_LEVEL_6;//Moderate Hypertension  橙色
+//		} else if (dia >= 110 && sys >= 180) {
+//			return Global.TYPE_BPM_LEVEL_7;//Severe Hypertension  红色
+//		}
+		return levelDia > levelSys ? levelDia : levelSys;
+	}
+
+	/**
+	 * 计算等级（3级）
+	 * @return
+	 */
+	public static int getBPMLevelColor(int level) {
+		switch (level) {
+			case Global.TYPE_BPM_LEVEL_1:
+			case Global.TYPE_BPM_LEVEL_2:
+			case Global.TYPE_BPM_LEVEL_3:
+			case Global.TYPE_BPM_LEVEL_4:return Global.TYPE_BPM_LEVEL_BLUE;
+			case Global.TYPE_BPM_LEVEL_5:
+			case Global.TYPE_BPM_LEVEL_6:return Global.TYPE_BPM_LEVEL_ORANGE;
+			case Global.TYPE_BPM_LEVEL_7:return Global.TYPE_BPM_LEVEL_RED;
+			default:return -1;
+		}
+	}
+
+	public static String buildBPMLevelText(int level) {
+		switch (level) {
+			case Global.TYPE_BPM_LEVEL_1:return ContextHelper.getInstance().getString(R.string.L1);
+			case Global.TYPE_BPM_LEVEL_2:return ContextHelper.getInstance().getString(R.string.L2);
+			case Global.TYPE_BPM_LEVEL_3:return ContextHelper.getInstance().getString(R.string.L3);
+			case Global.TYPE_BPM_LEVEL_4:return ContextHelper.getInstance().getString(R.string.L4);
+			case Global.TYPE_BPM_LEVEL_5:return ContextHelper.getInstance().getString(R.string.L5);
+			case Global.TYPE_BPM_LEVEL_6:return ContextHelper.getInstance().getString(R.string.L6);
+			case Global.TYPE_BPM_LEVEL_7:return ContextHelper.getInstance().getString(R.string.L7);
+			default:return "ERROR";
+		}
 	}
 }

@@ -38,10 +38,15 @@ public class SdkUtils {
             int sys = ByteUtils.byte2int_2(value, 5);
             int dia = ByteUtils.byte2int_2(value, 7);
             int hr = ByteUtils.byte2int_2(value, 11);
-            BpmResultBean bean = new BpmResultBean(true);
-            bean.setSystolic(sys);
-            bean.setDiatolic(dia);
-            bean.setHeartRate(hr);
+            boolean isSuccess = value[4] == 28;
+            BpmResultBean bean = new BpmResultBean(isSuccess);
+            if (isSuccess) {
+                bean.setSystolic(sys);
+                bean.setDiatolic(dia);
+                bean.setHeartRate(hr);
+            } else {
+                bean.setError(value[12]);
+            }
             EventBus.getDefault().post(bean);
         }
     }

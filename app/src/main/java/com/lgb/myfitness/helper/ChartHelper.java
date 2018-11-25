@@ -776,14 +776,15 @@ public class ChartHelper {
 		mRenderer.setShowCustomTextGrid(true); // 显示自己定制的网格
 
 		mRenderer.setYTitle("");
-		mRenderer.setYAxisMax(5.5);
+		mRenderer.setYAxisMax(6.5);
 		mRenderer.setYLabels(0);
-		mRenderer.addYTextLabel(0, context.getString(R.string.Low) + "  ");
-		mRenderer.addYTextLabel(1, context.getString(R.string.Opti) + "  ");
-		mRenderer.addYTextLabel(2, context.getString(R.string.Norm) + "  ");
-		mRenderer.addYTextLabel(3, context.getString(R.string.Mild) + "  ");
-		mRenderer.addYTextLabel(4, context.getString(R.string.Midd) + "  ");
-		mRenderer.addYTextLabel(5, context.getString(R.string.High) + "  ");
+		mRenderer.addYTextLabel(0, context.getString(R.string.L1) + "  ");
+		mRenderer.addYTextLabel(1, context.getString(R.string.L2) + "  ");
+		mRenderer.addYTextLabel(2, context.getString(R.string.L3) + "  ");
+		mRenderer.addYTextLabel(3, context.getString(R.string.L4) + "  ");
+		mRenderer.addYTextLabel(4, context.getString(R.string.L5) + "  ");
+		mRenderer.addYTextLabel(5, context.getString(R.string.L6) + "  ");
+		mRenderer.addYTextLabel(6, context.getString(R.string.L7) + "  ");
 
 		mRenderer.setShowLegend(false);
 		
@@ -1389,14 +1390,14 @@ public class ChartHelper {
 					BPM bpm = bpmList.get(i);
 					
 					if (bpm != null) {
-						series.add(i, CalculateHelper.getBPMType(bpm.getSystolic()));
+						series.add(i, CalculateHelper.getBPMLevel(bpm.getSystolic(), bpm.getDiatolic()));
 
 					} else {
-						series.add(i, Global.TYPE_BPM_TYPE_LOW);
+						series.add(i, Global.TYPE_BPM_LEVEL_1);
 					}
 					
 				} else {
-					series.add(i, Global.TYPE_BPM_TYPE_LOW);
+					series.add(i, Global.TYPE_BPM_LEVEL_1);
 				}
 				
 			}

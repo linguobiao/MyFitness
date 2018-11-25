@@ -73,33 +73,21 @@ public class TestResultActivity extends Activity{
 	
 	
 	private void setGraphState(BPM bpm) {
-		
-		int type = Global.TYPE_BPM_TYPE_LOW;
-		int typeCenter = Global.TYPE_BPM_TYPE_NORM;
+
+		int type = Global.TYPE_BPM_LEVEL_ERROR;
 		int diatolic = 0;
 		int systolic = 0;
 		if (bpm != null) {
-			
 			diatolic = bpm.getDiatolic();
 			systolic = bpm.getSystolic();
-			type = CalculateHelper.getBPMType(systolic);
-			
+			type = CalculateHelper.getBPMLevel(systolic, diatolic);
 		}
-		typeCenter = CalculateHelper.getBPMTypeCenter(systolic, diatolic);
-		if (typeCenter == Global.TYPE_BPM_TYPE_LOW) {
-			text_type.setText(getString(R.string.Low));
-		} else if (typeCenter == Global.TYPE_BPM_TYPE_HIGH)  {
-			text_type.setText(getString(R.string.High));
-		} else {
-			text_type.setText(getString(R.string.Norm));
-		}
+		text_type.setText(CalculateHelper.buildBPMLevelText(type));
+		int color = CalculateHelper.getBPMLevelColor(type);
 
-		image_point_low.setVisibility(type == Global.TYPE_BPM_TYPE_LOW ? View.VISIBLE : View.INVISIBLE);
-		image_point_opti.setVisibility(type == Global.TYPE_BPM_TYPE_OPTI ? View.VISIBLE : View.INVISIBLE);
-		image_point_norm.setVisibility(type == Global.TYPE_BPM_TYPE_NORM ? View.VISIBLE : View.INVISIBLE);
-		image_point_mild.setVisibility(type == Global.TYPE_BPM_TYPE_MILD ? View.VISIBLE : View.INVISIBLE);
-		image_point_midd.setVisibility(type == Global.TYPE_BPM_TYPE_MIDD ? View.VISIBLE : View.INVISIBLE);
-		image_point_high.setVisibility(type == Global.TYPE_BPM_TYPE_HIGH ? View.VISIBLE : View.INVISIBLE);
+		image_point_low.setVisibility(color == Global.TYPE_BPM_LEVEL_BLUE ? View.VISIBLE : View.INVISIBLE);
+		image_point_mild.setVisibility(color == Global.TYPE_BPM_LEVEL_ORANGE ? View.VISIBLE : View.INVISIBLE);
+		image_point_midd.setVisibility(color == Global.TYPE_BPM_LEVEL_RED ? View.VISIBLE : View.INVISIBLE);
 	}
 	
 	

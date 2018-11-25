@@ -160,12 +160,13 @@
     <string name="Calories">Calories</string>
     <string name="DATE">Date</string>
     <string name="TIME">TIME</string>
-    <string name="Low">Low</string>
-    <string name="Opti">Opti</string>
-    <string name="Norm">Norm</string>
-    <string name="Mild">Mild</string>
-    <string name="Midd">Midd</string>
-    <string name="High">High</string>
+    <string name="L1">L1</string>
+    <string name="L2">L2</string>
+    <string name="L3">L3</string>
+    <string name="L4">L4</string>
+    <string name="L5">L5</string>
+    <string name="L6">L6</string>
+    <string name="L7">L7</string>
 
     <!-- fragment_settings -->
     <string name="SETTINGS">SETTINGS</string>
@@ -305,5 +306,16 @@ data stored of your person, and the right to authorize, blocking or deleting of 
     <string name="impressum_content_2">TENACTA S.A.\n
 email: info@tenacta.com.ar\n
 Versión de la aplicación: V%1s </string>
+
+    <string-array name="bpm_error_code">
+        <item>Sensor signal is abnormal.</item>
+        <item>Cannot get the result.</item>
+        <item>Measurement results are abnormal.</item>
+        <item>Cuff is too loose or air leakage.</item>
+        <item>Cuff is too tight or air leakage or gas circuit is stopped up.</item>
+        <item>Serious pressure interference in the measurement process.</item>
+        <item>The pressure is over 300mmHg.</item>
+        <item>The device is not calibrated correctly. Send the device back to after sales center.</item>
+    </string-array>
 
 </resources>

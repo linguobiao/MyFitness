@@ -455,8 +455,15 @@ public class BPMMainActivity extends SimpleBaseActivity implements OnProfileUpda
 			}
 
 		} else {
-			DialogHelper.showAlertDialog(BPMMainActivity.this, getString(R.string.Notice), getString(R.string.Test_fail), null);
 
+			int error = event.getError();
+			if (error < 1 || error > 8) {
+				DialogHelper.showAlertDialog(BPMMainActivity.this, getString(R.string.Notice), getString(R.string.Test_fail), null);
+				return;
+			}
+
+			String[] errorCodes = getResources().getStringArray(R.array.bpm_error_code);
+			DialogHelper.showAlertDialog(BPMMainActivity.this, getString(R.string.Notice), errorCodes[event.getError() - 1], null);
 		}
 
 		BPMTestFragment fragment_test = (BPMTestFragment) BPMFragmentManager.getInstance().findFragment(BPMTestFragment.class);

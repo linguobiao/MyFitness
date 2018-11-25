@@ -97,24 +97,12 @@ public class BPMStatisticsFragment extends SimpleBaseFragment{
 				if (bpm_asc != null && bpm_asc.size() > index) {
 					BPM bpm = bpm_asc.get(index);
 					if (bpm != null) {
-						int type = CalculateHelper.getBPMType(bpm.getSystolic());
+						int type = CalculateHelper.getBPMLevel(bpm.getSystolic(), bpm.getDiatolic());
 						String value = null;
 						String xLabel = null;
 						String xLabel2 = null;
-						
-						if (type == Global.TYPE_BPM_TYPE_LOW) {
-							value = getString(R.string.Low);
-						} else if (type == Global.TYPE_BPM_TYPE_OPTI) {
-							value = getString(R.string.Opti);
-						} else if (type == Global.TYPE_BPM_TYPE_NORM) {
-							value = getString(R.string.Norm);
-						} else if (type == Global.TYPE_BPM_TYPE_MILD) {
-							value = getString(R.string.Mild);
-						} else if (type == Global.TYPE_BPM_TYPE_MIDD) {
-							value = getString(R.string.Midd);
-						} else if (type == Global.TYPE_BPM_TYPE_HIGH) {
-							value = getString(R.string.High);
-						}
+
+						value = CalculateHelper.buildBPMLevelText(type);
 						
 						String datetime = Global.sdf_4_1.format(bpm.getDatetime().getTime());
 						String[] array_datetime = datetime.split(" ");

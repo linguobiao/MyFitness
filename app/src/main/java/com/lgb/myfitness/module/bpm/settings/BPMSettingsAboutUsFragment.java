@@ -1,6 +1,7 @@
 package com.lgb.myfitness.module.bpm.settings;
 
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +22,8 @@ public class BPMSettingsAboutUsFragment extends SimpleBaseFragment {
 	@BindView(R.id.declaration) TextView tv_declaration;
 	@BindView(R.id.impressum) TextView tv_impressum;
 	@BindView(R.id.button_back) ImageView button_back;
+	@BindView(R.id.wv_about)
+	WebView wv_about;
 
 	@Override
 	public void initView() {
@@ -28,6 +31,8 @@ public class BPMSettingsAboutUsFragment extends SimpleBaseFragment {
 		tv_declaration.setOnClickListener(clickListener);
 		tv_impressum.setOnClickListener(clickListener);
 		tv_version.setText(getString(R.string.version_code, AppUtils.getVersionName(getActivity())));//版本号
+//		wv_about.loadUrl("file:///android_asset/about_us.webarchive");
+		wv_about.loadUrl("file:///android_asset/about.html");
 	}
 
 	@Override protected int getLayoutId() { return R.layout.fragment_band_settings_about_us; }

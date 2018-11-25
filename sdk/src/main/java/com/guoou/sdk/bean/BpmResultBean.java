@@ -8,6 +8,7 @@ public class BpmResultBean {
     private int systolic;
     private int diatolic;
     private int heartRate;
+    private int error;
     private boolean isSuccess;
 
     public BpmResultBean(boolean isSuccess) {
@@ -33,6 +34,15 @@ public class BpmResultBean {
     public void setHeartRate(int heartRate) {
         this.heartRate = heartRate;
     }
+
+    public int getError() {
+        return error;
+    }
+
+    public void setError(int error) {
+        this.error = error;
+    }
+
     public Calendar getDatetime() {
         return datetime;
     }

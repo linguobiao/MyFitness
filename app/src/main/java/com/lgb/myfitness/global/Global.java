@@ -185,13 +185,27 @@ public class Global {
 //	public static final int TYPE_JACK_UNIT = 4;
 	public static final int TYPE_JACK_NULL = 3;
 	
-	public static final int TYPE_BPM_TYPE_LOW = 0;
-	public static final int TYPE_BPM_TYPE_OPTI = 1;
-	public static final int TYPE_BPM_TYPE_NORM = 2;
-	public static final int TYPE_BPM_TYPE_MILD = 3;
-	public static final int TYPE_BPM_TYPE_MIDD = 4;
-	public static final int TYPE_BPM_TYPE_HIGH = 5;
-	
+//	public static final int TYPE_BPM_TYPE_LOW = 0;
+//	public static final int TYPE_BPM_TYPE_OPTI = 1;
+//	public static final int TYPE_BPM_TYPE_NORM = 2;
+//	public static final int TYPE_BPM_TYPE_MILD = 3;
+//	public static final int TYPE_BPM_TYPE_MIDD = 4;
+//	public static final int TYPE_BPM_TYPE_HIGH = 5;
+
+	public static final int TYPE_BPM_LEVEL_1 = 0;
+	public static final int TYPE_BPM_LEVEL_2 = 1;
+	public static final int TYPE_BPM_LEVEL_3 = 2;
+	public static final int TYPE_BPM_LEVEL_4 = 3;
+	public static final int TYPE_BPM_LEVEL_5 = 4;
+	public static final int TYPE_BPM_LEVEL_6 = 5;
+	public static final int TYPE_BPM_LEVEL_7 = 6;
+	public static final int TYPE_BPM_LEVEL_ERROR = -1;
+
+	public static final int TYPE_BPM_LEVEL_BLUE = 0;
+	public static final int TYPE_BPM_LEVEL_ORANGE = 1;
+	public static final int TYPE_BPM_LEVEL_RED = 2;
+
+
 	public static final int TYPE_BPM_LANGUAGE_GERMAN = 1;
 	public static final int TYPE_BPM_LANGUAGE_FRENCH = 2;
 	public static final int TYPE_BPM_LANGUAGE_ENGLISH = 3;
