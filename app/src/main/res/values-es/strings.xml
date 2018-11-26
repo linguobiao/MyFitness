@@ -97,7 +97,11 @@
     <string name="Interval">Interval</string>
 
     <!-- fragment_settings_about_us -->
-    <string name="version_code">Versión:V%1s</string>
+    <string name="version_code">
+        TENACTA S.A.\n
+        email: info@tenacta.com.ar\n
+        Versión de la aplicación: V%1s
+    </string>
 
     <!-- fragment_settings_lost_mode -->
     <string name="Lost_Mode">Lost Mode</string>
@@ -160,13 +164,13 @@
     <string name="Calories">Calorias</string>
     <string name="DATE">Fecha</string>
     <string name="TIME">HORA</string>
-    <string name="L1">L1</string>
-    <string name="L2">L2</string>
-    <string name="L3">L3</string>
-    <string name="L4">L4</string>
-    <string name="L5">L5</string>
-    <string name="L6">L6</string>
-    <string name="L7">L7</string>
+    <string name="L1">Baja</string>
+    <string name="L2">Optima</string>
+    <string name="L3">Normal</string>
+    <string name="L4">Norm-Alta</string>
+    <string name="L5">Alta 1</string>
+    <string name="L6">Alta 2</string>
+    <string name="L7">Muy Alta</string>
 
     <!-- fragment_settings -->
     <string name="SETTINGS">CONFIGURACION</string>
@@ -242,7 +246,7 @@
     <string name="English">English</string>
     <string name="German">Deutsch</string>
     <string name="French">French</string>
-    <string name="Spanish">Spanish</string>
+    <string name="Spanish">Español</string>
     <string name="Test_fail">Error en la medición, el resultado no será guardado</string>
     <string name="Delete_bpm">Do you want to delete this bpm data?</string>
     <string name="Measuring_Done">Medición finalizada</string>
@@ -257,7 +261,7 @@
     <string name="Please_select_a_language">Por favor seleccione un idioma.</string>
     <string name="success">Success</string>
     <string name="error">Error</string>
-    <string name="ppm">/Min.</string>
+    <string name="ppm">ppm</string>
     <string name="declaration">Declaration</string>
     <string name="impressum">Impressum</string>
     <string name="declaration_content_1">DECLARATION:</string>
@@ -308,14 +312,14 @@ email: info@tenacta.com.ar\n
 Versión de la aplicación: V%1s </string>
 
     <string-array name="bpm_error_code">
-        <item>La señal del sensor es anormal.</item>
-        <item>No se puede obtener el resultado.</item>
-        <item>La Medición resultó anormal</item>
-        <item>El Brazalete está demasiado flojo o tiene fugas de aire.</item>
-        <item>El Brazalete esta demasiado apretado o hay fugas de aire en el circuito.</item>
-        <item>Interferencia en el proceso de medición.</item>
-        <item>La presión es superior a 300 mmHg.</item>
-        <item>El dispositivo no está calibrado correctamente , envíelo al centro de atención.</item>
+        <item>ERROR 1: Error del sensor.</item>
+        <item>ERROR 2: El dispositivo no detecta pulso.</item>
+        <item>ERROR 3: Resultado de medición anormal.</item>
+        <item>ERROR 4: El brazalete está demasiado flojo, o tiene fugas de aire.</item>
+        <item>ERROR 5: El brazalete está demasiado apretado, o el circuito de aire está obstruido.</item>
+        <item>ERROR 6: Interferencia durante el proceso de medición.</item>
+        <item>ERROR 7: La presión es superor a 300mmHg.</item>
+        <item>ERROR 8: El dispositivo no está calibrado correctamente.</item>
     </string-array>
 
 </resources>

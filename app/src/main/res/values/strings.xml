@@ -97,7 +97,12 @@
     <string name="Interval">Interval</string>
 
     <!-- fragment_settings_about_us -->
-    <string name="version_code">Version:V%1s</string>
+    <string name="version_code">
+        TENACTA S.A.\n
+        email: info@tenacta.com.ar\n
+        Versión de la aplicación: V%1s
+    </string>
+
 
     <!-- fragment_settings_lost_mode -->
     <string name="Lost_Mode">Lost Mode</string>
@@ -160,13 +165,13 @@
     <string name="Calories">Calories</string>
     <string name="DATE">Date</string>
     <string name="TIME">TIME</string>
-    <string name="L1">L1</string>
-    <string name="L2">L2</string>
-    <string name="L3">L3</string>
-    <string name="L4">L4</string>
-    <string name="L5">L5</string>
-    <string name="L6">L6</string>
-    <string name="L7">L7</string>
+    <string name="L1">Low</string>
+    <string name="L2">Optimal</string>
+    <string name="L3">Normal</string>
+    <string name="L4">High</string>
+    <string name="L5">Mild</string>
+    <string name="L6">Moderate</string>
+    <string name="L7">Severe</string>
 
     <!-- fragment_settings -->
     <string name="SETTINGS">SETTINGS</string>
@@ -308,14 +313,14 @@ email: info@tenacta.com.ar\n
 Versión de la aplicación: V%1s </string>
 
     <string-array name="bpm_error_code">
-        <item>Sensor signal is abnormal.</item>
-        <item>Cannot get the result.</item>
-        <item>Measurement results are abnormal.</item>
-        <item>Cuff is too loose or air leakage.</item>
-        <item>Cuff is too tight or air leakage or gas circuit is stopped up.</item>
-        <item>Serious pressure interference in the measurement process.</item>
-        <item>The pressure is over 300mmHg.</item>
-        <item>The device is not calibrated correctly. Send the device back to after sales center.</item>
+        <item>ERROR 1: Sensor signal is abnormal.</item>
+        <item>ERROR 2: Cannot get the result.</item>
+        <item>ERROR 3: Measurement results are abnormal.</item>
+        <item>ERROR 4: Cuff is too loose or air leakage.</item>
+        <item>ERROR 5: Cuff is too tight or air leakage or gas circuit is stopped up.</item>
+        <item>ERROR 6: Serious pressure interference in the measurement process.</item>
+        <item>ERROR 7: The pressure is over 300mmHg.</item>
+        <item>ERROR 8: The device is not calibrated correctly. Send the device back to after sales center.</item>
     </string-array>
 
 </resources>

@@ -168,7 +168,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/activity_vertical_margin"
                     android:text="@string/Select_language_in_BP_Monitor"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/black" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>

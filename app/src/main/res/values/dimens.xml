@@ -76,7 +76,7 @@
     <dimen name="text_size_scale_middle">20dp</dimen>
     <dimen name="text_size_scale_large">35dp</dimen>
     
-    <dimen name="text_size_bpm_type">7dp</dimen>
+    <dimen name="text_size_bpm_type">6dp</dimen>
     <dimen name="text_size_bpm_sys_dia">7dp</dimen>
     <dimen name="text_size_bpm_value">10dp</dimen>
     <dimen name="text_size_bpm_date">6dp</dimen>

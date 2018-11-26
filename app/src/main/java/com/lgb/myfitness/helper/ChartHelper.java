@@ -45,7 +45,7 @@ public class ChartHelper {
 //		System.out.println("TEXT SIZE = " + TEXT_SIZE);
 //		System.out.println("POINT SIZE = " + POINT_SIZE);
 //		System.out.println("PADDING SIZE = " + PADDING_SIZE);
-		TEXT_SIZE = densityDPI * 1 / 40 + densityDPI * 1 / 40 + 2;
+		TEXT_SIZE = densityDPI * 1 / 50 + densityDPI * 1 / 50 + 2;
 		TEXT_SIZE_SCALE_SMALL = densityDPI * 1 / 40 ;
 		POINT_SIZE = densityDPI * 1 / 45;
 		PADDING_SIZE = densityDPI * 1 / 40;

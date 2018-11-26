@@ -44,8 +44,8 @@
     </style>
 
     <style name="style_bpm_level_item_iv">
-        <item name="android:layout_width">25dp</item>
-        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">36dp</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:contentDescription">@null</item>
     </style>
@@ -54,7 +54,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:textSize">@dimen/text_size_bpm_type</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
